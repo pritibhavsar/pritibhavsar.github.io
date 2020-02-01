@@ -1,0 +1,17 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+.logo {
+height:45px;
+}
+
+.FontColor {
+    color:#c52d2f;
+}
+
+.contactus {padding:30px 0 50px 0;text-align:center;background:url(Contants/images/contactus.png) no-repeat fixed;background-size:cover}
+.contactus p{color:#ccc}
+.contactus h1, .contactus h2{color:#fff}
+.contactus .btn-info{background:#017AE1;border:0px}
+.contactus .form-group{text-align:left;margin-top:15px;font-size:16px}
+.contactus .form-group label{color:#ccc}
+.contactus .form-control{background:rgba(255, 255, 255, 0.1);border:1px solid rgba(255, 255, 255, 0.3);resize:vertical; color:white;}

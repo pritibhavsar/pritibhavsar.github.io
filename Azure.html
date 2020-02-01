@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure - PAL Solutions</title>
+    <link href="/Contents/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Contents/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/Contents/css/animate.min.css" rel="stylesheet">
+    <link href="/Contents/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/Contents/css/main.css" rel="stylesheet">
+    <link href="/Contents/css/responsive.css" rel="stylesheet">
+    <link href="/Contents/css/site.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Contents/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Contents/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Contents/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/Contents/images/ico/apple-touch-icon-57-precomposed.png">
+    <script src="/Contents/js/jquery.js"></script>
+    <script src="/Contents/js/bootstrap.min.js"></script>
+    <script src="/Contents/js/jquery.prettyPhoto.js"></script>
+    <script src="/Contents/js/jquery.isotope.min.js"></script>
+    <script src="/Contents/js/main.js"></script>
+    <script src="/Contents/js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a.btn-theme-setting').on('click', function () {
+                if ($('.theme-setting').css('left') < '0') {
+                    $('.theme-setting').css('left', '0');
+                } else {
+                    $('.theme-setting').css('left', '-300px');
+                }
+            });
+        });
+
+        function MenuHighlight(id) {
+            $("#NavIndex").removeClass("active");
+            $("#NavContact").addClass("active");
+        }
+
+        function menu1(id) {
+            //$("#NavIndex").removeClass("active");
+            //$("#NavConsulting").removeClass("active");
+            //$("#NavSharePoint").removeClass("active");
+            //$("#NavAzure").removeClass("active");
+            //$("#NavDynamicsCRM").removeClass("active");
+            ////$("#NavDevelopment").removeClass("active");
+            ////$("#NavDotNet").removeClass("active");
+            ////$("#NavMobile").removeClass("active");
+            //$("#NavBlogs").removeClass("active");
+            //$("#NavContact").removeClass("active");
+            //$("#NavAbout").removeClass("active");
+            $("#" + id).addClass("active");
+        }
+
+    </script>
+</head>
+<body class="homepage">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="../"><img src="/Contents/images/logo.png" alt="PAL Solutions" class="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li id="NavIndex"><a href="/">Index</a></li>
+                    <li class="dropdown" id="NavConsulting">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consulting <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li id="NavSharePoint"><a href="/Consulting/SharePoint">SharePoint</a>
+                            <li id="NavAzure"><a href="/Consulting/Azure">Azure</a>
+                            <li id="NavDynamicsCRM"><a href="/Consulting/DynamicCRM">DynamicCRM</a>
+                        </ul>
+                    </li>
+                    
+                    <li id="NavAbout"><a href="/Home/About">About</a></li>
+                    <li id="NavContact"><a href="/Home/Contact">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </div><!--/.container-->
+    </nav><!--/nav-->
+    <partial name="_CookieConsentPartial" />
+    
+
+<h2>Azure.</h2>
+<h3></h3>
+<script>
+    $(document).ready(function () {
+        menu1('NavConsulting');
+        menu1('NavAzure');
+    });
+</script>
+    <section id="feature" class="transparent-bg">
+        <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Azure Consulting Services</h2>
+                <p class="lead">Microsoft Azure is an elastic cloud platform which provides enormous computing power to various businesses of diverse sizes thereby assuring you good performance with reduced cost. Our Azure Practice team will work closely with your business & create a  bespoke plan for virtual machines, cloud projects, storage and back up or identity and access management. </p>
+            </div>
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-bitbucket"></i>
+                            <h2>Application Platform</h2>
+                            <p>We help you plan your Azure Application Strategy</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-globe"></i>
+                            <h2>Infrastructure Services</h2>
+                            <p>We help you rapidly deploy and manage your Applications and Environments on Azure</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-table"></i>
+                            <h2>SQL and Data Storage</h2>
+                            <p>We help you build a Cloud Data Infrastructure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-random"></i>
+                            <h2>AD Identity and Access</h2>
+                            <p>We help you Federate and Extend your On-premise Active Directory Services</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-th-large"></i>
+                            <h2>SharePoint & Web Farm</h2>
+                            <p>We help you to deploy SharePoint Instances and Multi-Server Farms on Azure VMs</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-retweet"></i>
+                            <h2>Migration Services</h2>
+                            <p>We help you migrate your applications, computing and storage operations to the cloud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>&copy; 2020 - PAL Solutions</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="social">
+                        <ul class="social-share">
+                            <li><a href="https://www.facebook.com/Pal-Solutions-958373784225747"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/pal_solutions"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/pal-solutions-919540118"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="PAL.Supports"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+    
+    
+</body>
+</html>
