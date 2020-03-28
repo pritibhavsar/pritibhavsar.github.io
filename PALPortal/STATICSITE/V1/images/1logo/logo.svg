@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="140"
+   height="32"
+   viewBox="0 0 140 32"
+   fill="none"
+   version="1.1"
+   id="svg56"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata62">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs60">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 16 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="140 : 16 : 1"
+       inkscape:persp3d-origin="70 : 10.666667 : 1"
+       id="perspective869" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="768"
+     id="namedview58"
+     showgrid="false"
+     inkscape:snap-text-baseline="true"
+     inkscape:zoom="3.6466507"
+     inkscape:cx="69.526"
+     inkscape:cy="52.315338"
+     inkscape:window-x="-8"
+     inkscape:window-y="-31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg56"
+     inkscape:snap-bbox="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="true" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="p1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.38441849px;line-height:1.25;font-family:'Cooper Black';-inkscape-font-specification:'Cooper Black, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999976"
+     x="-0.24628575"
+     y="27.892645"
+     id="text898"
+     transform="scale(1.2402609,0.80628196)"><tspan
+       sodipodi:role="line"
+       id="tspan896"
+       x="-0.24628575"
+       y="27.892645"
+       style="fill:#000080;stroke-width:0.99999976">PAL</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.2914772px;line-height:1.25;font-family:'Cooper Black';-inkscape-font-specification:'Cooper Black, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+     x="44.80447"
+     y="41.876038"
+     id="text902"
+     transform="scale(1.3211799,0.75689919)"><tspan
+       sodipodi:role="line"
+       id="tspan900"
+       x="44.80447"
+       y="41.876038"
+       style="fill:#ff0000;stroke-width:1">Portals</tspan></text>
+</svg>
