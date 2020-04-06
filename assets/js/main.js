@@ -2,9 +2,9 @@
 (function ($) {
     "use strict";
 
-    $('body').bind('copy paste cut drag drop', function (e) {
-        e.preventDefault();
-     });
+    // $('body').bind('copy paste cut drag drop', function (e) {
+    //     e.preventDefault();
+    //  });
 
     /*-------------------------------------------------------------------------------
 	  Navbar 
