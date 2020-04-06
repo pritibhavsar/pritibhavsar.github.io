@@ -1011,3 +1011,59 @@
     ppTestislider();
 
 })(jQuery)
+
+function MenuLoad() {
+        
+    var pathname = window.location.pathname;
+    // alert(pathname);
+    debugger;
+     var paths = pathname.split('/');
+    if(paths.length > 2){
+        $("#" + paths[paths.length-3]).parent().addClass("active");
+        $("#" + paths[paths.length-2]).parent().addClass("active");
+
+        if(paths[paths.length-1].search("index",1)==0)
+            $("#IntranetPortal").parent().addClass("active");
+        
+        else if(paths[paths.length-1].search("corehr",1)==0) 
+            $("#CoreHr").parent().addClass("active");
+    }
+    else
+    {
+        if(pathname.search("index") > 0)
+            $("#Home").parent().addClass("active");
+        else if (pathname.search("legal") > 0)    
+            $("#Legal").css("text-decoration", "underline");
+        else if (pathname.search("terms") > 0)    
+            $("#Terms").css("text-decoration", "underline");
+        else if (pathname.search("policy") > 0)    
+            $("#Policy").css("text-decoration", "underline");        
+    }
+        
+}
+
+function test(){
+
+}
+setTimeout(() => {
+    MenuLoad();    
+    // Start of Tawk.to Script
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5e84287069e9320caabf156c/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    // End of Tawk.to Script
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162472346-2');
+}, 1000);
+
+

@@ -1,15 +1,8 @@
-function escapeRegExp(string){
-    return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
 
-function replaceAll(str, term, replacement) {
-   return str.replace(new RegExp(escapeRegExp(term), 'g'), replacement);
-}
-
-function getNavigationContent(path) {
-
-    var content = `<div class="container">
-    <a class="navbar-brand sticky_logo" href="#"><img src="./images/1logo/logo.svg" alt="logo"><img src="./images/1logo/logo.svg" alt=""></a>
+function getNavigationContent(isParent) {
+    var content =
+     `<div class="container">
+    <a class="navbar-brand sticky_logo" href="~~~index.html"><img src="~~~images/1logo/logo.svg" alt="logo"><img src="~~~images/1logo/logo.svg" alt=""></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="menu_toggle">
             <span class="hamburger">
@@ -26,22 +19,29 @@ function getNavigationContent(path) {
 
     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
         <ul class="navbar-nav menu w_menu ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link dropdown-toggle" href="https://www.palportals.com" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Home
-                </a>                                
+            <li class="nav-item">
+                <a href="~~~index.html" class="nav-link" id ="Home">Home</a>
             </li>
             <li class="nav-item dropdown submenu mega_menu">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Products">
                     Products
                 </a>
                 <div class="mega_menu_inner">
                     <ul class="dropdown-menu">
                         <li class="nav-item">
-                            <a href="./IntranetPortal/index.html" class="nav-link">Intranet Portal</a>
+                            <a href="~~~Products/Templates/index.html" class="nav-link">SharePoint Templates</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="./IntranetPortal/index.html" class="nav-link">Intranet Portal</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-grid-3columns.html" class="nav-link">Core HR</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/Template1.html" class="nav-link">Demo 1</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/Template2.html" class="nav-link">Demo 2</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/Template3.html" class="nav-link">Demo 3</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/WebParts.html" class="nav-link">Web Parts</a></li>
+                            </ul>
+                        </li>  
+                        <li class="nav-item">
+                            <a href="~~~Products/Portals/index.html" class="nav-link" id ="Portals">Portals</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="~~~Products/Portals/index.html" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>
+                                <li class="nav-item"><a href="~~~Products/Portals/corehr.html" class="nav-link" id ="CoreHr">Core HR</a></li>
                                 <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-grid-4columns.html" class="nav-link">Time & Attendance</a></li>
                                 <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-grid-2col-2.html" class="nav-link">Recruiting</a></li>
                                 <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-grid-2col-3.html" class="nav-link">Performace</a></li>
@@ -50,23 +50,15 @@ function getNavigationContent(path) {
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="http://droitthemes.com/html/saasland/index.html" class="nav-link">Core HR</a>
+                            <a href="http://droitthemes.com/html/saasland/index.html" class="nav-link">Office 365</a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-1.html" class="nav-link">Office 365</a></li>
                                 <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-2.html" class="nav-link">Style 2</a></li>
                                 <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-3.html" class="nav-link">Style 3</a></li>
                             </ul>
-                        </li>
+                        </li>                                                              
                         <li class="nav-item">
-                            <a href="http://droitthemes.com/html/saasland/index.html" class="nav-link">Learning</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-1.html" class="nav-link">Office 365</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-2.html" class="nav-link">Style 2</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-3.html" class="nav-link">Style 3</a></li>
-                            </ul>
-                        </li>                                        
-                        <li class="nav-item">
-                            <a href="http://droitthemes.com/html/saasland/index.html" class="nav-link">Monitoring</a>
+                            <a href="http://droitthemes.com/html/saasland/index.html" class="nav-link">Azure</a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-1.html" class="nav-link">Office 365</a></li>
                                 <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-2.html" class="nav-link">Style 2</a></li>
@@ -137,24 +129,32 @@ function getNavigationContent(path) {
                     <li class="nav-item"><a href="http://droitthemes.com/html/saasland/shoping-cart.html" class="nav-link">Release Notes</a></li>
                     <li class="nav-item"><a href="http://droitthemes.com/html/saasland/checkout.html" class="nav-link">Videos & Webinars</a></li>                                    
                 </ul>
-            </li>
-            
+            </li>            
         </ul>
     </div>
 </div>`;
-var newContent = replaceAll(content, './', path);
-document.getElementById("navigation").innerHTML = newContent;
+var newContent;
+    if(isParent){
+        newContent = content.replace(/~~~/gi, "./");
+    }
+    else{
+        newContent = content.replace(/~~~/gi, "../../");
+    }
+    console.log(newContent);
+    document.getElementById("navigation").innerHTML = newContent;
 }
 
-function getFooterContent() {
-    // document.getElementById("footer").innerHTML =       
-    var content = `<div class="footer_top_six">
+function getFooterContent(isParent) {
+    var content =
+    `<div class="footer_top_six">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-sm-6 ">
                 <div class="f_widget company_widget wow slideInLeft">
-                    <a href="https://www.palportals.com" class="f-logo"><img src="./images/1logo/logoWhite.svg" alt="logo"></a>
-                    <p class="mt_40">Copyright © 2020 <a href="https://www.palportals.com">PALPortals</a></p><span style="color:#1c143b;">v.0.1.2020.03.22</span>
+                    <a href="https://www.palportals.com" class="f-logo"><img src="~~~images/1logo/logoWhite.svg" alt="logo"></a>
+                    <p class="mt_40">Copyright © 2020 <a href="https://www.palportals.com">PALPortals</a></p>
+                    <p class="mt_40"><a href="~~~legal.html" id="Legal">Legal</a> | <a href="~~~website-usage-terms-and-conditions.html" id="Terms">Terms of use</a> | <a href="~~~privacy-policy.html" id="Policy">Privacy</a></p>
+                    <span style="color:#1c143b;">v.0.1.2020.03.22</span>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -192,10 +192,14 @@ function getFooterContent() {
             </div>
         </div>
     </div>
-</div>
-`;
-var newContent = replaceAll(content, './', path);
-document.getElementById("footer").innerHTML = newContent;
+</div>`;
+var newContent;
+    if(isParent){
+        newContent = content.replace(/~~~/gi, "./");
+    }
+    else{
+        newContent = content.replace(/~~~/gi, "../../");
+    }
+    console.log(newContent);
+    document.getElementById("footer").innerHTML = newContent;
 }
-
-getFooterContent();
