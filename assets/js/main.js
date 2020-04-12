@@ -1030,7 +1030,7 @@ function MenuLoad() {
     }
     else
     {
-        if(pathname.search("index") > 0)
+        if(pathname.search("index") >= 0)
             $("#Home").parent().addClass("active");
         else if (pathname.search("legal") > 0)    
             $("#Legal").css("text-decoration", "underline");
@@ -1038,32 +1038,39 @@ function MenuLoad() {
             $("#Terms").css("text-decoration", "underline");
         else if (pathname.search("policy") > 0)    
             $("#Policy").css("text-decoration", "underline");        
-    }
-        
+        else 
+            $("#Home").parent().addClass("active");    
+    }        
 }
 
-function test(){
-
-}
-setTimeout(() => {
-    MenuLoad();    
-    // Start of Tawk.to Script
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
+// Start of Tawk.to Script
+function TalkAPILoad(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
     s1.src='https://embed.tawk.to/5e84287069e9320caabf156c/default';
     s1.charset='UTF-8';
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
-    })();
-    // End of Tawk.to Script
+}
+// End of Tawk.to Script
 
+function LoadGoogleAnalysis(){
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-162472346-2');
+}
+
+setTimeout(() => {
+    MenuLoad();   
+    TalkAPILoad(); 
+    LoadGoogleAnalysis();
+    // Start of Tawk.to Script
+    // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    // (function(){
+    
+    // })();
+    // End of Tawk.to Script
 }, 1000);
 
 

@@ -42,27 +42,27 @@ function getNavigationContent(isParent) {
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="~~~Products/Portals/index.html" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>
                                 <li class="nav-item"><a href="~~~Products/Portals/corehr.html" class="nav-link" id ="CoreHr">Core HR</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-grid-4columns.html" class="nav-link">Time & Attendance</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-grid-2col-2.html" class="nav-link">Recruiting</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-grid-2col-3.html" class="nav-link">Performace</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-grid-2col-4.html" class="nav-link">Learning</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-grid-2col-4.html" class="nav-link">Self Service</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Time & Attendance</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Recruiting</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Performace</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Learning</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Self Service</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="http://droitthemes.com/html/saasland/index.html" class="nav-link">Office 365</a>
+                            <a href="#" class="nav-link">Office 365</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-1.html" class="nav-link">Office 365</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-2.html" class="nav-link">Style 2</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-3.html" class="nav-link">Style 3</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Office 365 Management</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Application Development</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Migration</a></li>
                             </ul>
                         </li>                                                              
                         <li class="nav-item">
-                            <a href="http://droitthemes.com/html/saasland/index.html" class="nav-link">Azure</a>
+                            <a href="#" class="nav-link">Azure</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-1.html" class="nav-link">Office 365</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-2.html" class="nav-link">Style 2</a></li>
-                                <li class="nav-item"><a href="http://droitthemes.com/html/saasland/portfolio-details-3.html" class="nav-link">Style 3</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Office 365</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Add Ins</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Branding</a></li>
                             </ul>
                         </li>
                     </ul>
