@@ -2,7 +2,7 @@
 function getNavigationContent(isParent) {
     var content =
      `<div class="container">
-    <a class="navbar-brand sticky_logo" href="~~~index.html"><img src="~~~images/1logo/logo.svg" alt="logo"><img src="~~~images/1logo/logo.svg" alt=""></a>
+    <a class="navbar-brand sticky_logo" href="~~~"><img src="~~~images/1logo/logo.svg" alt="logo"><img src="~~~images/1logo/logo.svg" alt=""></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="menu_toggle">
             <span class="hamburger">
