@@ -1012,11 +1012,9 @@
 
 })(jQuery)
 
-function MenuLoad() {
-        
+function MenuLoad() {        
     var pathname = window.location.pathname;
-    // alert(pathname);
-    debugger;
+    // alert(pathname);    
      var paths = pathname.split('/');
     if(paths.length > 2){
         $("#" + paths[paths.length-3]).parent().addClass("active");
