@@ -1055,10 +1055,19 @@ function TalkAPILoad(){
 // End of Tawk.to Script
 
 function LoadGoogleAnalysis(){
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-162472346-2');
+    $.getScript("https://www.googletagmanager.com/gtag/js?id=UA-162472346-1", function(){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'UA-162472346-1');
+        gtag('set', {'user_id': 'bhavsar.priti'}); // Set the user ID using signed-in user_id.
+    });
+
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'UA-162472346-2');
 }
 
 setTimeout(() => {
