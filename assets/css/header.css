@@ -790,7 +790,7 @@ body {
     font: 500 18px "Poppins", sans-serif;
     color: #13112d;
   }
-  /********** ACTIVE*******/
+  /********** CTIVE*******/
   .menu > .nav-item.submenu.mega_menu .mega_menu_inner > .dropdown-menu > .nav-item.active > .nav-link {
     font: 500 18px "Poppins", sans-serif;
     text-decoration: underline;
@@ -1034,51 +1034,4 @@ body {
 
 /*================= End breadcrumb_area css =================*/
 
-.f_subscribe {
-  position: relative;
-  margin-top: 40px;
-}
-
-.f_subscribe .form-control {
-  font: 300 14px "Poppins", sans-serif;
-  color: white;
-  border: 1px solid #e2e7f3;
-  border-radius: 3px;
-  /* background: #e9ecf3; */
-  background: -webkit-linear-gradient(0deg,#1c143b 0,#111339 100%);
-  padding-left: 25px;
-  height: 54px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-input[type="text"] {
-  -webkit-appearance: none;
-  outline: none;
-}
-
-.f_subscribe button {
-  position: absolute;
-  right: 25px;
-  background: transparent;
-  padding: 0;
-  color: #222d39;
-  font-size: 16px;
-  top: 52%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.f_widget.company_widget .mchimp-errmessage, .f_widget.company_widget .mchimp-sucmessage {
-  position: absolute;
-}
-
-.footer_bottom {
-  border-top: 1px solid #e9ecf3;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #7f88a6;
-  padding: 27px 0px;
-}
+  

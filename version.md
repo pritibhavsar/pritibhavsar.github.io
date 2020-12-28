@@ -9,7 +9,5 @@ Footer:
 ###### v.0.1.2020.04.06 #####
 - Added common.js - that could help get data commonly for Menu and Footer data
     -   getNavigationContent function with true parameter will be used for Parent data and with false parameter for Child data 
-###### v.0.1.2020.12.28 #####
-- Added common.js - that could help get data commonly for Menu and Footer data
-    -   getNavigationContent function with stage parameter will be used for individual stage of page load
-     
+    -   
+

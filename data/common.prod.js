@@ -20,7 +20,7 @@ function getNavigationContent(isParent) {
     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
         <ul class="navbar-nav menu w_menu ml-auto">
             <li class="nav-item">
-                <a href="~~~index.html" class="nav-link" id ="Home">Home</a>
+                <a href="~~~index" class="nav-link" id ="Home">Home</a>
             </li>
             <li class="nav-item dropdown submenu mega_menu">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Products">
@@ -29,19 +29,19 @@ function getNavigationContent(isParent) {
                 <div class="mega_menu_inner">
                     <ul class="dropdown-menu">
                         <li class="nav-item">
-                            <a href="~~~Products/Templates/templatedemo.html" class="nav-link">SharePoint Templates</a>
+                            <a href="~~~Products/Templates/templatedemo" class="nav-link">SharePoint Templates</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="~~~Products/Templates/template1.html" class="nav-link">Demo 1</a></li>
-                                <li class="nav-item"><a href="~~~Products/Templates/template2.html" class="nav-link">Demo 2</a></li>
-                                <li class="nav-item"><a href="~~~Products/Templates/template3.html" class="nav-link">Demo 3</a></li>
-                                <li class="nav-item"><a href="~~~Products/Templates/webparts.html" class="nav-link">Web Parts</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/template1" class="nav-link">Demo 1</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/template2" class="nav-link">Demo 2</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/template3" class="nav-link">Demo 3</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/webparts" class="nav-link">Web Parts</a></li>
                             </ul>
                         </li>  
                         <li class="nav-item">
-                            <a href="~~~Products/Portals/index.html" class="nav-link" id ="Portals">Portals</a>
+                            <a href="~~~Products/Portals/index" class="nav-link" id ="Portals">Portals</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="~~~Products/Portals/intranetportal.html" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>
-                                <li class="nav-item"><a href="~~~Products/Portals/corehr.html" class="nav-link" id ="CoreHr">Core HR</a></li>
+                                <li class="nav-item"><a href="~~~Products/Portals/intranetportal" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>
+                                <li class="nav-item"><a href="~~~Products/Portals/corehr" class="nav-link" id ="CoreHr">Core HR</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">Time & Attendance</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">Recruiting</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">Performace</a></li>
@@ -153,7 +153,7 @@ function getFooterContent(isParent) {
                 <div class="f_widget company_widget wow slideInLeft">
                     <a href="https://www.palportals.com" class="f-logo"><img src="~~~images/1logo/logoWhite.svg" alt="logo"></a>
                     <p class="mt_40">Copyright © 2020 <a href="https://www.palportals.com">PALPortals</a></p>
-                    <p class="mt_40"><a href="~~~legal.html" id="Legal">Legal</a> | <a href="~~~website-usage-terms-and-conditions.html" id="Terms">Terms of use</a> | <a href="~~~privacy-policy.html" id="Policy">Privacy</a></p>
+                    <p class="mt_40"><a href="~~~legal" id="Legal">Legal</a> | <a href="~~~website-usage-terms-and-conditions" id="Terms">Terms of use</a> | <a href="~~~privacy-policy" id="Policy">Privacy</a></p>
                     <span style="color:#1c143b;">v.0.1.2020.03.22</span>
                 </div>
             </div>
