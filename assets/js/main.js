@@ -1053,12 +1053,12 @@ function TalkAPILoad(){
 // End of Tawk.to Script
 
 function LoadGoogleAnalysis(){
-    $.getScript("https://www.googletagmanager.com/gtag/js?id=UA-172463225-1", function(){
+    $.getScript("https://www.googletagmanager.com/gtag/js?id=UA-162472346-1", function(){
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
       
-        gtag('config', 'UA-172463225-1');
+        gtag('config', 'UA-162472346-1');
         gtag('set', {'user_id': 'bhavsar.priti'}); // Set the user ID using signed-in user_id.
     });
 
