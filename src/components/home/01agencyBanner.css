@@ -1,0 +1,18 @@
+/*============== agency_banner_area css =============*/
+.agency_banner_area {
+    padding-top: 150px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .agency_banner_area .banner_shap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .agency_content h2 {
+    font-size: 50px;
+    line-height: 66px;
+  }

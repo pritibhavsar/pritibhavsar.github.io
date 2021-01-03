@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
+
+.body_wrapper {
+    z-index: 20;
+    overflow: hidden;
+}
+body {
+    font: 400 15px/28px "Poppins", sans-serif;
+    letter-spacing: 0px;
+    color: #677294;
+    padding: 0px;
+    overflow-x: hidden;
+    z-index: 0;
+}

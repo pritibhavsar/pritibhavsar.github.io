@@ -1,0 +1,75 @@
+
+  /*************************FOOTER**************************/
+  .footer_area_six {
+    /* background-image: -moz-linear-gradient(0deg, #1c143b 0%, #111339 100%);
+    background-image: -webkit-linear-gradient(0deg, #1c143b 0%, #111339 100%);
+    background-image: -ms-linear-gradient(0deg, #1c143b 0%, #111339 100%); */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1c143b), color-stop(40%,#111339), color-stop(100%,#1c143b));
+    border-top: 2px solid #192161;
+  }
+
+  .footer_top_six .company_widget a {
+    color: #fff;
+  }
+
+  .footerActive {
+    color:#f00 !important;
+    text-decoration: underline !important;
+    font-weight: 600;
+  }
+
+  .f_widget .f_list li a {
+    color:#fff;
+  }
+  
+  .footer_top_six .f_widget.about-widget .f_list li a:before {
+    background: #f00;
+  }
+  
+  .footer_top_six .f_widget.about-widget .f_list li a:hover {
+    color:#f00;
+  }
+  
+  .footer_top_six .social-widget {
+    margin-right: -15px;
+  }
+  
+  .footer_top_six .social-widget .f_social_icon {
+    padding-top: 4px;
+  }
+  
+  .footer_top_six .social-widget .f_social_icon a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #232453;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    color:#fff;
+  }
+  
+  .footer_top_six .social-widget .f_social_icon a + a {
+    margin-left: 2px;
+  }
+  
+  .footer_top_six .social-widget .f_social_icon a:hover {
+    background: #f00;
+  }
+
+  .f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #f00;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  /*************************FOOTER FINISH *********************/

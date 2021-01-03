@@ -1,0 +1,92 @@
+/*============= app_service_area css ============*/
+.app_service_area {
+    padding-top: 120px;
+    background: #fff;
+  }
+  
+  .app_service_info {
+    margin-bottom: -90px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  
+  .app_service_item {
+    border: 1px solid #f4f4f9;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
+    box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
+    padding: 50px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  .app_service_item .app_icon {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  
+  .app_service_item .app_icon.one {
+    text-shadow: 0px 14px 30px rgba(44, 130, 237, 0.4);
+    color: #677294;
+    background-image: -moz-linear-gradient(0deg, #2171d4 0%, #2cc4f0 100%);
+    background-image: -webkit-linear-gradient(0deg, #2171d4 0%, #2cc4f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .app_service_item .app_icon.two {
+    text-shadow: 0px 14px 30px rgba(224, 56, 39, 0.4);
+    color: #e03827;
+    background-image: -moz-linear-gradient(0deg, #e03827 0%, #f9a47a 100%);
+    background-image: -webkit-linear-gradient(0deg, #e03827 0%, #f9a47a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .app_service_item .app_icon.three {
+    text-shadow: 0px 14px 30px rgba(94, 44, 237, 0.4);
+    color: #e03827;
+    background-image: -moz-linear-gradient(0deg, #5e2ced 0%, #a485fd 100%);
+    background-image: -webkit-linear-gradient(0deg, #5e2ced 0%, #a485fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .app_service_item .learn_btn_two {
+    color: #222d39;
+    font-size: 14px;
+  }
+  
+  .app_service_item .learn_btn_two:before {
+    background: #4069eb;
+  }
+  
+  .app_service_item .learn_btn_two:hover {
+    color: #4069eb;
+  }
+  
+  .app_service_item .learn_btn_two.c_violet:hover {
+    color: #5e2ced;
+  }
+  
+  .app_service_item .learn_btn_two.c_violet:hover:before {
+    background: #5e2ced;
+  }
+  
+  .app_service_item:hover {
+    -webkit-box-shadow: 0px 20px 40px 0px rgba(12, 0, 46, 0.08);
+    box-shadow: 0px 20px 40px 0px rgba(12, 0, 46, 0.08);
+  }
+  
+  .app_service_area_two {
+    background: #f9f9fc;
+    padding: 120px 0px;
+  }
+  
+  .app_service_area_two .app_service_info {
+    margin-bottom: -30px;
+  }

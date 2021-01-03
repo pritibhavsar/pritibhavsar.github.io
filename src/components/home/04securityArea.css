@@ -1,0 +1,27 @@
+/*================== h_security_area css ===========*/
+.h_security_area {
+    padding: 100px 0px;
+  }
+  
+  .h_security_area .row {
+    margin-bottom: -45px;
+  }
+  
+  .h_security_item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 45px 0px;
+  }
+  
+  .h_security_item img {
+    margin-right: 40px;
+  }
+  
+  .h_security_item .media-body h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c2c51;
+    line-height: 28px;
+    margin-bottom: 18px;
+  }
