@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import React, {useEffect} from "react"
 import $ from 'jquery';
 import './index.css';
+import Logo from '../../images/svg/logo.svg';
 
 function Header() {  
   useEffect(()=>{
@@ -28,7 +29,7 @@ function Header() {
     <header className="header_area navbar_fixed">
       <nav className="navbar navbar-expand-lg" id="navigation">
         <div className="container">
-          <a className="navbar-brand sticky_logo" href="www.palportals.com"><img src="../src/assets/images/1logo/logo.svg" alt="logo" /> <img src="./src/assets/images/1logo/logo.svg" alt="" /></a>
+          <a className="navbar-brand sticky_logo" href="www.palportals.com"><img src={Logo} alt="logo" /> <img src={Logo} alt="" /></a>
           <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="menu_toggle">
               <span className="hamburger">

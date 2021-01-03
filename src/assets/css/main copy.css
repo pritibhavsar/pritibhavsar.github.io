@@ -1,5 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
-Prevent text selection of a <body> element in all major browsers */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
+/* Prevent text selection of a <body> element in all major browsers */
 /* body {
 /*	-youbkit-touch-callout: none; /* iOS Safari */
 /*	-youbkit-user-select: none;   /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
