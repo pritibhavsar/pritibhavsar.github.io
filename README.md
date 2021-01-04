@@ -86,39 +86,69 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ### 0.2021.0104 ###
 
-1.  ** Project set up by Gatsup default startup **
+1.  **Project set up by Gatsup default startup**
 
-2.  ** In order to make replica of the existing site, created following React components **
+2.  **In order to make replica of the existing site, created following React components**
+
     a.  _footer_
+
     b.  _header_
+
     c.  _layout_
+
     d.  _legal_
+
     e.  _loader_
+
     f.  _pageHeader_
+
     g.  _images_
+
     h.  _seo_
 
-3.  ** Following pages has been created by using React components **
+
+3.  **Following pages has been created by using React components**
+
     a.  _Products/Templates/Demo1_
+
     b.  _Products/Templates/Demo2_
+
     c.  _Products/Templates/Demo3_
+
     d.  _Products/Templates/Webparts_
+
     e.  _Products/Portals/CoreHR_
+
     f.  _Products/Portals/IntranetPortals_
+
     g.  _404_
+
     h.  _index_
+
     i.  _page-2_
+
     j.  _Privacy_
+
     k.  _Terms_
 
-4.  ** Following plugins have been implemented in gatsby-config.js file **
+
+4.  **Following plugins have been implemented in gatsby-config.js file**
+
     a.  _gatsby-plugin-react-helmet_
+
     b.  _gatsby-source-filesystem_
+
     c.  _gatsby-plugin-react-svg_
+
     d.  _gatsby-plugin-google-analytics_
+
     e.  _gatsby-plugin-scroll-reveal_
+
     f.  _gatsby-transformer-sharp_
+
     g.  _gatsby-plugin-sharp_
+
     h.  _gatsby-plugin-manifest_
+    
     
 ## 💫 Deploy
