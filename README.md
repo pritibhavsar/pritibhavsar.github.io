@@ -1,44 +1,44 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://www.palportals.com">
+    <img alt="Gatsby" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgd2lkdGg9IjE0MCIKICAgaGVpZ2h0PSIzMiIKICAgdmlld0JveD0iMCAwIDE0MCAzMiIKICAgZmlsbD0ibm9uZSIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnNTYiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImxvZ28uc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkyLjQgKDVkYTY4OWMzMTMsIDIwMTktMDEtMTQpIj4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE2MiI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGRlZnMKICAgICBpZD0iZGVmczYwIj4KICAgIDxpbmtzY2FwZTpwZXJzcGVjdGl2ZQogICAgICAgc29kaXBvZGk6dHlwZT0iaW5rc2NhcGU6cGVyc3AzZCIKICAgICAgIGlua3NjYXBlOnZwX3g9IjAgOiAxNiA6IDEiCiAgICAgICBpbmtzY2FwZTp2cF95PSIwIDogMTAwMCA6IDAiCiAgICAgICBpbmtzY2FwZTp2cF96PSIxNDAgOiAxNiA6IDEiCiAgICAgICBpbmtzY2FwZTpwZXJzcDNkLW9yaWdpbj0iNzAgOiAxMC42NjY2NjcgOiAxIgogICAgICAgaWQ9InBlcnNwZWN0aXZlODY5IiAvPgogIDwvZGVmcz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICAgIGJvcmRlcm9wYWNpdHk9IjEiCiAgICAgb2JqZWN0dG9sZXJhbmNlPSIxMCIKICAgICBncmlkdG9sZXJhbmNlPSIxMCIKICAgICBndWlkZXRvbGVyYW5jZT0iMTAiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzY4IgogICAgIGlkPSJuYW1lZHZpZXc1OCIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgaW5rc2NhcGU6c25hcC10ZXh0LWJhc2VsaW5lPSJ0cnVlIgogICAgIGlua3NjYXBlOnpvb209IjMuNjQ2NjUwNyIKICAgICBpbmtzY2FwZTpjeD0iNjkuNTI2IgogICAgIGlua3NjYXBlOmN5PSI1Mi4zMTUzMzgiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii04IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItMzEiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmc1NiIKICAgICBpbmtzY2FwZTpzbmFwLWJib3g9InRydWUiCiAgICAgaW5rc2NhcGU6c25hcC1taWRwb2ludHM9InRydWUiCiAgICAgaW5rc2NhcGU6c25hcC1zbW9vdGgtbm9kZXM9InRydWUiIC8+CiAgPGcKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiCiAgICAgaW5rc2NhcGU6bGFiZWw9InAxIiAvPgogIDx0ZXh0CiAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC12YXJpYW50Om5vcm1hbDtmb250LXdlaWdodDpub3JtYWw7Zm9udC1zdHJldGNoOm5vcm1hbDtmb250LXNpemU6MzkuMzg0NDE4NDlweDtsaW5lLWhlaWdodDoxLjI1O2ZvbnQtZmFtaWx5OidDb29wZXIgQmxhY2snOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246J0Nvb3BlciBCbGFjaywgTm9ybWFsJztmb250LXZhcmlhbnQtbGlnYXR1cmVzOm5vcm1hbDtmb250LXZhcmlhbnQtY2Fwczpub3JtYWw7Zm9udC12YXJpYW50LW51bWVyaWM6bm9ybWFsO2ZvbnQtZmVhdHVyZS1zZXR0aW5nczpub3JtYWw7dGV4dC1hbGlnbjpzdGFydDtsZXR0ZXItc3BhY2luZzowcHg7d29yZC1zcGFjaW5nOjBweDt3cml0aW5nLW1vZGU6bHItdGI7dGV4dC1hbmNob3I6c3RhcnQ7ZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjk5OTk5OTc2IgogICAgIHg9Ii0wLjI0NjI4NTc1IgogICAgIHk9IjI3Ljg5MjY0NSIKICAgICBpZD0idGV4dDg5OCIKICAgICB0cmFuc2Zvcm09InNjYWxlKDEuMjQwMjYwOSwwLjgwNjI4MTk2KSI+PHRzcGFuCiAgICAgICBzb2RpcG9kaTpyb2xlPSJsaW5lIgogICAgICAgaWQ9InRzcGFuODk2IgogICAgICAgeD0iLTAuMjQ2Mjg1NzUiCiAgICAgICB5PSIyNy44OTI2NDUiCiAgICAgICBzdHlsZT0iZmlsbDojMDAwMDgwO3N0cm9rZS13aWR0aDowLjk5OTk5OTc2Ij5QQUw8L3RzcGFuPjwvdGV4dD4KICA8dGV4dAogICAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgICAgc3R5bGU9ImZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7Zm9udC1zaXplOjE2LjI5MTQ3NzJweDtsaW5lLWhlaWdodDoxLjI1O2ZvbnQtZmFtaWx5OidDb29wZXIgQmxhY2snOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246J0Nvb3BlciBCbGFjaywgTm9ybWFsJztmb250LXZhcmlhbnQtbGlnYXR1cmVzOm5vcm1hbDtmb250LXZhcmlhbnQtY2Fwczpub3JtYWw7Zm9udC12YXJpYW50LW51bWVyaWM6bm9ybWFsO2ZvbnQtZmVhdHVyZS1zZXR0aW5nczpub3JtYWw7dGV4dC1hbGlnbjpzdGFydDtsZXR0ZXItc3BhY2luZzowcHg7d29yZC1zcGFjaW5nOjBweDt3cml0aW5nLW1vZGU6bHItdGI7dGV4dC1hbmNob3I6c3RhcnQ7ZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDoxIgogICAgIHg9IjQ0LjgwNDQ3IgogICAgIHk9IjQxLjg3NjAzOCIKICAgICBpZD0idGV4dDkwMiIKICAgICB0cmFuc2Zvcm09InNjYWxlKDEuMzIxMTc5OSwwLjc1Njg5OTE5KSI+PHRzcGFuCiAgICAgICBzb2RpcG9kaTpyb2xlPSJsaW5lIgogICAgICAgaWQ9InRzcGFuOTAwIgogICAgICAgeD0iNDQuODA0NDciCiAgICAgICB5PSI0MS44NzYwMzgiCiAgICAgICBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZS13aWR0aDoxIj5Qb3J0YWxzPC90c3Bhbj48L3RleHQ+Cjwvc3ZnPgo=" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  PALPortals Pvt. Ltd.
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Business Performance Management, Intranet Portals, SharePoint, SPFx, Cloud Management, AWS, Azure, Angular, React, Mobile Development and advance cutting edge software services provider
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+<!-- _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._ -->
 
-## 🚀 Quick start
+## 🚀 Purpose of this website
 
-1.  **Create a Gatsby site.**
+1.  **Introduction of Products**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    <!-- Use the Gatsby CLI to create a new site, specifying the default starter.
 
     ```shell
     # create a new Gatsby site using the default starter
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+    ``` -->
 
-1.  **Start developing.**
+2.  **Introduction of Services**
 
-    Navigate into your new site’s directory and start it up.
+    <!-- Navigate into your new site’s directory and start it up.
 
     ```shell
     cd my-default-starter/
     gatsby develop
-    ```
+    ``` -->
 
-1.  **Open the source code and start editing!**
+3.  **Offering**
 
-    Your site is now running at `http://localhost:8000`!
+    <!-- Your site is now running at `http://localhost:8000`!
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time! -->
 
 ## 🧐 What's inside?
 
@@ -82,18 +82,43 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
+## 🧐 Version wise changes
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+### 0.2021.0104 ###
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+1.  ** Project set up by Gatsup default startup **
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+2.  ** In order to make replica of the existing site, created following React components **
+    a.  _footer_
+    b.  _header_
+    c.  _layout_
+    d.  _legal_
+    e.  _loader_
+    f.  _pageHeader_
+    g.  _images_
+    h.  _seo_
 
+3.  ** Following pages has been created by using React components **
+    a.  _Products/Templates/Demo1_
+    b.  _Products/Templates/Demo2_
+    c.  _Products/Templates/Demo3_
+    d.  _Products/Templates/Webparts_
+    e.  _Products/Portals/CoreHR_
+    f.  _Products/Portals/IntranetPortals_
+    g.  _404_
+    h.  _index_
+    i.  _page-2_
+    j.  _Privacy_
+    k.  _Terms_
+
+4.  ** Following plugins have been implemented in gatsby-config.js file **
+    a.  _gatsby-plugin-react-helmet_
+    b.  _gatsby-source-filesystem_
+    c.  _gatsby-plugin-react-svg_
+    d.  _gatsby-plugin-google-analytics_
+    e.  _gatsby-plugin-scroll-reveal_
+    f.  _gatsby-transformer-sharp_
+    g.  _gatsby-plugin-sharp_
+    h.  _gatsby-plugin-manifest_
+    
 ## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->

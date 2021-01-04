@@ -2,7 +2,7 @@
   "name": "palportals",
   "private": true,
   "description": "Business Performance Management, Intranet Portals, SharePoint, SPFx, Cloud Management, AWS, Azure, Angular, React, Mobile Development and advance cutting edge software services provider",
-  "version": "0.1.0",
+  "version": "0.2021.0104",
   "author": "Priti Bhavsar <bhavsar.priti@gmail.com>",
   "dependencies": {
     "@popperjs/core": "^2.6.0",

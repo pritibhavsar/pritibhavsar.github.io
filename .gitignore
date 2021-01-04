@@ -3,6 +3,9 @@
 /node_modules
 /public
 
+# Files
+/package-lock.json
+
 # Logs
 logs
 *.log

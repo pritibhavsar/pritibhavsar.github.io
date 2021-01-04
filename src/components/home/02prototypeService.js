@@ -57,7 +57,7 @@ const PrototypeService = () => (
                     </div>
                 </div>
                 <div className="col-lg-4 col-sm-6" data-sal="zoom-in">
-                    <div className="p_service_item pr_70">o
+                    <div className="p_service_item pr_70">
                         <div className="icon icon_four"><i className="ti-vector"></i></div>
                         <h5 className="f_600 f_p t_color3">Data Migration</h5>
                         <p className="f_400">We help migration of your data from any location. Our experts use proven methodologies that include industry specific best practices and adhere to legal requirements and data privacy standards that ensuring non-disruption and flexibility as a core part of the proven process</p>
