@@ -28,12 +28,12 @@
 }
 
 @media (max-width: 991px) {
-    .menu > .nav-item.submenu .dropdown-menu.mega_menu_three > .nav-item > .dropdown-menu .nav-item {
+    /*.menu > .nav-item.submenu .dropdown-menu.mega_menu_three > .nav-item > .dropdown-menu .nav-item {
         padding-top: 0;
     }
     .header_area a.menu_cus {
         margin-left: 30px !important;
-    }
+    } */
     ul.navbar-nav.search_cart.menu {
         background: transparent;
         padding-top: 22px !important;
@@ -94,7 +94,7 @@
         margin-bottom: 50px !important;
         margin-top: 20px !important;
     }
-    header.header_area .menu > .nav-item > .nav-link {
+    /* header.header_area .menu > .nav-item > .nav-link {
         color: #051441 !important;
     }
     header.header_area .menu > .nav-item > .nav-link:not(.cart-btn) span{
@@ -107,7 +107,7 @@
         border-radius: 50%;
         line-height: 27px;
         text-align: center;
-    }
+    } */
     .blog-sidebar {
         margin-top: 100px !important;
     }
@@ -124,12 +124,12 @@
 }
 
 @media (max-width: 768px) {
-    .header_area .header_top .header_top_column.left_content {
+    /* .header_area .header_top .header_top_column.left_content {
         width: 80%;
     }
     .header_area .header_top .header_top_column.right_content {
         width: 20%;
-    }
+    } */
     .job_listing .listing_tab .list_item .joblisting_text h4 a {
         padding-top: 10px !important;
         font-size: 18px !important;
@@ -199,9 +199,9 @@
 }
 
 @media (max-width: 601px) {
-    .admin-bar header.header_area.navbar_fixed {
+    /* .admin-bar header.header_area.navbar_fixed {
         margin-top: 0;
-    }
+    } */
     .f_size_50 {
         font-size: 36px;
         line-height: 1.3;
@@ -212,9 +212,9 @@
 }
 
 @media (max-width: 576px) {
-    ul.navbar-nav.search_cart.menu {
+    /* ul.navbar-nav.search_cart.menu {
         padding-right: 10px !important;
-    }
+    } */
     p.sticky-label {
         padding: 5px 10px !important;
     }
@@ -288,9 +288,9 @@
     .pr_details .ratting .star-rating {
         margin-left: 0;
     }
-    .header_area .header_top ul li:before {
+    /* .header_area .header_top ul li:before {
         display: none;
-    }
+    } */
 }
 
 @media (max-width: 400px) {

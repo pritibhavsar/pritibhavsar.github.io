@@ -9,14 +9,12 @@ function Header() {
   useEffect(()=>{
     let pathname = window.location.pathname;
     let paths = pathname.split('/');
-    debugger;
     if(paths.length > 2){
       $("#" + paths[1]).parent().addClass("active");
       $("#" + paths[paths.length-2]).parent().addClass("active");
       $("#" + paths[paths.length-1]).parent().addClass("active");
     }
     else {
-      
       if((paths.length == 2 && paths[0] =="" && paths[1]=="") || (pathname.search("index") >= 0))
           $("#Home").parent().addClass("active");
       else {
@@ -29,7 +27,7 @@ function Header() {
     <header className="header_area navbar_fixed">
       <nav className="navbar navbar-expand-lg" id="navigation">
         <div className="container">
-          <a className="navbar-brand sticky_logo" href="www.palportals.com"><img src={Logo} alt="logo" /> <img src={Logo} alt="" /></a>
+          <a className="navbar-brand sticky_logo" href="/"><img src={Logo} alt="logo" /> <img src={Logo} alt="" /></a>
           <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="menu_toggle">
               <span className="hamburger">
@@ -94,31 +92,31 @@ function Header() {
                     </ul>
                   </div>
                 </li>
-                <li className="dropdown submenu nav-item"><a title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Consulting</a>
+                <li className="nav-item dropdown submenu"><a title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Consulting</a>
                   <ul role="menu" className=" dropdown-menu">
                     <li className="dropdown submenu nav-item ">
                       <Link title="Service" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Office 365<span className="arrow_carrot-right"></span></Link>
                     </li>
-                    <li className="dropdown submenu nav-item">
+                    <li className="nav-item dropdown submenu">
                       <Link title="Service" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Azure<span className="arrow_carrot-right"></span></Link>
                     </li>
-                    <li className="dropdown submenu nav-item">
+                    <li className="nav-item dropdown submenu">
                       <Link title="Service" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">AWS<span className="arrow_carrot-right"></span></Link>
                     </li>
                   </ul>
                 </li>
-                <li className="dropdown submenu nav-item"><a title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Customers</a>
+                <li className="nav-item dropdown submenu"><a title="Pages" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Customers</a>
                   <ul role="menu" className=" dropdown-menu">
-                    <li className="dropdown submenu nav-item ">
+                    <li className="nav-item dropdown submenu">
                       <Link title="Service" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Our Success Stories<span className="arrow_carrot-right"></span></Link>
                     </li>
-                    <li className="dropdown submenu nav-item">
+                    <li className="nav-item dropdown submenu">
                       <Link title="Service" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Our Case Studies<span className="arrow_carrot-right"></span></Link>
                     </li>
-                    <li className="dropdown submenu nav-item">
+                    <li className="nav-item dropdown submenu">
                       <Link title="Service" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Our Solutions<span className="arrow_carrot-right"></span></Link>
                     </li>
-                    <li className="dropdown submenu nav-item">
+                    <li className="nav-item dropdown submenu">
                       <Link title="Service" className="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" to="#">Your Feedback<span className="arrow_carrot-right"></span></Link>
                     </li>    
                   </ul>

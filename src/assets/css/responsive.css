@@ -1100,7 +1100,7 @@
     .sec_title p br{
         display: none;
     }
-    .menu > .nav-item + .nav-item{
+    /* .menu > .nav-item + .nav-item{
         margin-left: 0px;
     }
     .menu > .nav-item{
@@ -1215,7 +1215,7 @@
     .menu > .nav-item.submenu.mega_menu.mega_menu_two > .dropdown-menu .nav-item{
         width: calc(100% / 3);
         padding: 15px 20px;
-    }
+    } */
     .footer_top_two .company_widget{
         padding-right: 0px;
     }
@@ -1225,7 +1225,7 @@
     .footer_area_two .footer_top_two .row{
         margin-bottom: -40px;
     }
-    .header_area .container {
+    /* .header_area .container {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -1237,11 +1237,11 @@
     }
     .w_menu .nav-item:hover .nav-link, .w_menu .nav-item.active .nav-link{
         color: #00aff0;
-    }
+    } */
     .prototype_banner_area{
         padding-top: 140px;
     }
-    .menu_four .menu > .nav-item .nav-link,.menu_five .menu > .nav-item .nav-link,.menu_six .menu > .nav-item .nav-link,.menu_seven .menu .nav-item .nav-link{
+    /* .menu_four .menu > .nav-item .nav-link,.menu_five .menu > .nav-item .nav-link,.menu_six .menu > .nav-item .nav-link,.menu_seven .menu .nav-item .nav-link{
         color: #051441;
     }
     .menu_five .menu > .nav-item:hover .nav-link,.menu_five .menu > .nav-item.active .nav-link{
@@ -1264,7 +1264,7 @@
     }
     .menu > .nav-item.submenu .dropdown-menu.mega_menu_three > .nav-item > .dropdown-menu{
         display: block !important;
-    }
+    } */
     .payment_features_content.pl_70{
         padding-left: 0;
     }
@@ -1627,7 +1627,7 @@
         margin-top: 0px;
         flex-direction: initial;
     }
-    .header_area_six + section {
+    /* .header_area_six + section {
         margin-top: 122px;
     }
     .header_contact_info li{
@@ -1638,7 +1638,7 @@
     }
     .navbar .search_cart .search a.nav-link:before{
         display: none;
-    }
+    } */
     .software_promo_area .round_shape {
         max-width: 690px;
         min-height: 690px;
@@ -1723,7 +1723,7 @@
     .new_footer_top .f_widget{
         margin-bottom: 50px;
     }
-    .header_area_six .alter_nav{
+    /* .header_area_six .alter_nav{
         top: 9px;
     }
     .menu > .nav-item.submenu.mega_menu.mega_menu_two .mega_menu_inner > .dropdown-menu > .nav-item .dropdown-menu{
@@ -1732,7 +1732,7 @@
     .menu > .nav-item.submenu.mega_menu.mega_menu_two .mega_menu_inner > .dropdown-menu > .nav-item .dropdown-menu .nav-item{
         padding-left: 10px;
         padding-right: 10px;
-    }
+    } */
     .home_analytics_banner_area{
         height: auto;
         padding-top: 150px;
@@ -2488,7 +2488,7 @@
     .comment_inner .comment_box .post_comment{
         padding: 30px 20px 30px;
     }
-    .menu > .nav-item.submenu.mega_menu > .dropdown-menu.show {
+    /* .menu > .nav-item.submenu.mega_menu > .dropdown-menu.show {
         padding: 0px 10px;
     }
     .menu > .nav-item.submenu.mega_menu.mega_menu_two > .dropdown-menu > .nav-item{
@@ -2496,7 +2496,7 @@
     }
     .menu > .nav-item.submenu.mega_menu.mega_menu_two > .dropdown-menu > .nav-item .item .text{
         font-size: 12px;
-    }
+    } */
     .feedback_area_two{
         height: auto;
         padding-bottom: 50px;
@@ -3185,10 +3185,10 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
-    .header_area .container {
+    /* .header_area .container {
         padding-left: 15px;
         padding-right: 15px;
-    }
+    } */
     .feedback_area_two .sec_title,.feedback_area_three .sec_title{
         padding-right: 0;
     }
@@ -3377,12 +3377,12 @@
 }
 
 @media (max-width:400px){
-    .header_area_six .header_top{
+    /* .header_area_six .header_top{
         display: none;
     }
     .header_area_six + section {
         margin-top: 68px;
-    }
+    } */
     .payment_content_two .payment_img .payment_icon.icon_one,.payment_content_two .payment_img .payment_icon.icon_two,.payment_content_two .payment_img .payment_icon.icon_three,.payment_content_two .payment_img .payment_icon.icon_four,.payment_content_two .payment_img .payment_icon.icon_five,.payment_content_two .payment_img .payment_icon.icon_six{
         display: none;
     }
