@@ -1012,7 +1012,7 @@
 
 })(jQuery)
 
-function MenuLoad() {        
+function MenuLoad() {
     var pathname = window.location.pathname;
     // alert(pathname);    
      var paths = pathname.split('/');
