@@ -25,25 +25,25 @@
     <meta name="theme-color" content="#ffffff">
     <title>PAL Portals - SharePoint Webparts</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/main.min.css">
-    <link rel="stylesheet" href="./assets/css/header.min.css"> 
-    <link rel="stylesheet" href="./assets/css/responsive.min.css">
-    <link rel="stylesheet" href="./assets/css/responsive-2.css">
-    <link rel="stylesheet" href="./assets/fonts/themify/themify.css">
-    <link rel="stylesheet" href="./assets/css/animate.css">
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/main.min.css">
+    <link rel="stylesheet" href="../../assets/css/header.min.css"> 
+    <link rel="stylesheet" href="../../assets/css/responsive.min.css">
+    <link rel="stylesheet" href="../../assets/css/responsive-2.css">
+    <link rel="stylesheet" href="../../assets/fonts/themify/themify.css">
+    <link rel="stylesheet" href="../../assets/css/animate.css">
+    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
     <script data-ad-client="ca-pub-4889853461914689" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
     <div class="body_wrapper"> <header class="header_area navbar_fixed"> <nav class="navbar navbar-expand-lg" id="navigation"></nav> </header> <section class="breadcrumb_area"> <div class="container"> <div class="breadcrumb_content text-center"> <h1 class="f_p f_700 f_size_50 w_color l_height50 mb_20">SharePoint Webparts</h1> </div> </div> </section> <footer class="footer_area_six sec_pad" id="footer"></footer> </div>
 
-    <script src="./assets/js/jquery-3.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/wow.js"></script>
-    <script src="./assets/js/owl.js"></script>
-    <script src="./assets/js/main.min.js"></script>
-    <script src="./data/common.prod.js"></script>
+    <script src="../../assets/js/jquery-3.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/wow.js"></script>
+    <script src="../../assets/js/owl.js"></script>
+    <script src="../../assets/js/main.min.js"></script>
+    <script src="../../data/common.prod.js"></script>
     <script type="text/javascript">
         getNavigationContent(2);
         getFooterContent(2);

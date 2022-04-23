@@ -25,24 +25,24 @@
     <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <title>PAL Portals - Pending Subscription</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/main.min.css">
-    <link rel="stylesheet" href="./assets/css/header.min.css"> 
-    <link rel="stylesheet" href="./assets/css/responsive.min.css">
-    <link rel="stylesheet" href="./assets/css/responsive-2.css">
-    <link rel="stylesheet" href="./assets/fonts/themify/themify.css">
-    <link rel="stylesheet" href="./assets/css/animate.css">
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.min.css">
+    <link rel="stylesheet" href="../assets/css/header.min.css"> 
+    <link rel="stylesheet" href="../assets/css/responsive.min.css">
+    <link rel="stylesheet" href="../assets/css/responsive-2.css">
+    <link rel="stylesheet" href="../assets/fonts/themify/themify.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
     <script data-ad-client="ca-pub-4889853461914689" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
     <div class="body_wrapper"> <header class="header_area navbar_fixed"> <nav class="navbar navbar-expand-lg" id="navigation"></nav> </header> <section class="app_service_area app_service_area_two"> <div class="container"> <div class="sec_title text-center mb_70"> <h2 class="f_p f_size_30 l_height30 f_700 t_color3 mb_20 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Please check your email box.</h2> <p class="f_400 f_size_16 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">You have been confirmed for the subscription</p> </div> </div> </section> </div> <footer class="footer_area_six sec_pad" id="footer"></footer></div>
-<script src="./assets/js/jquery-3.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/wow.js"></script>
-    <script src="./assets/js/owl.js"></script>
-    <script src="./assets/js/main.min.js"></script>
-    <script src="./data/common.prod.js"></script>
+    <script src="../assets/js/jquery-3.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/wow.js"></script>
+    <script src="../assets/js/owl.js"></script>
+    <script src="../assets/js/main.min.js"></script>
+    <script src="../data/common.prod.js"></script>
 <script type="text/javascript">
     getNavigationContent(1);
     getFooterContent(1);
