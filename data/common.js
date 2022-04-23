@@ -33,15 +33,15 @@ function getNavigationContent(idx) {
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="~~~products/templates/classic" class="nav-link">Classic</a></li>
                                     <li class="nav-item"><a href="~~~products/templates/modern" class="nav-link">Modern</a></li>
-                                    <li class="nav-item"><a href="~~~products/templates/template.html" class="nav-link">Demo 3</a></li>
-                                    <li class="nav-item"><a href="~~~products/templates/webparts.html" class="nav-link">Web Parts</a></li>
+                                    <li class="nav-item"><a href="~~~products/templates/templates" class="nav-link">Demo 3</a></li>
+                                    <li class="nav-item"><a href="~~~products/templates/webparts" class="nav-link">Web Parts</a></li>
                                 </ul>
                             </li>  
                             <li class="nav-item">
                                 <a href="~~~products/portals/index.html" class="nav-link" id ="Portals">Portals</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="~~~products/portals/intranetportal.html" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>
-                                    <li class="nav-item"><a href="~~~products/portals/corehr.html" class="nav-link" id ="CoreHr">Core HR</a></li>
+                                    <li class="nav-item"><a href="~~~products/portals/intranetportal" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>
+                                    <li class="nav-item"><a href="~~~products/portals/corehr" class="nav-link" id ="CoreHr">Core HR</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Time & Attendance</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Recruiting</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Performace</a></li>
@@ -142,6 +142,12 @@ var newContent;
     }
     else if(idx==2){
         newContent = content.replace(/~~~/gi, "../../");
+    }
+    else if(idx==3){
+        newContent = content.replace(/~~~/gi, "../../../");
+    }
+    else if(idx==4){
+        newContent = content.replace(/~~~/gi, "../../../../");
     }
     document.getElementById("navigation").innerHTML = newContent;
 }
