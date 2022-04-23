@@ -12,7 +12,4 @@ Footer:
 ###### v.0.1.2020.12.28 #####
 - Added common.js - that could help get data commonly for Menu and Footer data
     -   getNavigationContent function with stage parameter will be used for individual stage of page load
-
-###### v.0.1.2022.04.23 #####
-- Minimize content for common.prod.js
-
+     
