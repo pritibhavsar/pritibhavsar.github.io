@@ -20,7 +20,7 @@ function getNavigationContent(idx) {
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav menu w_menu ml-auto">
                 <li class="nav-item">
-                    <a href="~~~index.html" class="nav-link" id ="Home">Home</a>
+                    <a href="~~~" class="nav-link" id ="Home">Home</a>
                 </li>
                 <li class="nav-item dropdown submenu mega_menu">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Products">
@@ -155,7 +155,7 @@ function getFooterContent(idx) {
                     <div class="f_widget company_widget wow slideInLeft">
                         <a rel="canonical" href="https://www.palportals.com" class="f-logo"><img src="~~~images/1logo/logoWhite.svg" alt="logo"></a>
                         <p class="mt_40">Copyright © 2020 <a rel="canonical" href="https://www.palportals.com">PALPortals</a></p>
-                        <p class="mt_40"><a rel="canonical" href="~~~legal" id="Legal">Legal</a> | <a rel="canonical" href="~~~website-usage-terms-and-conditions.html" id="Terms">Terms of use</a> | <a rel="canonical" href="~~~privacy-policy.html" id="Policy">Privacy</a> | <a rel="canonical" href="~~~/subscribe/index.html" id="Subscribe">Subscribe us</a></p>
+                        <p class="mt_40"><a rel="canonical" href="~~~legal.html" id="Legal">Legal</a> | <a rel="canonical" href="~~~website-usage-terms-and-conditions.html" id="Terms">Terms of use</a> | <a rel="canonical" href="~~~privacy-policy.html" id="Policy">Privacy</a> | <a rel="canonical" href="~~~/subscribe/" id="Subscribe">Subscribe us</a></p>
                         <span style="color:#1c143b;">v.0.1.2020.12.28</span>
                     </div>
                 </div>

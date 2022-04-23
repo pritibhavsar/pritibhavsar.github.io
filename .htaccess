@@ -1,17 +1,7 @@
 
 #remove html file extension https://example.com/page.html
 # to https://example.com/page
-## RewriteEngine On
-## RewriteCond %{REQUEST_FILENAME} !-d
-## RewriteCond %{REQUEST_FILENAME} !-f
-## RewriteRule ^([^\.]+)$ $1.html [NC, L]
-
-<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
-RewriteRule ^wp-admin/includes/ - [F,L]
-RewriteRule !^wp-includes/ - [S=3]
-RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
-RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
-RewriteRule ^wp-includes/theme-compat/ - [F,L]
-</IfModule>
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
