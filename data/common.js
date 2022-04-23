@@ -31,8 +31,8 @@ function getNavigationContent(idx) {
                             <li class="nav-item">
                                 <a href="~~~products/templates/templatedemo.html" class="nav-link">SharePoint Templates</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="~~~products/templates/classic/index.html" class="nav-link">Demo 1</a></li>
-                                    <li class="nav-item"><a href="~~~products/templates/modern/" class="nav-link">Demo 2</a></li>
+                                    <li class="nav-item"><a href="~~~products/templates/classic" class="nav-link">Classic</a></li>
+                                    <li class="nav-item"><a href="~~~products/templates/modern" class="nav-link">Modern</a></li>
                                     <li class="nav-item"><a href="~~~products/templates/template.html" class="nav-link">Demo 3</a></li>
                                     <li class="nav-item"><a href="~~~products/templates/webparts.html" class="nav-link">Web Parts</a></li>
                                 </ul>
