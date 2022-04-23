@@ -790,7 +790,7 @@ body {
     font: 500 18px "Poppins", sans-serif;
     color: #13112d;
   }
-  /********** CTIVE*******/
+  /********** ACTIVE*******/
   .menu > .nav-item.submenu.mega_menu .mega_menu_inner > .dropdown-menu > .nav-item.active > .nav-link {
     font: 500 18px "Poppins", sans-serif;
     text-decoration: underline;
