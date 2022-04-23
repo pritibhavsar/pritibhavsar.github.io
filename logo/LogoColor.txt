@@ -1,2 +1,0 @@
-Outer Color: #D40000
-Inside Color: 2C89A0
