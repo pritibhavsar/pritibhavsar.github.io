@@ -56,7 +56,7 @@ function getNavigationContent(idx) {
                                     <li class="nav-item"><a href="#" class="nav-link">Application Development</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Migration</a></li>
                                 </ul>
-                            </li>                                                              
+                            </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Azure</a>
                                 <ul class="dropdown-menu">
@@ -115,9 +115,9 @@ function getNavigationContent(idx) {
                                 Your Feedback
                                 <span class="arrow_carrot-right"></span> 
                             </a>
-                        </li>    
+                        </li>
                     </ul>
-                </li>                            
+                </li>
                 <li class="nav-item dropdown submenu">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Resources
@@ -211,6 +211,11 @@ var newContent;
     else if(idx==2){
         newContent = content.replace(/~~~/gi, "../../");
     }
-
+    else if(idx==3){
+        newContent = content.replace(/~~~/gi, "../../../");
+    }
+    else if(idx==4){
+        newContent = content.replace(/~~~/gi, "../../../../");
+    }
     document.getElementById("footer").innerHTML = newContent;
 }
