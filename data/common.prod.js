@@ -1,1 +1,205 @@
-function getNavigationContent(a){var n,l='<div class="container">\n        <a class="navbar-brand sticky_logo" href="~~~"><img src="~~~images/1logo/logo.svg" alt="logo"><img src="~~~images/1logo/logo.svg" alt=""></a>\n        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >\n            <span class="menu_toggle">\n                <span class="hamburger">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </span>\n                <span class="hamburger-cross">\n                    <span></span>\n                    <span></span>\n                </span>\n            </span>\n        </button>\n\n        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">\n            <ul class="navbar-nav menu w_menu ml-auto">\n                <li class="nav-item">\n                    <a href="~~~index.html" class="nav-link" id ="Home">Home</a>\n                </li>\n                <li class="nav-item dropdown submenu mega_menu">\n                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Products">\n                        Products\n                    </a>\n                    <div class="mega_menu_inner">\n                        <ul class="dropdown-menu">\n                            <li class="nav-item">\n                                <a href="~~~Products/Templates/templatedemo.html" class="nav-link">SharePoint Templates</a>\n                                <ul class="dropdown-menu">\n                                    <li class="nav-item"><a href="~~~Products/Templates/template1.html" class="nav-link">Demo 1</a></li>\n                                    <li class="nav-item"><a href="~~~Products/Templates/template2.html" class="nav-link">Demo 2</a></li>\n                                    <li class="nav-item"><a href="~~~Products/Templates/template3.html" class="nav-link">Demo 3</a></li>\n                                    <li class="nav-item"><a href="~~~Products/Templates/webparts.html" class="nav-link">Web Parts</a></li>\n                                </ul>\n                            </li>  \n                            <li class="nav-item">\n                                <a href="~~~Products/Portals/index.html" class="nav-link" id ="Portals">Portals</a>\n                                <ul class="dropdown-menu">\n                                    <li class="nav-item"><a href="~~~Products/Portals/intranetportal.html" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>\n                                    <li class="nav-item"><a href="~~~Products/Portals/corehr.html" class="nav-link" id ="CoreHr">Core HR</a></li>\n                                    <li class="nav-item"><a href="#" class="nav-link">Time & Attendance</a></li>\n                                    <li class="nav-item"><a href="#" class="nav-link">Recruiting</a></li>\n                                    <li class="nav-item"><a href="#" class="nav-link">Performace</a></li>\n                                    <li class="nav-item"><a href="#" class="nav-link">Learning</a></li>\n                                    <li class="nav-item"><a href="#" class="nav-link">Self Service</a></li>\n                                </ul>\n                            </li>\n                            <li class="nav-item">\n                                <a href="#" class="nav-link">Office 365</a>\n                                <ul class="dropdown-menu">\n                                    <li class="nav-item"><a href="#" class="nav-link">Office 365 Management</a></li>\n                                    <li class="nav-item"><a href="#" class="nav-link">Application Development</a></li>\n                                    <li class="nav-item"><a href="#" class="nav-link">Migration</a></li>\n                                </ul>\n                            </li>                                                              \n                            <li class="nav-item">\n                                <a href="#" class="nav-link">Azure</a>\n                                <ul class="dropdown-menu">\n                                    <li class="nav-item"><a href="#" class="nav-link">Office 365</a></li>\n                                    <li class="nav-item"><a href="#" class="nav-link">Add Ins</a></li>\n                                    <li class="nav-item"><a href="#" class="nav-link">Branding</a></li>\n                                </ul>\n                            </li>\n                        </ul>\n                    </div>\n                </li>\n                <li class="dropdown submenu nav-item"><a title="Pages" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Consulting</a>\n                    <ul role="menu" class=" dropdown-menu">\n                        <li class="dropdown submenu nav-item ">\n                            <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">\n                                Office 365 \n                                <span class="arrow_carrot-right"></span> \n                            </a>\n                        </li>\n                        <li class="dropdown submenu nav-item">\n                            <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">\n                                Azure \n                                <span class="arrow_carrot-right"></span> \n                            </a>\n                        </li>\n                        <li class="dropdown submenu nav-item">\n                            <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">\n                                AWS \n                                <span class="arrow_carrot-right"></span> \n                            </a>\n                        </li>    \n                    </ul>\n                </li>\n                <li class="dropdown submenu nav-item"><a title="Pages" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Costomers</a>\n                    <ul role="menu" class=" dropdown-menu">\n                        <li class="dropdown submenu nav-item ">\n                            <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">\n                                Our Success Stories \n                                <span class="arrow_carrot-right"></span> \n                            </a>\n                        </li>\n                        <li class="dropdown submenu nav-item">\n                            <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">\n                                Our Case Studies \n                                <span class="arrow_carrot-right"></span> \n                            </a>\n                        </li>\n                        <li class="dropdown submenu nav-item">\n                            <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">\n                                Our Solutions\n                                <span class="arrow_carrot-right"></span> \n                            </a>\n                        </li>\n                        <li class="dropdown submenu nav-item">\n                            <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">\n                                Your Feedback\n                                <span class="arrow_carrot-right"></span> \n                            </a>\n                        </li>    \n                    </ul>\n                </li>                            \n                <li class="nav-item dropdown submenu">\n                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\n                        Resources\n                    </a>\n                    <ul class="dropdown-menu">\n                        <li class="nav-item"><a href="#" class="nav-link">Blog & News</a></li>\n                        <li class="nav-item"><a href="#" class="nav-link">Help Center</a></li>\n                        <li class="nav-item"><a href="#" class="nav-link">Service Request</a></li>\n                        <li class="nav-item"><a href="#" class="nav-link">Release Notes</a></li>\n                        <li class="nav-item"><a href="#" class="nav-link">Videos & Webinars</a></li>                                    \n                    </ul>\n                </li>            \n            </ul>\n        </div>\n    </div>';0==a?n=l.replace(/~~~/gi,"./"):1==a?n=l.replace(/~~~/gi,"../"):2==a&&(n=l.replace(/~~~/gi,"../../")),document.getElementById("navigation").innerHTML=n}function getFooterContent(a){var n,l='<div class="footer_top_six">\n        <div class="container">\n            <div class="row">\n                <div class="col-lg-4 col-sm-6 ">\n                    <div class="f_widget company_widget wow slideInLeft">\n                        <a href="https://www.palportals.com" class="f-logo"><img src="~~~images/1logo/logoWhite.svg" alt="logo"></a>\n                        <p class="mt_40">Copyright © 2020 <a href="https://www.palportals.com">PALPortals</a></p>\n                        <p class="mt_40"><a href="~~~legal.html" id="Legal">Legal</a> | <a href="~~~website-usage-terms-and-conditions.html" id="Terms">Terms of use</a> | <a href="~~~privacy-policy.html" id="Policy">Privacy</a> | <a href="~~~/subscribe/index.html" id="Subscribe">Subscribe us</a></p>\n                        <span style="color:#1c143b;">v.0.1.2020.03.22</span>                \n                    </div>\n                </div>\n                <div class="col-lg-3 col-sm-6">\n                    <div class="f_widget about-widget">\n                        <h3 class="f-title f_600 w_color f_size_18 mb_40  wow fadeInUp">About Us</h3>\n                        <ul class="list-unstyled f_list wow fadeInUp">\n                            <li><a href="#">Company</a></li>\n                            <li><a href="#">Android App</a></li>\n                            <li><a href="#">ios App</a></li>\n                            <li><a href="#">Desktop</a></li>\n                        </ul>\n                    </div>\n                </div>\n                <div class="col-lg-3 col-sm-6">\n                    <div class="f_widget about-widget">\n                        <h3 class="f-title f_600 w_color f_size_18 mb_40  wow fadeInUp">Help?</h3>\n                        <ul class="list-unstyled f_list wow fadeInUp">\n                            <li><a href="#">FAQ</a></li>\n                            <li><a href="#">Privacy</a></li>\n                            <li><a href="#">Term &amp; conditions</a></li>\n                            <li><a href="#">Reporting</a></li>\n                        </ul>\n                    </div>\n                </div>\n                <div class="col-lg-2 col-sm-6">\n                    <div class="f_widget social-widget">\n                        <h3 class="f-title f_600 w_color f_size_18 mb_40 wow slideInRight">Follow Us</h3>\n                        <div class="f_social_icon  wow slideInRight">\n                            <a target="_blank" href="https://www.facebook.com/PALPortals-104742791167579" class="ti-facebook"></a>\n                            <a href="#" class="ti-twitter-alt"></a>\n                            <a href="#" class="ti-vimeo-alt"></a>\n                            <a href="#" class="ti-pinterest"></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>';0==a?n=l.replace(/~~~/gi,"./"):1==a?n=l.replace(/~~~/gi,"../"):2==a&&(n=l.replace(/~~~/gi,"../../")),document.getElementById("footer").innerHTML=n}
+
+function getNavigationContent(isParent) {
+    var content =
+     `<div class="container">
+    <a class="navbar-brand sticky_logo" href="~~~"><img src="~~~images/1logo/logo.svg" alt="logo"><img src="~~~images/1logo/logo.svg" alt=""></a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="menu_toggle">
+            <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span class="hamburger-cross">
+                <span></span>
+                <span></span>
+            </span>
+        </span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav menu w_menu ml-auto">
+            <li class="nav-item">
+                <a href="~~~index" class="nav-link" id ="Home">Home</a>
+            </li>
+            <li class="nav-item dropdown submenu mega_menu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Products">
+                    Products
+                </a>
+                <div class="mega_menu_inner">
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a href="~~~Products/Templates/templatedemo" class="nav-link">SharePoint Templates</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="~~~Products/Templates/template1" class="nav-link">Demo 1</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/template2" class="nav-link">Demo 2</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/template3" class="nav-link">Demo 3</a></li>
+                                <li class="nav-item"><a href="~~~Products/Templates/webparts" class="nav-link">Web Parts</a></li>
+                            </ul>
+                        </li>  
+                        <li class="nav-item">
+                            <a href="~~~Products/Portals/index" class="nav-link" id ="Portals">Portals</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="~~~Products/Portals/intranetportal" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>
+                                <li class="nav-item"><a href="~~~Products/Portals/corehr" class="nav-link" id ="CoreHr">Core HR</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Time & Attendance</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Recruiting</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Performace</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Learning</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Self Service</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Office 365</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="#" class="nav-link">Office 365 Management</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Application Development</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Migration</a></li>
+                            </ul>
+                        </li>                                                              
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Azure</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="#" class="nav-link">Office 365</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Add Ins</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Branding</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="dropdown submenu nav-item"><a title="Pages" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Consulting</a>
+                <ul role="menu" class=" dropdown-menu">
+                    <li class="dropdown submenu nav-item ">
+                        <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+                            Office 365 
+                            <span class="arrow_carrot-right"></span> 
+                        </a>
+                    </li>
+                    <li class="dropdown submenu nav-item">
+                        <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+                            Azure 
+                            <span class="arrow_carrot-right"></span> 
+                        </a>
+                    </li>
+                    <li class="dropdown submenu nav-item">
+                        <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+                            AWS 
+                            <span class="arrow_carrot-right"></span> 
+                        </a>
+                    </li>    
+                </ul>
+            </li>
+            <li class="dropdown submenu nav-item"><a title="Pages" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Costomers</a>
+                <ul role="menu" class=" dropdown-menu">
+                    <li class="dropdown submenu nav-item ">
+                        <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+                            Our Success Stories 
+                            <span class="arrow_carrot-right"></span> 
+                        </a>
+                    </li>
+                    <li class="dropdown submenu nav-item">
+                        <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+                            Our Case Studies 
+                            <span class="arrow_carrot-right"></span> 
+                        </a>
+                    </li>
+                    <li class="dropdown submenu nav-item">
+                        <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+                            Our Solutions
+                            <span class="arrow_carrot-right"></span> 
+                        </a>
+                    </li>
+                    <li class="dropdown submenu nav-item">
+                        <a title="Service" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+                            Your Feedback
+                            <span class="arrow_carrot-right"></span> 
+                        </a>
+                    </li>    
+                </ul>
+            </li>                            
+            <li class="nav-item dropdown submenu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Resources
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Blog & News</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Help Center</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Service Request</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Release Notes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Videos & Webinars</a></li>                                    
+                </ul>
+            </li>            
+        </ul>
+    </div>
+</div>`;
+var newContent;
+    if(isParent){
+        newContent = content.replace(/~~~/gi, "./");
+    }
+    else{
+        newContent = content.replace(/~~~/gi, "../../");
+    }
+    console.log(newContent);
+    document.getElementById("navigation").innerHTML = newContent;
+}
+
+function getFooterContent(isParent) {
+    var content =
+    `<div class="footer_top_six">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="f_widget company_widget wow slideInLeft">
+                    <a href="https://www.palportals.com" class="f-logo"><img src="~~~images/1logo/logoWhite.svg" alt="logo"></a>
+                    <p class="mt_40">Copyright © 2020 <a href="https://www.palportals.com">PALPortals</a></p>
+                    <p class="mt_40"><a href="~~~legal" id="Legal">Legal</a> | <a href="~~~website-usage-terms-and-conditions" id="Terms">Terms of use</a> | <a href="~~~privacy-policy" id="Policy">Privacy</a></p>
+                    <span style="color:#1c143b;">v.0.1.2020.03.22</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="f_widget about-widget">
+                    <h3 class="f-title f_600 w_color f_size_18 mb_40  wow fadeInUp">About Us</h3>
+                    <ul class="list-unstyled f_list wow fadeInUp">
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Android App</a></li>
+                        <li><a href="#">ios App</a></li>
+                        <li><a href="#">Desktop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="f_widget about-widget">
+                    <h3 class="f-title f_600 w_color f_size_18 mb_40  wow fadeInUp">Help?</h3>
+                    <ul class="list-unstyled f_list wow fadeInUp">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Term &amp; conditions</a></li>
+                        <li><a href="#">Reporting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="f_widget social-widget">
+                    <h3 class="f-title f_600 w_color f_size_18 mb_40 wow slideInRight">Follow Us</h3>
+                    <div class="f_social_icon  wow slideInRight">
+                        <a target="_blank" href="https://www.facebook.com/PALPortals-104742791167579" class="ti-facebook"></a>
+                        <a href="#" class="ti-twitter-alt"></a>
+                        <a href="#" class="ti-vimeo-alt"></a>
+                        <a href="#" class="ti-pinterest"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+var newContent;
+    if(isParent){
+        newContent = content.replace(/~~~/gi, "./");
+    }
+    else{
+        newContent = content.replace(/~~~/gi, "../../");
+    }
+    console.log(newContent);
+    document.getElementById("footer").innerHTML = newContent;
+}
