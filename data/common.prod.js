@@ -20,7 +20,7 @@ function getNavigationContent(idx) {
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav menu w_menu ml-auto">
                 <li class="nav-item">
-                    <a href="~~~index.html" class="nav-link" id ="Home">Home</a>
+                    <a href="~~~" class="nav-link" id ="Home">Home</a>
                 </li>
                 <li class="nav-item dropdown submenu mega_menu">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Products">
@@ -29,19 +29,19 @@ function getNavigationContent(idx) {
                     <div class="mega_menu_inner">
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="~~~Products/Templates/templatedemo.html" class="nav-link">SharePoint Templates</a>
+                                <a href="~~~Products/Templates/templatedemo" class="nav-link">SharePoint Templates</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="~~~Products/Templates/template1.html" class="nav-link">Demo 1</a></li>
-                                    <li class="nav-item"><a href="~~~Products/Templates/template2.html" class="nav-link">Demo 2</a></li>
-                                    <li class="nav-item"><a href="~~~Products/Templates/template3.html" class="nav-link">Demo 3</a></li>
-                                    <li class="nav-item"><a href="~~~Products/Templates/webparts.html" class="nav-link">Web Parts</a></li>
+                                    <li class="nav-item"><a href="~~~Products/Templates/template1" class="nav-link">Demo 1</a></li>
+                                    <li class="nav-item"><a href="~~~Products/Templates/template2" class="nav-link">Demo 2</a></li>
+                                    <li class="nav-item"><a href="~~~Products/Templates/template3" class="nav-link">Demo 3</a></li>
+                                    <li class="nav-item"><a href="~~~Products/Templates/webparts" class="nav-link">Web Parts</a></li>
                                 </ul>
                             </li>  
                             <li class="nav-item">
                                 <a href="~~~Products/Portals/index.html" class="nav-link" id ="Portals">Portals</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="~~~Products/Portals/intranetportal.html" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>
-                                    <li class="nav-item"><a href="~~~Products/Portals/corehr.html" class="nav-link" id ="CoreHr">Core HR</a></li>
+                                    <li class="nav-item"><a href="~~~Products/Portals/intranetportal" class="nav-link" id ="IntranetPortal">Intranet Portal</a></li>
+                                    <li class="nav-item"><a href="~~~Products/Portals/corehr" class="nav-link" id ="CoreHr">Core HR</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Time & Attendance</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Recruiting</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Performace</a></li>
@@ -56,7 +56,7 @@ function getNavigationContent(idx) {
                                     <li class="nav-item"><a href="#" class="nav-link">Application Development</a></li>
                                     <li class="nav-item"><a href="#" class="nav-link">Migration</a></li>
                                 </ul>
-                            </li>                                                              
+                            </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Azure</a>
                                 <ul class="dropdown-menu">
@@ -87,7 +87,7 @@ function getNavigationContent(idx) {
                                 AWS 
                                 <span class="arrow_carrot-right"></span> 
                             </a>
-                        </li>    
+                        </li>
                     </ul>
                 </li>
                 <li class="dropdown submenu nav-item"><a title="Pages" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Costomers</a>
@@ -117,7 +117,7 @@ function getNavigationContent(idx) {
                             </a>
                         </li>    
                     </ul>
-                </li>                            
+                </li>
                 <li class="nav-item dropdown submenu">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Resources
@@ -129,7 +129,7 @@ function getNavigationContent(idx) {
                         <li class="nav-item"><a href="#" class="nav-link">Release Notes</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Videos & Webinars</a></li>                                    
                     </ul>
-                </li>            
+                </li>
             </ul>
         </div>
     </div>`;
