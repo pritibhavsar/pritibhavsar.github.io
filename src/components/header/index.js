@@ -47,13 +47,13 @@ function Header() {
                   <Link to='/' className="nav-link" id ="Home">Home</Link>
                 </li>
                 <li className="nav-item dropdown submenu mega_menu">
-                  <span className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Products">
+                  <a href="#" className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Products">
                     Products
-                  </span>
+                  </a>
                   <div className="mega_menu_inner">
                     <ul className="dropdown-menu">
                       <li className="nav-item">
-                        <span className="nav-link" id="Templates">SharePoint Templates</span>
+                        <a href="#" className="nav-link" id="Templates">SharePoint Templates</a>
                         <ul className="dropdown-menu">
                           <li className="nav-item"><Link to="../../../Products/Templates/Demo1" className="nav-link" id="Demo1">Demo 1</Link></li>
                           <li className="nav-item"><Link to="../../../Products/Templates/Demo2" className="nav-link" id="Demo2">Demo 2</Link></li>
@@ -62,7 +62,7 @@ function Header() {
                         </ul>
                       </li>  
                       <li className="nav-item">
-                        <span className="nav-link" id ="Portals">Portals</span>
+                        <a href="#" className="nav-link" id ="Portals">Portals</a>
                         <ul className="dropdown-menu">
                             <li className="nav-item"><Link to="../../../Products/Portals/IntranetPortals" className="nav-link" id ="IntranetPortals">Intranet Portal</Link></li>
                             <li className="nav-item"><Link to="../../../Products/Portals/CoreHR" className="nav-link" id ="CoreHR">Core HR</Link></li>
@@ -74,7 +74,7 @@ function Header() {
                         </ul>
                       </li>
                       <li className="nav-item">
-                          <span to="#" className="nav-link">Office 365</span>
+                          <a href="#" className="nav-link">Office 365</a>
                           <ul className="dropdown-menu">
                               <li className="nav-item"><Link to="#" className="nav-link">Office 365 Management</Link></li>
                               <li className="nav-item"><Link to="#" className="nav-link">Application Development</Link></li>
@@ -82,7 +82,7 @@ function Header() {
                           </ul>
                       </li>
                       <li className="nav-item">
-                          <span to="#" className="nav-link">Azure</span>
+                          <a href="#" className="nav-link">Azure</a>
                           <ul className="dropdown-menu">
                               <li className="nav-item"><Link to="#" className="nav-link">Office 365</Link></li>
                               <li className="nav-item"><Link to="#" className="nav-link">Add Ins</Link></li>
@@ -130,7 +130,7 @@ function Header() {
                         <li className="nav-item"><Link to="#" className="nav-link">Release Notes</Link></li>
                         <li className="nav-item"><Link to="#" className="nav-link">Videos & Webinars</Link></li>
                     </ul>
-                </li>
+                </li>                
               </ul>
           </div>
         </div>
