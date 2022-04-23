@@ -154,9 +154,9 @@ function getFooterContent(idx) {
                 <div class="col-lg-4 col-sm-6 ">
                     <div class="f_widget company_widget wow slideInLeft">
                         <a href="https://www.palportals.com" class="f-logo"><img src="~~~images/1logo/logoWhite.svg" alt="logo"></a>
-                        <p class="mt_40">Copyright © 2020 <a href="https://www.palportals.com">PALPortals</a></p>
+                        <p class="mt_40">Copyright © 2020 <a href="https://www.palportals.com">PALPortals v 1.0</a></p>
                         <p class="mt_40"><a href="~~~legal.html" id="Legal">Legal</a> | <a href="~~~website-usage-terms-and-conditions.html" id="Terms">Terms of use</a> | <a href="~~~privacy-policy.html" id="Policy">Privacy</a> | <a href="~~~/subscribe/index.html" id="Subscribe">Subscribe us</a></p>
-                        <span style="color:#1c143b;">v.0.1.2020.12.28</span>                
+                        <span style="color:#1c143b;">v.0.1.2020.12.28</span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
