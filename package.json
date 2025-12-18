@@ -10,16 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.0.0",
-    "@fontsource-variable/inter": "^5.0.8",
-    "astro": "^3.6.4",
-    "astro-compress": "^2.0.15",
-    "swiper": "^11.0.4",
-    "tailwindcss": "^3.3.3"
+    "@astrojs/tailwind": "latest",
+    "@fontsource-variable/inter": "latest",
+    "astro": "latest",
+    "astro-compress": "latest",
+    "swiper": "latest",
+    "tailwindcss": "latest"
   },
   "devDependencies": {
-    "prettier": "^3.0.3",
-    "prettier-plugin-astro": "^0.12.0",
-    "prettier-plugin-tailwindcss": "^0.5.4"
+    "prettier": "latest",
+    "prettier-plugin-astro": "latest",
+    "prettier-plugin-tailwindcss": "latest"
   }
 }
