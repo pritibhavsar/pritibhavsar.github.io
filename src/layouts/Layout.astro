@@ -11,8 +11,8 @@ interface Props {
 }
 
 const { description, title, image } = Astro.props;
-// Google Tag Manager ID: prefer public env var, fallback to server env or hardcoded
-const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CLJ2';
+// Google Analytics Measurement ID: prefer public env var, fallback to server env or hardcoded
+const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'G-6C7D50KQ9W';
 ---
 
 <!DOCTYPE html>
@@ -30,13 +30,10 @@ const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CL
     <meta property="twitter:image" content={image} />
     <meta name="robots" content="index,follow" />
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title={title} />
-    <!-- Google Tag Manager (head) -->
+    <!-- Google Analytics (gtag.js) -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GTM_ID}`}></script>
     <script>
-    {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','${GTM_ID}');`}
+    {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${GTM_ID}', { 'anonymize_ip': true });`}
     </script>
     <script type="application/ld+json">
     {`{
@@ -55,10 +52,6 @@ const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CL
     <title>{title}</title>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`} height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
     <Header />
     <!-- <Header client:load /> -->
     <main>
