@@ -16,7 +16,7 @@ const GTM_ID = "GTM-PG4CLJ2"; //import.meta.env.PUBLIC_GTM_ID || process.env.GTM
 const GA_ID = "G-6C7D50KQ9W"; //import.meta.env.PUBLIC_GA_ID || process.env.GA_ID || null;
 const isGtm = GTM_ID && GTM_ID.startsWith('GTM-');
 const isGtag = GTM_ID && GTM_ID.startsWith('G-');
-const gaToUse = GA_ID || (isGtag ? GTM_ID : null);
+const gaToUse = 'GTM-PG4CLJ2'; // GA_ID || (isGtag ? GTM_ID : null);
 ---
 
 <!DOCTYPE html>
@@ -47,9 +47,9 @@ const gaToUse = GA_ID || (isGtag ? GTM_ID : null);
 
     {  (
       <>
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaToUse}`}></script>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=GTM-PG4CLJ2`}></script>
         <script>
-        {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${gaToUse}', { 'anonymize_ip': true });`}
+        {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-PG4CLJ2', { 'anonymize_ip': true });`}
         </script>
       </>
     ) }
