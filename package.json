@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/generate-sitemap.cjs && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -14,6 +14,7 @@
     "@fontsource-variable/inter": "latest",
     "astro": "latest",
     "astro-compress": "latest",
+    "dotenv": "latest",
     "swiper": "latest",
     "tailwindcss": "latest"
   },

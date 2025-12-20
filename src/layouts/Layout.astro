@@ -11,6 +11,8 @@ interface Props {
 }
 
 const { description, title, image } = Astro.props;
+// Google Tag Manager ID: prefer public env var, fallback to server env or hardcoded
+const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CLJ2';
 ---
 
 <!DOCTYPE html>
@@ -26,9 +28,37 @@ const { description, title, image } = Astro.props;
     <meta name="description" content={description} />
     <meta property="og:image" content={image} />
     <meta property="twitter:image" content={image} />
+    <meta name="robots" content="index,follow" />
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title={title} />
+    <!-- Google Tag Manager (head) -->
+    <script>
+    {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','${GTM_ID}');`}
+    </script>
+    <script type="application/ld+json">
+    {`{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "${title}",
+      "description": "${description}",
+      "url": "/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }`}
+    </script>
     <title>{title}</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`} height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <Header />
     <!-- <Header client:load /> -->
     <main>

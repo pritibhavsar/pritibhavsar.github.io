@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Replace the URL below with your site domain
+Sitemap: https://palportals.com/sitemap.xml
+
+# Optional: specify host (some crawlers use this)
+Host: https://palportals.com
