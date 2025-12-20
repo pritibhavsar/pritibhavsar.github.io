@@ -1,11 +1,11 @@
 {
   "name": "play-astro",
   "type": "module",
-  "version": "1.0",
+  "version": "0.0.3",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "node scripts/generate-sitemap.cjs && astro build",
+    "build": "node scripts/increment-version.cjs && node scripts/generate-sitemap.cjs && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
