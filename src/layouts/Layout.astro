@@ -44,7 +44,7 @@ const gaToUse = 'GTM-PG4CLJ2'; // GA_ID || (isGtag ? GTM_ID : null);
       })(window,document,'script','dataLayer','GTM-PG4CLJ2');`}
       </script>
     ) }
-
+<!-- 
     {  (
       <>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=GTM-PG4CLJ2`}></script>
@@ -52,7 +52,7 @@ const gaToUse = 'GTM-PG4CLJ2'; // GA_ID || (isGtag ? GTM_ID : null);
         {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-PG4CLJ2', { 'anonymize_ip': true });`}
         </script>
       </>
-    ) }
+    ) } -->
     <script type="application/ld+json">
     {`{
       "@context": "https://schema.org",
@@ -70,12 +70,12 @@ const gaToUse = 'GTM-PG4CLJ2'; // GA_ID || (isGtag ? GTM_ID : null);
     <title>{title}</title>
   </head>
   <body>
-    {isGtm ? (
+    {(
       <!-- Google Tag Manager (noscript) -->
       <noscript>
         <iframe src={`https://www.googletagmanager.com/ns.html?id=GTM-PG4CLJ2`} height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </noscript>
-    ) : null}
+    )}
     <Header />
     <!-- <Header client:load /> -->
     <main>
