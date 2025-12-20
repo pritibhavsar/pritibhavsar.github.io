@@ -6,6 +6,8 @@
 
 You are welcome to peruse [our documentation](https://tailgrids.com/astro) or join the conversation on our [Discord server](https://pimjo.com/discord).
 
+https://webreaper.dev/posts/google-tag-manager-cookie-consent/
+
 Prompts
 
 Create a cinematic, futuristic brand video for “PAL Portals – AI Innovations”.

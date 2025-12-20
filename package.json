@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/partytown": "^2.1.4",
     "@astrojs/tailwind": "latest",
     "@fontsource-variable/inter": "latest",
     "astro": "latest",
