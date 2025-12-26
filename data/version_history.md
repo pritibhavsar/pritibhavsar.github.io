@@ -20,3 +20,8 @@
   - author: Dipal Bhavsar
   - commit-date: 2025-12-20T11:36:45+05:30
 
+## v0.0.5 — 2025-12-26
+- Change site icons
+  - author: Dipal Bhavsar
+  - commit-date: 2025-12-21T20:00:06+05:30
+
