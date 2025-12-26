@@ -1,9 +1,9 @@
 {
-  "version": "0.0.5",
-  "updated": "2025-12-26T14:00:14.704Z",
+  "version": "0.0.6",
+  "updated": "2025-12-26T14:01:24.423Z",
   "last_commit": {
     "author": "Dipal Bhavsar",
-    "date": "2025-12-21T20:00:06+05:30",
-    "message": "Change site icons"
+    "date": "2025-12-26T19:30:15+05:30",
+    "message": "chore(release): v0.0.5"
   }
 }
