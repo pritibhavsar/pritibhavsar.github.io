@@ -30,3 +30,8 @@
   - author: Dipal Bhavsar
   - commit-date: 2025-12-26T19:30:15+05:30
 
+## v0.0.7 — 2025-12-26
+- chore(release): v0.0.6
+  - author: Dipal Bhavsar
+  - commit-date: 2025-12-26T19:31:25+05:30
+
