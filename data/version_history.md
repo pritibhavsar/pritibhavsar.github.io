@@ -50,3 +50,8 @@
   - author: Dipal Bhavsar
   - commit-date: 2025-12-26T19:49:24+05:30
 
+## v0.0.11 — 2025-12-26
+- chore(release): v0.0.10
+  - author: Dipal Bhavsar
+  - commit-date: 2025-12-26T19:50:20+05:30
+
