@@ -1,5 +1,6 @@
 ---
 draft: false
+template: "default"
 title: "The no-fuss guide to upselling and cross selling"
 snippet: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 image: {
@@ -20,6 +21,12 @@ authorImg: {
 comments: "05"
 views: "05"
 tags: ["Design", "Development", "Info"]
+blogContentCollection: [
+    { type: "h1", name: "Reach", description: "Estimated number of unique users who saw the post." },
+    { type: "h2", name: "Impressions", description: "Total count of times the post was displayed." },
+    { type: "Italic", name: "Engagement", description: "Aggregate of likes, comments, shares, and clicks for the post." },
+    { type: "bold", name: "Test Post", description: "Placeholder item used for layout and content rendering tests." },
+]
 postDetails: {
     paraOne: "There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.",
     paraTwo: "There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.",

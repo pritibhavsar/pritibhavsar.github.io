@@ -26,6 +26,14 @@ const blogCollection = defineCollection({
     views: z.string(),
     category: z.string(),
     tags: z.array(z.string()),
+    template: z.enum(['default', 'standard', 'other']).default('default'),
+    blogContentCollection: z.array(
+      z.object({
+        type: z.string(),
+        name: z.string(),
+        description: z.string(),
+      })
+    ).default([]),
     postDetails: z.object({
       paraOne: z.string(),
       paraTwo: z.string(),
@@ -33,7 +41,7 @@ const blogCollection = defineCollection({
       paraThree: z.string(),
       titleTwo: z.string(),
       paraFour: z.string(),
-      paraFive: z.string(),
+      paraFive: z.string()
     }),
     quotes: z.object({
       quote: z.string(),
@@ -41,7 +49,6 @@ const blogCollection = defineCollection({
     }),
   }),
 });
-
 
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"

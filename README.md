@@ -8,6 +8,12 @@ You are welcome to peruse [our documentation](https://tailgrids.com/astro) or jo
 
 https://webreaper.dev/posts/google-tag-manager-cookie-consent/
 
+https://heropatterns.com/
+
+https://surferseo.com/writing-tools/blog-title-generator/
+
+https://app.haikei.app/
+
 Prompts
 
 Create a cinematic, futuristic brand video for “PAL Portals – AI Innovations”.

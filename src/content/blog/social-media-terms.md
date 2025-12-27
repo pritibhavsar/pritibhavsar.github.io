@@ -1,13 +1,13 @@
 ---
 draft: false
-template: "default"
-title: "Meet AutoManage, the best AI management tools"
-snippet: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+template: "standard"
+title: "Social Media Terms: A Comprehensive Glossary"
+snippet: "With clear definitions and helpful examples, social media terms glossary has everything you need to know to succeed on social media."
 image: {
     src: "/assets/blog/blog-01.jpg",
     alt: "blog details"
 }
-publishDate: "2023-11-08 11:39"
+publishDate: "2025-12-26 12:39"
 category: "related"
 author: "Priti Bhavsar"
 bigImg: {
@@ -20,7 +20,7 @@ authorImg: {
 }
 comments: "05"
 views: "05"
-tags: [Design, Development, Info]
+tags: [Design, Development, Info, Social]
 blogContentCollection: [
     { type: "h1", name: "Reach", description: "Estimated number of unique users who saw the post." },
     { type: "h2", name: "Impressions", description: "Total count of times the post was displayed." },
