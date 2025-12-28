@@ -1,0 +1,63 @@
+---
+interface Props { items: any[] }
+const { items = [] } = Astro.props;
+---
+
+{items && items.length > 0 ? (
+  <div class="mb-6 mt-[30px]">
+    <div class="grid gap-2">
+      {items.map((item, idx) => {
+        const tag = (item.type || 'div').toLowerCase();
+        const content = item.description || '';
+        const keyLabel = item.name ? item.name.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase()) : `Item ${idx+1}`;
+        const allowed = ['h1','h2','h3','h4','h5','h6','p','pre','div','html'];
+        const renderTag = allowed.includes(tag) ? tag : 'div';
+        return (
+          <div class="flex items-start gap-4" key={idx}>
+            <div class="text-sm text-body-color dark:text-dark-6">
+              {
+                renderTag === 'pre' ? (
+                  <pre class="whitespace-pre-wrap bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-mono p-4 rounded-md overflow-x-auto">{content}</pre>
+                ) : renderTag === 'h1' ? (
+                  <h1 class="text-2xl md:text-3xl font-bold leading-tight text-gray-900 dark:text-gray-100">{content}</h1>
+                ) : renderTag === 'h2' ? (
+                  <h2 class="text-xl md:text-2xl font-semibold leading-tight text-gray-900 dark:text-gray-100">{content}</h2>
+                ) : renderTag === 'h3' ? (
+                  <h3 class="text-lg md:text-xl font-semibold leading-tight text-gray-900 dark:text-gray-100">{content}</h3>
+                ) : renderTag === 'h4' ? (
+                  <h4 class="text-base md:text-lg font-medium text-gray-900 dark:text-gray-100">{content}</h4>
+                ) : renderTag === 'h5' ? (
+                  <h5 class="text-sm md:text-base font-medium text-gray-900 dark:text-gray-100">{content}</h5>
+                ) : renderTag === 'h6' ? (
+                  <h6 class="text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100">{content}</h6>
+                ) : renderTag === 'italic' ? (
+                  <em class="italic text-base md:text-lg text-gray-900 dark:text-gray-100">{content}</em>
+                ) : renderTag === 'bold' ? (
+                  <strong class="font-semibold text-base md:text-lg text-gray-900 dark:text-gray-100">{content}</strong>
+                ) : renderTag === 'br' ? (
+                  <div class="w-full">
+                    <br />
+                    <p class="mt-2 text-base md:text-lg text-gray-900 dark:text-gray-100">{content}</p>
+                  </div>
+                ) : renderTag === 'html' ? (
+                  <div class="text-base md:text-lg leading-7 md:leading-8 text-gray-900 dark:text-gray-100 font-sans tracking-wide whitespace-pre-wrap break-words mb-4" innerHTML={content}></div>
+                ) : renderTag === 'li' ? (
+                  <ul class="list-disc list-inside pl-6 mb-4">
+                    <li class="text-base md:text-lg leading-7 md:leading-8 text-gray-900 dark:text-gray-100 font-sans tracking-wide whitespace-pre-wrap break-words">{content}</li>
+                  </ul>
+                ) : (
+                  <p class="text-base md:text-lg leading-7 md:leading-8 text-gray-900 dark:text-gray-100 font-sans tracking-wide whitespace-pre-wrap break-words mb-4">{content}</p>
+                )
+              }
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  </div>
+) : (
+  <div class="mb-6">
+    <h3 class="mb-2 text-lg font-semibold text-dark dark:text-white">Params</h3>
+    <p class="text-sm text-body-color dark:text-dark-6">No params provided.</p>
+  </div>
+)}
