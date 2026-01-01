@@ -11,21 +11,21 @@ const blogCollection = defineCollection({
     image: z.object({
       src: z.string(),
       alt: z.string(),
-    }),
+    }).optional(),
     bigImg: z.object({
       src: z.string(),
       alt: z.string(),
-    }),
+    }).optional(),
     authorImg: z.object({
       src: z.string(),
       alt: z.string(),
-    }),
+    }).optional(),
     publishDate: z.string().transform((str) => new Date(str)),
     author: z.string().default('Pimjolabs'),
-    comments: z.string(),
-    views: z.string(),
+    comments: z.string().optional(),
+    views: z.string().optional(),
     category: z.string(),
-    tags: z.array(z.string()),
+    tags: z.array(z.string()).default([]),
     template: z.enum(['default', 'standard', 'other']).default('default'),
     blogContentCollection: z.array(
       z.object({
@@ -42,11 +42,11 @@ const blogCollection = defineCollection({
       titleTwo: z.string(),
       paraFour: z.string(),
       paraFive: z.string()
-    }),
+    }).optional(),
     quotes: z.object({
       quote: z.string(),
       author: z.string(),
-    }),
+    }).optional(),
   }),
 });
 

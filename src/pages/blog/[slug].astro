@@ -3,9 +3,12 @@ import { getCollection } from "astro:content";
 import Newsletterbox from '../../components/Newsletterbox.astro';
 import PopularArticles from '../../components/PopularArticles.astro';
 import Layout from "../../layouts/Layout.astro";
-import RelatedArticles from "../../components/RelatedArticles.astro";import PostStandard from '../../components/blog/PostStandard.astro';
+import RelatedArticles from "../../components/RelatedArticles.astro";
+import PostStandard from '../../components/blog/PostStandard.astro';
 import PostOther from '../../components/blog/PostOther.astro';
 import PostDefault from '../../components/blog/PostDefault.astro';
+import PostMarkdown from '../../components/blog/PostMarkdown.astro';
+
 // Generate a new path for every collection entry
 export async function getStaticPaths() {
   // collections are not typed in this project; cast getCollection to any to avoid "never" errors
@@ -23,7 +26,9 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-{entry.data.template === "standard" ? (
+{!entry.data.postDetails ? (
+  <PostMarkdown entry={entry} Content={Content} />
+) : entry.data.template === "standard" ? (
   <PostStandard entry={entry} />
 ) : entry.data.template === "other" ? (
   <PostOther entry={entry} Content={Content} />

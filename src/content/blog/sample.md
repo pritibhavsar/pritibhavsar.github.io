@@ -1,86 +1,55 @@
 ---
 draft: false
-template: "standard"
-title: "Sample"
-snippet: "An algorithm is a set of rules used by social media platforms to determine which content to display to users and in what order."
+title: "Add a Longer Cycle Around Scrum Sprints"
+snippet: "Extending the traditional sprint cycle to include extra phases, like review or reflection periods, to accommodate complex projects and deliver more value."
 image: {
-    src: "/assets/blog/blog-01.jpg",
-    alt: "blog details"
+    src: "/assets/blog/blog-scrum.jpg",
+    alt: "Scrum sprint cycle planning"
 }
-publishDate: "2025-12-26 11:39"
-category: "related"
-author: "Priti Bhavsar"
-bigImg: {
-    src: "/assets/blog/blog-details-01.jpg",
-    alt: "blog details",
-}
-authorImg: {
-    src: "/assets/blog/author-01.png",
-    alt: "author",
-}
-comments: "05"
-views: "05"
-tags: [Design, Development, Info, Social]
-blogContentCollection: [
-    { type: "h1", name: "Reach", description: "What is social algorithm?" },
-    { type: "br", name: "Reach", description: "" },
-    { type: "br", name: "Reach", description: "" },
-    { type: "p", name: "Impressions", description: "An algorithm is a set of scientific or mathematical rules used by social media platforms to determine which content to display to users, and in what order." },
-    { type: "p", name: "Engagement", description: "Most algorithms are designed to deliver the content a user is most likely to engage with, based on previous content they’ve interacted with (that’s why your TikTok feed is filled with funny cat videos)." },
-
-    { type: "p", name: "Test Post", description: "A challenge you might run into as an individual, business, or marketer looking to grow on any algorithm-driven platform is that most platforms hide the formula behind their algorithms. So you can only go off the best practices shared by third-parties." },
-
-    { type: "p", name: "Test Post", description: "Still, developing even a vague understanding of how social media algorithms work can help you optimize your content strategy to increase visibility and engagement." },
-
-    { type: "br", name: "Reach", description: "" },
-
-    { type: "h2", name: "Test Post", description: "What is the purpose of social media algorithms?" },
-
-    { type: "br", name: "Reach", description: "" },
-
-    { type: "html", name: "SM", description: "<ul><li>Social media platforms developed algorithms as a response to user behavior and proper ad targeting. They serve many purposes for both the platforms and users including:</li><li>asdasdas</li></ul>" },
-
-    { type: "li", name: "SM", description: "By personalizing content feeds, algorithms help users discover new content and connections, while also enabling advertisers to target specific audiences more effectively." }
-]
-postDetails: {
-    paraOne: "An algorithm is a set of rules or steps that social media platforms use to decide what content you see and in what order.",
-    paraTwo: "There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.",
-    title: "Sea no quidam vulputate",
-    paraThree: "At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.",
-    titleTwo: "Sea no quidam vulputate",
-    paraFour: "At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.",
-    paraFive: "At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel."
-}
-quotes : {
-    quote: "A spring of truth shall flow from it: like a new star it shall scatter the darkness of ignorance, and cause a light heretofore unknown to shine amongst men.",
-    author: "Andrio Domeco"
-}
+publishDate: "2025-12-12"
+category: "agile"
+author: "Dipal Bhavsar"
+tags: ["Agile", "Scrum", "Project Management"]
 ---
 
-## Introduction
+There I sat with the CEO and the VP of marketing. We were discussing what my teams could deliver in the coming quarter. The teams were all using two-week sprints and we knew the velocity of each.
 
-I was surprised by how many of you replied saying that you didn’t necessarily disagree but asked what a product owner or Scrum Master could possibly say at a daily scrum. So that’s what I’d like to address this week.
+The VP of marketing asked me how many sprints we'd complete in the coming quarter. You see, with two-week sprints, sometimes you can finish six sprints in a quarter, but other times you can finish seven. It all depends on whether the quarter starts with a new sprint or starts halfway through a sprint.
 
-During the daily scrum, a Scrum Master or product owner should report on anything the team may want to know about. It’s not so much about what they say as it is about their demonstrating that they are not above having to report on their progress.
+So I start doing the math in my head to figure this out. And I'm thinking: September 10, September 24, uhh, how many days in September? OK, 30, so that's October 8, October 22 …
 
-I don’t want the product owner or Scrum Master to speak endlessly or talk about irrelevant things. So, fortunately, there are things they can talk about.
+And right then I decided that having to do that was an unnecessary hassle. I hated that some quarters had six sprints and some had seven. And I decided that from then on, each 13-week quarter would have six two-week sprints.
 
-For example, a Scrum Master might:
-*	Comment about an impediment or two that was removed
-*	Mention facilitating a meeting with the product owner to demo something to stakeholders
-*	Mention setting up that important meeting for next Tuesday
-*	Mention cleaning up the product backlog in the tool based on the results of previous day's product backlog grooming meeting
+But, six times two equals 12, and there were 13 weeks in the quarter. What should I do with the 13th week?
 
-A product owner might comment on similar things, especially work involving the product backlog, stakeholders, users and so on.
+I decided I would give it to the team.
 
-I do want the product owner and Scrum Master to talk only about work affecting the current sprint. (I actually want everyone on the team to stick to the current sprint.) But, especially on a day when there is little else to report, a product owner might, for example, say something like, _“I got a chance to think about the things I’d like us to work on next quarter.”_
+## The Power of Flex Time
 
-Again, it’s more about the fact that the product owner and Scrum Master speak versus what they say. So their updates can be very short. And after that, they may occasionally add something like, “And lots of other things that aren’t relevant to this sprint; but, wow, what a busy day.”
+Every quarter, the team would have one week to do entirely what they wanted. It needed to be project- or company-related, but they would determine what to do.
 
-There will even be days when a Scrum Master or product owner (or, really, anyone on the team) may feel they have nothing to report. That’s fine. It will happen.
+Some teams used it to do refactorings they hadn't been able to convince the product owner to do. Other teams used the time to learn new skills. Still others experimented with ideas of their own that later became some of the best features in their products.
 
-On those days, I’d prefer to have the person give a really brief update, basically saying that there is no update. Even saying something like, “I got nothing done yesterday. My old project needed something from me. I had some hardware problems. Ugh. Nothing to report.”
+## Three Unintended Benefits
 
-One last time: it’s more about that everyone hears them participate just like everyone else rather than allowing the product owner or Scrum Master to live by a different set of rules.
+There were three unintended but important additional benefits to this.
 
-One team. One set of rules. And that will help you succeed with agile.
+**First**, it gave product owners a week away from the pressures of staying current in a sprint. Product owners used this time to think more strategically about their products, get the product backlog in good shape for the next quarter, visit customers or do other research.
+
+**Second**, it established a longer cycle than just sprints one after another. We found this cycle helped us take a longer term view of the product. Instead of starting each sprint with a focus on what was most urgent for the next two weeks, we began to think about what was most important for the full quarter.
+
+And with that longer term view, the teams were able to deliver more value to their product owners.
+
+### Variations of the 6+1 Model
+
+Since then, I've worked with companies that have used many variations on this "6 x 2 + 1" approach. For example, three four-week sprints plus a one-week sprint left up to the team works well.
+
+I've even seen five two-week sprints followed by a three-week sprint of work selected by the team. This was a team with a lot of refactoring that needed to be done, which the team did during the final sprint of each quarter.
+
+**Third**, an unintended benefit was that this 13th week was not considered in making quarterly plans because no one knew in advance how the team would use it. This allowed teams and product owners a built-in buffer if they ever needed to use that week to meet commitments. And if the team gave up "their week" in week 13, so what, their product owner would give them week 15 or 18 instead.
+
+## Key Takeaway
+
+> By establishing a longer cycle than just sprints one after another, teams can take a longer term view of the product and deliver significantly more value.
+
+I believe you will find a lot of benefits to establishing a cycle that wraps around a series of sprints. And those benefits will help you succeed with agile.

@@ -1,0 +1,10 @@
+---
+import PostOther from '../../components/blog/PostOther.astro';
+import sample from '../../content/blog/sample.md';
+
+// Render the markdown file's content component
+const { Content } = await sample.render();
+
+---
+
+<PostOther entry={sample} Content={Content} />

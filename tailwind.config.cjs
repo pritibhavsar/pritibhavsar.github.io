@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -24,9 +25,19 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: "16px",
+      padding: "16px"
     },
     extend: {
+      fontFamily: {
+        // Primary: Space Grotesk - Modern geometric sans-serif for visual impact
+        display: ['var(--font-space-grotesk)', ...defaultTheme.fontFamily.sans],
+        
+        // Secondary: Inter - Default body font for optimal readability
+        sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
+        
+        // Monospace: JetBrains Mono - For code and technical content
+        mono: ['var(--font-jetbrains-mono)', ...defaultTheme.fontFamily.mono],
+      },
       colors: {
         white: "#FFFFFF",
         black: "#212b36",
@@ -51,6 +62,44 @@ module.exports = {
         "gray-1": "#F9FAFB",
         "gray-2": "#F3F4F6",
         "gray-7": "#CED4DA",
+        
+        // New Blue, Teal & Charcoal Theme
+        "theme-blue": {
+          50: "#E3F2FD",
+          100: "#BBDEFB",
+          200: "#90CAF9",
+          300: "#64B5F6",
+          400: "#42A5F5",
+          500: "#2196F3",
+          600: "#1E88E5",
+          700: "#1976D2",
+          800: "#1565C0",
+          900: "#0D47A1",
+        },
+        "theme-cyan": {
+          50: "#E0F2F1",
+          100: "#B2DFDB",
+          200: "#80CBC4",
+          300: "#4DB6AC",
+          400: "#26A69A",
+          500: "#009688",
+          600: "#00897B",
+          700: "#00796B",
+          800: "#00695C",
+          900: "#004D40",
+        },
+        "theme-charcoal": {
+          50: "#F5F5F5",
+          100: "#EEEEEE",
+          200: "#E0E0E0",
+          300: "#BDBDBD",
+          400: "#9E9E9E",
+          500: "#757575",
+          600: "#616161",
+          700: "#424242",
+          800: "#2C2C2C",
+          900: "#1A1A1A",
+        },
       },
       boxShadow: {
         input: "0px 7px 20px rgba(0, 0, 0, 0.03)",
@@ -64,5 +113,7 @@ module.exports = {
       },
     },
   },
-	plugins: [],
+	plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
