@@ -1,5 +1,6 @@
 ---
 draft: false
+template: "default"
 title: 'The no-fuss guide to upselling and cross selling'
 snippet: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
 image: { src: '/assets/blog/blog-03.jpg', alt: 'blog details' }
@@ -11,6 +12,12 @@ authorImg: { src: '/assets/blog/author-01.png', alt: 'author' }
 comments: '05'
 views: '05'
 tags: ['Design', 'Development', 'Info']
+blogContentCollection: [
+    { type: "h1", name: "Reach", description: "Estimated number of unique users who saw the post" },
+    { type: "h2", name: "Impressions", description: "Total count of times the post was displayed" },
+    { type: "Italic", name: "Engagement", description: "Aggregate of likes, comments, shares, and clicks for the post." },
+    { type: "bold", name: "Test Post", description: "Placeholder item used for layout and content rendering tests." },
+]
 postDetails:
   {
     paraOne: "There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.",
@@ -19,7 +26,7 @@ postDetails:
     paraThree: 'At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.',
     titleTwo: 'Sea no quidam vulputate',
     paraFour: 'At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.',
-    paraFive: 'At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.',
+    paraFive: 'At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.'
   }
 quotes:
   {

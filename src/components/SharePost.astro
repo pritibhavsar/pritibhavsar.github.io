@@ -1,0 +1,185 @@
+---
+import facebookIcon from "/public/assets/logo/social/facebook.svg";
+import x from "/public/assets/logo/social/x.svg";
+import linkedinIcon from "/public/assets/logo/social/linkedin.svg";
+import redditIcon from "/public/assets/logo/social/reddit.svg";
+import threadsIcon from "/public/assets/logo/social/threads.svg";
+import chatGPTIcon from "/public/assets/logo/social/chatgpt.svg";
+import whatsAppIcon from "/public/assets/logo/social/whatsapp.svg";
+import claudeIcon from "/public/assets/logo/social/claude.svg";
+
+interface Props {
+  slug: string;
+  postUrl?: string;
+}
+
+
+const { slug, postUrl } = Astro.props;
+
+// Construct the blog post URL
+const baseUrl = 'https://palportals.com/blog/';
+const url = postUrl || `${baseUrl}${slug}`;
+const encodedUrl = encodeURIComponent(url);
+
+// Share platform URLs
+const shareUrls = {
+  
+  buffer: `https://publish.buffer.com/compose?url=${encodedUrl}`,
+  threads: `https://threads.com/intent/post?text=${encodedUrl}`,
+  whatsapp: `https://api.whatsapp.com/send?text=${encodedUrl}`,
+  facebook: `https://www.facebook.com/sharer/sharer.php?href=${encodedUrl}`,
+  linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}`,
+  twitter: `https://x.com/share?url=${encodedUrl}`,
+  reddit: `https://www.reddit.com/submit?url=${encodedUrl}`,
+  chatgpt: `https://chatgpt.com/?prompt=Read+${encodedUrl}+summarize+and+answer+questions+about+the+content`,
+  claude: `https://claude.ai/new?q=Read%20${encodedUrl}%20summarize+and+answer+questions+about+the+content`,
+};
+---
+
+<div class="wow fadeInUp mb-12 w-full bg-gradient-to-r from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 py-8 px-4 sm:px-6 md:px-8 lg:px-10 rounded-lg "
+  data-wow-delay=".1s"
+>
+  <div class="flex flex-col items-center justify-center gap-6">
+    <div class="text-center">
+      <h3 class="text-lg md:text-2xl font-semibold text-dark dark:text-white mb-2">
+        Share This Post
+      </h3>
+      <p class="text-lg text-body-color dark:text-dark-6">
+        Spread the knowledge with your network
+      </p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3 w-full">
+      <!-- Facebook -->
+      <a
+        href={shareUrls.facebook}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex h-14 w-14 items-center justify-center"
+      >
+        <img 
+          src={facebookIcon.src} 
+          alt="Facebook" 
+        />
+        
+        <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs font-medium px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          Share on Facebook
+        </div>
+      </a>
+
+      <!-- WhatsApp -->
+      <a
+        href={shareUrls.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex h-14 w-14 items-center justify-center"
+      >
+        <img 
+          src={whatsAppIcon.src} 
+          alt="WhatsApp" 
+        />
+        
+        <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs font-medium px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          Share on WhatsApp
+        </div>
+      </a>
+
+      <!-- Twitter / X -->
+      <a
+        href={shareUrls.twitter}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex h-14 w-14 items-center justify-center"
+      >
+        <img 
+          src={x.src} 
+          alt="X" 
+        />
+        <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs font-medium px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          Share on X
+        </div>
+      </a>
+
+      <!-- LinkedIn -->
+      <a
+        href={shareUrls.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex h-14 w-14 items-center justify-center"
+      >
+        <img 
+          src={linkedinIcon.src} 
+          alt="LinkedIn" 
+        />
+        <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs font-medium px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          Share on LinkedIn
+        </div>
+      </a>
+
+      <!-- Reddit -->
+      <a
+        href={shareUrls.reddit}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex h-14 w-14 items-center justify-center"
+      >
+        <img 
+          src={redditIcon.src} 
+          alt="Reddit" 
+        />
+        
+        <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs font-medium px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          Share on Reddit
+        </div>
+      </a>
+
+      <!-- Threads -->
+      <a
+        href={shareUrls.threads}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex h-14 w-14 items-center justify-center"
+      >
+        <img 
+          src={threadsIcon.src} 
+          alt="Threads" 
+        />
+
+        <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs font-medium px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          Share on Threads
+        </div>
+      </a>
+
+      <!-- ChatGPT -->
+      <a
+        href={shareUrls.chatgpt}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex h-14 w-14 items-center justify-center"
+      >
+        <img 
+          src={chatGPTIcon.src} 
+          alt="ChatGPT" 
+        />
+        <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs font-medium px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          Share with ChatGPT
+        </div>
+      </a>
+
+      <!-- Claude -->
+       <a
+        href={shareUrls.claude}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative flex h-14 w-14 items-center justify-center"
+      >
+        <img 
+          src={claudeIcon.src} 
+          alt="Claude" 
+        />
+        <div class="absolute bottom-full mb-2 hidden group-hover:block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs font-medium px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          Share with Claude
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

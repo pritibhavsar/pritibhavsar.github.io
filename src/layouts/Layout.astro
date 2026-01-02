@@ -2,6 +2,16 @@
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
 import BackToTop from '../components/layout/BackToTop.astro';
+
+// Primary: Space Grotesk - Modern geometric sans-serif for headings
+import '@fontsource/space-grotesk/400.css';
+import '@fontsource/space-grotesk/500.css';
+import '@fontsource/space-grotesk/600.css';
+import '@fontsource/space-grotesk/700.css';
+
+// Secondary: Inter Variable - Highly legible sans-serif for body text
+import '@fontsource-variable/inter/index.css';
+
 // import MadeWithButton from '../components/layout/MadeWithButton.astro';
 
 interface Props {
@@ -15,8 +25,169 @@ const { description, title, image } = Astro.props;
 const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CLJ2';
 ---
 
+<style is:global>
+  :root {
+    /* Primary font for headings - Modern & distinctive */
+    --font-space-grotesk: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    
+    /* Secondary font for body text - Highly readable */
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Line height for better readability */
+    --line-height-relaxed: 1.6;
+    --line-height-normal: 1.5;
+
+    /* Blue, Teal & Charcoal Theme - Light Mode */
+    --theme-primary-blue: #2196F3;
+    --theme-primary-cyan: #009688;
+    --theme-primary-charcoal: #2C2C2C;
+    
+    /* Background colors with proper contrast */
+    --theme-bg-light: #FFFFFF;
+    --theme-bg-surface: #F5F5F5;
+    --theme-bg-hover: #EEEEEE;
+    
+    /* Text colors for proper contrast */
+    --theme-text-primary: #1A1A1A;
+    --theme-text-secondary: #424242;
+    --theme-text-tertiary: #757575;
+    
+    /* Accent colors */
+    --theme-accent-blue: #1976D2;
+    --theme-accent-cyan: #00897B;
+    --theme-accent-charcoal: #1A1A1A;
+  }
+
+  /* Dark Mode Theme */
+  :root.dark {
+    --theme-primary-blue: #64B5F6;
+    --theme-primary-cyan: #4DB6AC;
+    --theme-primary-charcoal: #E0E0E0;
+    
+    /* Dark mode backgrounds */
+    --theme-bg-light: #1A1A1A;
+    --theme-bg-surface: #2C2C2C;
+    --theme-bg-hover: #3F3F3F;
+    
+    /* Dark mode text - high contrast */
+    --theme-text-primary: #FFFFFF;
+    --theme-text-secondary: #E0E0E0;
+    --theme-text-tertiary: #BDBDBD;
+    
+    /* Dark mode accents */
+    --theme-accent-blue: #90CAF9;
+    --theme-accent-cyan: #80CBC4;
+    --theme-accent-charcoal: #E0E0E0;
+  }
+
+  /* Apply Inter to body for excellent readability */
+  body {
+    font-family: var(--font-inter);
+    line-height: var(--line-height-relaxed);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--theme-bg-light);
+    color: var(--theme-text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Headings use Space Grotesk for visual hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-space-grotesk);
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--theme-accent-blue);
+  }
+
+  /* Links with theme colors */
+  a {
+    color: var(--theme-primary-blue);
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--theme-accent-blue);
+  }
+
+  /* Improved paragraph spacing */
+  p {
+    margin-bottom: 1rem;
+    color: var(--theme-text-secondary);
+  }
+
+  /* Better readability for lists */
+  ul, ol {
+    line-height: var(--line-height-relaxed);
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    color: var(--theme-text-secondary);
+  }
+
+  /* Buttons with theme colors */
+  button, [role="button"] {
+    transition: all 0.2s ease;
+  }
+
+  /* Surface elements */
+  .theme-surface {
+    background-color: var(--theme-bg-surface);
+    color: var(--theme-text-primary);
+  }
+
+  /* Blue theme element */
+  .theme-blue-accent {
+    color: var(--theme-primary-blue);
+    border-color: var(--theme-primary-blue);
+  }
+
+  .theme-blue-accent:hover {
+    color: var(--theme-accent-blue);
+    border-color: var(--theme-accent-blue);
+  }
+
+  /* Cyan theme element */
+  .theme-cyan-accent {
+    color: var(--theme-primary-cyan);
+    border-color: var(--theme-primary-cyan);
+  }
+
+  .theme-cyan-accent:hover {
+    color: var(--theme-accent-cyan);
+    border-color: var(--theme-accent-cyan);
+  }
+
+  /* Charcoal theme element */
+  .theme-charcoal-accent {
+    color: var(--theme-primary-charcoal);
+    border-color: var(--theme-primary-charcoal);
+  }
+
+  .theme-charcoal-accent:hover {
+    color: var(--theme-accent-charcoal);
+    border-color: var(--theme-accent-charcoal);
+  }
+
+  /* Background variants */
+  .bg-theme-blue {
+    background-color: var(--theme-primary-blue);
+    color: white;
+  }
+
+  .bg-theme-cyan {
+    background-color: var(--theme-primary-cyan);
+    color: white;
+  }
+
+  .bg-theme-charcoal {
+    background-color: var(--theme-primary-charcoal);
+    color: var(--theme-text-primary);
+  }
+</style>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -30,6 +201,7 @@ const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CL
     <meta property="twitter:image" content={image} />
     <meta name="robots" content="index,follow" />
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title={title} />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="PAL Portals Blog Feed" />
     <!-- Google tag (gtag.js) - Modified for Partytown -->
     <script
       async
@@ -90,6 +262,7 @@ const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CL
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
       body {
         font-family: "Inter", sans-serif;
+        font-size: large;
       }
       .sticky-header {
         @apply fixed z-[9999] bg-white/80 dark:bg-dark/80 transition;

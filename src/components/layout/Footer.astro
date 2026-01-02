@@ -1,6 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 
+// Get the environment variable to check if we're in development mode
+const isDev = import.meta.env.DEV;
+
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
@@ -47,12 +50,12 @@ const footerLinks = [
       },
       {
         name: 'Privacy policy',
-        href: '/',
+        href: '/privacy-policy',
         isExternal: false,
       },
       {
-        name: 'Terms of Service',
-        href: '/',
+        name: 'Terms of Services',
+        href: '/terms-of-services',
         isExternal: false,
       },
       {
@@ -103,16 +106,18 @@ const footerLinks = [
     <div class="-mx-4 flex flex-wrap">
       <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
         <div class="mb-10 w-full">
-          <a
-            href="/"
-            class="mb-6 inline-block max-w-[160px]"
-          >
-            <img
-              src="/assets/logo/logo-white.svg"
-              alt="logo"
-              class="max-w-full"
-            />
-          </a>
+          {!isDev && (
+            <a
+              href="/"
+              class="mb-6 inline-block max-w-[160px]"
+            >
+              <img
+                src="/assets/logo/logo-white.svg"
+                alt="logo"
+                class="max-w-full"
+              />
+            </a>
+          )}
           <p class="mb-8 max-w-[270px] text-base text-gray-7">
             We create digital experiences for brands and companies by using
             technology.
@@ -258,22 +263,22 @@ const footerLinks = [
               class="-mx-3 flex items-center justify-center md:justify-start"
             >
               <a
-                href="javascript:void(0)"
+                href="/privacy-policy"
                 class="px-3 text-base text-gray-7 hover:text-white hover:underline"
               >
                 Privacy policy
               </a>
               <a
-                href="javascript:void(0)"
+                href="/legal-notice"
                 class="px-3 text-base text-gray-7 hover:text-white hover:underline"
               >
                 Legal notice
               </a>
               <a
-                href="javascript:void(0)"
+                href="/terms-of-services"
                 class="px-3 text-base text-gray-7 hover:text-white hover:underline"
               >
-                Terms of service
+                Terms of services
               </a>
             </div>
           </div>

@@ -1,0 +1,217 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Newsletterbox from '../Newsletterbox.astro';
+import PopularArticles from '../PopularArticles.astro';
+import RelatedArticles from '../RelatedArticles.astro';
+import SharePost from '../SharePost.astro';
+import Tags from '../Tags.astro';
+
+interface Props { 
+  entry: any
+  Content: any
+}
+
+const { entry, Content } = Astro.props;
+const defaultImage = entry.data.image?.src || '/assets/blog/blog-default.jpg';
+const defaultBigImage = entry.data.bigImg?.src || '/assets/blog/blog-details-default.jpg';
+const defaultAuthorImage = entry.data.authorImg?.src || '/assets/blog/author-01.png';
+const defaultComments = entry.data.comments || '0';
+const defaultViews = entry.data.views || '0';
+---
+
+<Layout title={entry.data.title} description={entry.data.snippet} image={defaultBigImage}>
+  <!-- ====== Blog Details Section Start -->
+  <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 dark:bg-dark">
+    <div class="container text-base text-body-color dark:text-dark-6">
+      <div class="-mx-4 flex flex-wrap justify-center">
+        <div class="w-full px-4">
+          <div
+            class="wow fadeInUp relative z-20 mb-[50px] h-[300px] overflow-hidden rounded-[5px] md:h-[400px] lg:h-[500px] "
+            data-wow-delay=".1s"
+          >
+            <!-- Professional SVG Blog Header Banner -->
+            <svg
+              viewBox="0 0 1200 600"
+              preserveAspectRatio="xMidYMid slice"
+              class="h-full w-full"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient id="blogHeaderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                  <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#f093fb;stop-opacity:0.8" />
+                </linearGradient>
+                <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.3" />
+                  <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.1" />
+                </linearGradient>
+              </defs>
+              
+              <!-- Background gradient -->
+              <rect width="1200" height="600" fill="url(#blogHeaderGradient)" />
+              
+              <!-- Decorative circles - top right -->
+              <circle cx="1000" cy="100" r="150" fill="url(#accentGradient)" />
+              <circle cx="1100" cy="200" r="100" fill="rgba(240, 147, 251, 0.1)" />
+              
+              <!-- Decorative circles - bottom left -->
+              <circle cx="150" cy="500" r="120" fill="rgba(102, 126, 234, 0.15)" />
+              <circle cx="50" cy="400" r="80" fill="url(#accentGradient)" />
+              
+              <!-- Wave shapes for visual interest -->
+              <path
+                d="M 0,400 Q 300,350 600,400 T 1200,400 L 1200,600 L 0,600 Z"
+                fill="rgba(255, 255, 255, 0.05)"
+              />
+              
+              <!-- Diagonal accent lines -->
+              <line x1="0" y1="0" x2="300" y2="150" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2" />
+              <line x1="900" y1="600" x2="1200" y2="450" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2" />
+              
+              <!-- Geometric shapes for modern look -->
+              <rect x="100" y="50" width="80" height="80" fill="none" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2" transform="rotate(45 140 90)" />
+              <rect x="1000" y="450" width="100" height="100" fill="none" stroke="rgba(255, 255, 255, 0.15)" stroke-width="2" transform="rotate(30 1050 500)" />
+              
+              <!-- Center accent dot for visual hierarchy -->
+              <circle cx="600" cy="100" r="15" fill="rgba(255, 255, 255, 0.3)" />
+              <circle cx="600" cy="100" r="10" fill="none" stroke="rgba(255, 255, 255, 0.5)" stroke-width="2" />
+              
+              <!-- Additional decorative elements -->
+              <polygon points="200,250 250,200 300,250 250,300" fill="rgba(240, 147, 251, 0.15)" />
+              <polygon points="950,150 1000,100 1050,150 1000,200" fill="rgba(102, 126, 234, 0.15)" />
+            </svg> 
+              <!-- Theme-aware SVG background: uses currentColor so Tailwind text color controls light/dark -->
+              
+            <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center p-4 sm:p-6">
+              <div class="max-w-[90%] sm:max-w-[80%] md:max-w-[70%] flex flex-col items-center text-center space-y-2 sm:space-y-3 md:space-y-5">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold tracking-wide leading-snug sm:leading-tight md:leading-tight text-white">{entry.data.title}</h1>
+                <p class="text-base sm:text-lg md:text-1xl tracking-wider text-white max-w-[90%]">{entry.data.snippet}</p>
+              </div>
+            </div>
+            <div
+              class="absolute top-0 left-0 z-10 flex h-full w-full items-end bg-gradient-to-t from-dark-700 to-transparent"
+            >
+              <!-- <div class="flex flex-wrap items-center p-4 pb-4 sm:px-8">
+                <div class="mb-4 mr-5 flex items-center md:mr-10">
+                  <div class="mr-4 h-10 w-10 overflow-hidden rounded-full">
+                    <img
+                      src={defaultAuthorImage}
+                      alt={entry.data.authorImg?.alt || 'Author'}
+                      class="w-full"
+                    />
+                  </div>
+                  <p class="text-base font-medium text-white">
+                    By
+                    <a
+                      href="javascript:void(0)"
+                      class="text-white hover:opacity-70"
+                    >
+                      {entry.data.author}
+                    </a>
+                  </p>
+                </div>
+                 <div class="mb-4 flex items-center">
+                  <p
+                    class="mr-5 flex items-center text-sm font-medium text-white md:mr-6"
+                  >
+                    <span class="mr-3">
+                      <svg
+                        class="fill-white"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.75 2.01562H11.2969V1.57031C11.2969 1.36328 11.125 1.20312 10.9063 1.20312H10.0625C9.84375 1.20312 9.67188 1.36328 9.67188 1.57031V2.01562H4.32813V1.57031C4.32813 1.36328 4.15625 1.20312 3.9375 1.20312H3.09375C2.875 1.20312 2.70313 1.36328 2.70313 1.57031V2.01562H0.25C0.0312501 2.01562 0 2.25781 0 2.39062V13.75C0 13.8828 0.0312501 14 0.25 14H13.75C13.9688 14 14 13.8828 14 13.75V2.39062C14 2.25781 13.9688 2.01562 13.75 2.01562ZM12.1094 3.56737H12.9219V4.97081H12.1094V3.56737ZM9.98438 3.56737H10.7969V4.97081H9.98438V3.56737ZM7.84375 3.56737H8.65625V4.97081H7.84375V3.56737ZM5.70313 3.56737H6.51563V4.97081H5.70313V3.56737ZM3.5625 3.56737H4.375V4.97081H3.5625V3.56737ZM1.42188 3.56737H2.23438V4.97081H1.42188V3.56737ZM12.1094 6.52349H12.9219V7.86612H12.1094V6.52349ZM9.98438 6.52349H10.7969V7.86612H9.98438V6.52349ZM7.84375 6.52349H8.65625V7.86612H7.84375V6.52349ZM5.70313 6.52349H6.51563V7.86612H5.70313V6.52349ZM3.5625 6.52349H4.375V7.86612H3.5625V6.52349ZM1.42188 6.52349H2.23438V7.86612H1.42188V6.52349ZM12.1094 9.47962H12.9219V10.8222H12.1094V9.47962ZM9.98438 9.47962H10.7969V10.8222H9.98438V9.47962ZM7.84375 9.47962H8.65625V10.8222H7.84375V9.47962ZM5.70313 9.47962H6.51563V10.8222H5.70313V9.47962ZM3.5625 9.47962H4.375V10.8222H3.5625V9.47962ZM1.42188 9.47962H2.23438V10.8222H1.42188V9.47962ZM12.1094 12.4359H12.9219V13.7785H12.1094V12.4359ZM9.98438 12.4359H10.7969V13.7785H9.98438V12.4359ZM7.84375 12.4359H8.65625V13.7785H7.84375V12.4359ZM5.70313 12.4359H6.51563V13.7785H5.70313V12.4359ZM3.5625 12.4359H4.375V13.7785H3.5625V12.4359ZM1.42188 12.4359H2.23438V13.7785H1.42188V12.4359Z"
+                          fill=""
+                        ></path>
+                      </svg>
+                    </span>
+                    {entry.data.publishDate.toDateString()}
+                  </p>
+
+                  {defaultComments && (
+                    <p class="mr-5 flex items-center text-sm font-medium text-white md:mr-6">
+                      <span class="mr-3">
+                        <svg
+                          class="fill-white"
+                          width="14"
+                          height="13"
+                          viewBox="0 0 14 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M13.2353 1.64118C13.2353 1.55882 13.1765 1.47647 13.0882 1.47647H2.29412C1.91176 1.47647 1.5882 1.76471 1.5882 2.17647V9.23529C1.5882 9.64706 1.88235 9.97059 2.29412 9.97059H7.17647L11.0588 12.8235C11.2941 13.0059 11.6765 12.8823 11.6765 12.6235V9.97059H12.6471C13.0588 9.97059 13.3529 9.64706 13.3529 9.23529V2.17647C13.2941 2.03529 13.2353 1.88235 13.2353 1.64118ZM6.59375 6.52778H5.26875V8.13472H6.59375V6.52778ZM9.26875 6.52778H7.94375V8.13472H9.26875V6.52778ZM11.9437 6.52778H10.6187V8.13472H11.9437V6.52778Z"
+                            fill=""
+                          ></path>
+                        </svg>
+                      </span>
+                      {defaultComments}
+                    </p>
+                  )}
+                  {defaultViews && (
+                    <p class="flex items-center text-sm font-medium text-white">
+                      <span class="mr-3">
+                        <svg
+                          class="fill-white"
+                          width="16"
+                          height="12"
+                          viewBox="0 0 16 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.6915 5.5C15.375 5.0625 12.4844 0.875 8 0.875C3.51563 0.875 0.625 5.0625 0.3125 5.5C0.625 5.9375 3.51563 10.125 8 10.125C12.4844 10.125 15.375 5.9375 15.6915 5.5ZM8 8.375C6.50625 8.375 5.3125 7.21875 5.3125 5.6875C5.3125 4.1875 6.46875 3 8 3C9.53125 3 10.6875 4.15625 10.6875 5.6875C10.6875 7.1875 9.49375 8.375 8 8.375Z"
+                            fill=""
+                          ></path>
+                        </svg>
+                      </span>
+                      {defaultViews}
+                    </p>
+                  )} 
+                </div>
+              </div>  -->
+            </div> 
+          </div>
+          <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4 lg:w-8/12">
+              <div>
+                <div class="prose prose-base md:prose-lg dark:prose-invert prose-p:text-black dark:prose-p:text-white prose-h2:text-dark dark:prose-h2:text-white prose-h3:text-dark dark:prose-h3:text-white prose-strong:text-dark dark:prose-strong:text-white prose-blockquote:border-primary prose-blockquote:text-body-color dark:prose-blockquote:text-dark-6 max-w-none">
+                  <Content />
+                </div>
+
+                <Tags tags={entry.data.tags} />
+
+                <SharePost slug={entry.slug} />
+              </div>
+            </div>
+            <div class="w-full px-4 lg:w-4/12">
+              <div>
+                <Newsletterbox />
+                <PopularArticles />
+
+                <div
+                  class="wow fadeInUp mb-12 overflow-hidden rounded-[5px]"
+                  data-wow-delay=".1s"
+                >
+                  <img
+                    src="/assets/blog/bannder-ad.png"
+                    alt="image"
+                    class="w-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <RelatedArticles />
+    </div>
+  </section>
+  <!-- ====== Blog Details Section End -->
+</Layout>

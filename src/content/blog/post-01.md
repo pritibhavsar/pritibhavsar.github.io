@@ -1,5 +1,6 @@
 ---
 draft: false
+template: "default"
 title: "Meet AutoManage, the best AI management tools"
 snippet: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 image: {
@@ -8,7 +9,7 @@ image: {
 }
 publishDate: "2023-11-08 11:39"
 category: "related"
-author: "Samuyl Joshi"
+author: "Priti Bhavsar"
 bigImg: {
     src: "/assets/blog/blog-details-01.jpg",
     alt: "blog details",
@@ -20,8 +21,14 @@ authorImg: {
 comments: "05"
 views: "05"
 tags: [Design, Development, Info]
+blogContentCollection: [
+    { type: "h1", name: "Reach", description: "Estimated number of unique users who saw the post." },
+    { type: "h2", name: "Impressions", description: "Total count of times the post was displayed." },
+    { type: "Italic", name: "Engagement", description: "Aggregate of likes, comments, shares, and clicks for the post." },
+    { type: "bold", name: "Test Post", description: "Placeholder item used for layout and content rendering tests." },
+]
 postDetails: {
-    paraOne: "There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.",
+    paraOne: "An algorithm is a set of rules or steps that social media platforms use to decide what content you see and in what order.",
     paraTwo: "There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.",
     title: "Sea no quidam vulputate",
     paraThree: "At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.",
