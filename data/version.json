@@ -1,9 +1,9 @@
 {
-  "version": "0.0.58",
-  "updated": "2026-01-02T12:12:14.356Z",
+  "version": "0.0.60",
+  "updated": "2026-01-02T13:39:10.092Z",
   "last_commit": {
-    "author": "Dipalkumar Bhavsar",
-    "date": "2026-01-02T16:46:14+05:30",
-    "message": "chore(release): v0.0.57"
+    "author": "Dipal Bhavsar",
+    "date": "2026-01-02T19:08:41+05:30",
+    "message": "chore(release): v0.0.59"
   }
 }

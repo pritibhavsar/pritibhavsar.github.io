@@ -290,3 +290,13 @@
   - author: Dipalkumar Bhavsar
   - commit-date: 2026-01-02T16:46:14+05:30
 
+## v0.0.59 — 2026-01-02
+- Remove Sample page
+  - author: Dipal Bhavsar
+  - commit-date: 2026-01-02T19:06:15+05:30
+
+## v0.0.60 — 2026-01-02
+- chore(release): v0.0.59
+  - author: Dipal Bhavsar
+  - commit-date: 2026-01-02T19:08:41+05:30
+
