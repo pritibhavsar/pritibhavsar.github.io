@@ -1,7 +1,7 @@
 {
   "name": "pal-portals",
   "type": "module",
-  "version": "0.0.59",
+  "version": "0.0.60",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
