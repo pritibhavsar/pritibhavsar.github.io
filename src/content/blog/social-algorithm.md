@@ -3,8 +3,16 @@ draft: false
 title: "Social Algorithms Explained: How They Work and Why They Matter"
 snippet: "Understanding social media algorithms is crucial for optimizing content visibility and engagement on various platforms."
 image: {
-    src: "/assets/blog/blog-scrum.jpg",
-    alt: "Scrum sprint cycle planning"
+    src: "/assets/blog/blog-01.jpg",
+    alt: "blog details"
+}
+bigImg: {
+    src: "/assets/blog/blog-details-01.jpg",
+    alt: "blog details",
+}
+authorImg: {
+    src: "/assets/blog/author-01.png",
+    alt: "author",
 }
 publishDate: "2025-12-12"
 category: "social"
@@ -105,5 +113,3 @@ Engagement isn’t one-sided. Reply to comments, ask questions, and start conver
 
 Track your content performance regularly. Identify what works best on each platform and use those insights to refine your strategy. Data-driven decisions help you stay aligned with algorithm preferences and improve results over time.
 </div>
-## Key Takeaway ##
-

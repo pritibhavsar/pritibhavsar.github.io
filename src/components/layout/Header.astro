@@ -1,4 +1,7 @@
 ---
+// Get the environment variable to check if we're in development mode
+const isDev = import.meta.env.DEV;
+
 const menuitems = [
   // {
   //   title: "Home",
@@ -48,14 +51,16 @@ const menuitems = [
   <div class="container">
     <div class="relative -mx-4 flex items-center justify-between">
       <div class="w-60 max-w-full px-4">
-        <a href="/" class="navbar-logo block w-full py-5">
-          {(Astro.url.pathname === '/') ? (
-            <img src="/assets/logo/logo-white.svg" alt="logo" class="header-logo w-full"/>
-          ) : (
-            <img src="/assets/logo/logo.svg" alt="logo" class="w-full dark:hidden"/>
-            <img src="/assets/logo/logo-white.svg" alt="logo" class="w-full hidden dark:block"/>
-          )}
-        </a>
+        {!isDev && (
+          <a href="/" class="navbar-logo block w-full py-5">
+            {(Astro.url.pathname === '/') ? (
+              <img src="/assets/logo/logo-white.svg" alt="logo" class="header-logo w-full"/>
+            ) : (
+              <img src="/assets/logo/logo.svg" alt="logo" class="w-full dark:hidden"/>
+              <img src="/assets/logo/logo-white.svg" alt="logo" class="w-full hidden dark:block"/>
+            )}
+          </a>
+        )}
       </div>
       <div class="flex w-full items-center justify-between px-4">
         <div>

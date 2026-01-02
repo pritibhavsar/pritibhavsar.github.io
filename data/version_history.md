@@ -226,12 +226,67 @@
   - commit-date: 2025-12-30T12:02:13+05:30
 
 ## v0.0.46 — 2026-01-01
-- sync changes
-  - author: Dipal Bhavsar
-  - commit-date: 2025-12-28T11:21:09+05:30
+- chore(release): v0.0.45
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2025-12-31T12:23:30+05:30
 
 ## v0.0.47 — 2026-01-01
 - chore(release): v0.0.46
-  - author: Dipal Bhavsar
-  - commit-date: 2026-01-01T11:06:02+05:30
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:02:10+05:30
+
+## v0.0.48 — 2026-01-01
+- chore(release): v0.0.47
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:04:47+05:30
+
+## v0.0.49 — 2026-01-01
+- chore(release): v0.0.48
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:09:09+05:30
+
+## v0.0.50 — 2026-01-01
+- chore(release): v0.0.49
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:11:51+05:30
+
+## v0.0.51 — 2026-01-01
+- chore(release): v0.0.50
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:17:22+05:30
+
+## v0.0.52 — 2026-01-01
+- chore(release): v0.0.51
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:20:04+05:30
+
+## v0.0.53 — 2026-01-01
+- chore(release): v0.0.52
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:22:01+05:30
+
+## v0.0.54 — 2026-01-01
+- chore(release): v0.0.53
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:25:01+05:30
+
+## v0.0.55 — 2026-01-01
+- chore(release): v0.0.54
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:27:30+05:30
+
+## v0.0.56 — 2026-01-01
+- chore(release): v0.0.55
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:29:20+05:30
+
+## v0.0.57 — 2026-01-02
+- chore(release): v0.0.56
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-01T22:55:13+05:30
+
+## v0.0.58 — 2026-01-02
+- chore(release): v0.0.57
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-01-02T16:46:14+05:30
 
