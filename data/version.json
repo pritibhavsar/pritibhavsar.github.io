@@ -1,9 +1,9 @@
 {
-  "version": "0.0.58",
-  "updated": "2026-01-02T12:12:14.356Z",
+  "version": "0.0.59",
+  "updated": "2026-01-02T13:38:41.737Z",
   "last_commit": {
-    "author": "Dipalkumar Bhavsar",
-    "date": "2026-01-02T16:46:14+05:30",
-    "message": "chore(release): v0.0.57"
+    "author": "Dipal Bhavsar",
+    "date": "2026-01-02T19:06:15+05:30",
+    "message": "Remove Sample page"
   }
 }
