@@ -4,25 +4,83 @@ import './Hero.css';
 <!-- ====== Hero Section Start -->
 <section
   id="home"
-  class="relative overflow-hidden bg-primary main-banner pt-[120px] md:pt-[130px] lg:pt-[160px]"
+  class="relative overflow-hidden main-banner pt-[120px] md:pt-[130px] lg:pt-[160px]"
 >
-  <div class="container">
-    <div class="-mx-4 flex flex-wrap items-center">
-      <div class="w-full px-4">
+  <div class="hero-gradient-orb hero-gradient-orb-1" aria-hidden="true"></div>
+  <div class="hero-gradient-orb hero-gradient-orb-2" aria-hidden="true"></div>
+  <div class="container relative z-10">
+    <div class="-mx-4 flex flex-wrap items-center gap-y-12">
+      <div class="w-full px-4 lg:w-7/12">
         <div
-          class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
+          class="hero-content wow fadeInUp mx-auto max-w-[740px] text-center lg:mx-0 lg:text-left"
           data-wow-delay=".2s"
         >
+          <span class="hero-pill">
+            Trusted Partner for Generative AI, Marketing, Services, and Technology Excellence
+          </span>
           <h1
-            class="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]"
+            class="hero-title mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-[52px] lg:leading-[1.1]"
           >
-            AI Innovations powering MCP Servers, SaaS, Startups, and Agentic Intelligence
-            </h1>
+            Generative AI, Marketing, and Technology Experts Delivering Business-Ready Services
+          </h1>
           <p
-            class="mx-auto mb-9 max-w-[600px] font-medium text-base text-white sm:text-lg sm:leading-[1.44]"
+            class="hero-subtitle mx-auto mb-10 max-w-[620px] text-base sm:text-lg sm:leading-[1.6] lg:mx-0"
           >
-A powerful AI-first platform by PAL Portals, built for startups, SaaS products, enterprises, and innovators. Delivers MCP servers, agentic AI, and intelligent automation with scalable architecture, essential components, and enterprise-ready solutions.
+            PAL Portals combines Generative AI innovation, strategic marketing, expert technology services, and trusted partnership to turn complex ideas into measurable business outcomes.
           </p>
+
+          <div class="hero-cta-group flex flex-col items-center gap-4 sm:flex-row lg:items-start">
+            <a href="/contact" class="hero-btn hero-btn-primary">Book Strategy Session</a>
+            <a href="/services" class="hero-btn hero-btn-secondary">Explore Solutions</a>
+          </div>
+
+          <div class="hero-metrics mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div class="hero-metric-card">
+              <p class="hero-metric-value">Production Ready</p>
+              <p class="hero-metric-label">AI Deployments and Integrations</p>
+            </div>
+            <div class="hero-metric-card">
+              <p class="hero-metric-value">Enterprise Grade</p>
+              <p class="hero-metric-label">Security and Scalability Standards</p>
+            </div>
+            <div class="hero-metric-card">
+              <p class="hero-metric-value">Outcome Focused</p>
+              <p class="hero-metric-label">Clear ROI and Business Alignment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-4 lg:w-5/12">
+        <div class="hero-visual-wrapper mx-auto max-w-[520px] lg:mr-0">
+          <div class="hero-visual-panel">
+            <p class="hero-panel-kicker">Generative AI Capability Stack</p>
+            <h2 class="hero-panel-title">Strategy to Deployment, End-to-End</h2>
+
+            <div class="hero-banner-frame" aria-hidden="false">
+              <img
+                src="/assets/hero/ai-expertise-banner.svg"
+                alt="AI services dashboard showing Generative AI, marketing systems, and technology expertise"
+                class="hero-banner-image"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="hero-chip-grid">
+              <span class="hero-chip">MCP Server Engineering</span>
+              <span class="hero-chip">Marketing and Growth Systems</span>
+              <span class="hero-chip">Agentic Workflow Design</span>
+              <span class="hero-chip">Technology Expert Consulting</span>
+              <span class="hero-chip">Enterprise Services Integration</span>
+              <span class="hero-chip">Trusted Delivery Partnership</span>
+            </div>
+
+            <div class="hero-panel-footer">
+              <span class="hero-live-dot"></span>
+              <p>Active AI systems running across startups and enterprise teams.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

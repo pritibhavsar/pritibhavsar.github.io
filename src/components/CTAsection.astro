@@ -1,29 +1,46 @@
 <!-- ====== CTA Section Start -->
-<section class="relative z-10 overflow-hidden bg-primary py-20 lg:py-[115px]">
+<section class="cta-section relative z-10 overflow-hidden py-20 lg:py-[115px]">
+  <div class="cta-glow cta-glow-a" aria-hidden="true"></div>
+  <div class="cta-glow cta-glow-b" aria-hidden="true"></div>
   <div class="container mx-auto">
-    <div class="relative overflow-hidden">
+    <div class="cta-shell relative overflow-hidden rounded-2xl px-6 py-10 sm:px-10 sm:py-12 lg:px-16">
       <div class="flex flex-wrap items-stretch -mx-4">
         <div class="w-full px-4">
-          <div class="mx-auto max-w-[570px] text-center">
-            <h2 class="mb-2.5 text-3xl font-bold md:leading-[1.44] text-white md:text-[38px]">
-              <span>What Are You Looking For?</span>
-              <span class="font-normal text-3xl md:text-[40px]"> Get Started Now </span>
+          <div class="mx-auto max-w-[760px] text-center">
+            <span class="cta-pill mb-4 inline-flex">Start Your AI Transformation</span>
+            <h2 class="cta-heading mb-4 text-3xl font-bold md:text-[42px] md:leading-[1.2]">
+              Ready to Launch Production-Grade Generative AI?
             </h2>
-            <p class="mb-6 mx-auto max-w-[515px] text-base leading-[1.5] text-white">
-              There are countless approaches to Generative AI architecture
-              but the majority fail to reach production due to fragmented data, unoptimized models, or a lack of agentic reasoning.
+            <p class="cta-description mb-7 mx-auto max-w-[640px] text-base leading-[1.65] sm:text-lg">
+              Most AI initiatives stall before reaching measurable outcomes. We help you connect data, models, and agentic workflows into one secure delivery roadmap built for scale.
             </p>
-            <a href="javascript:void(0)"
-              class="inline-block py-3 text-base font-medium text-white transition border border-transparent rounded-md bg-secondary px-7 hover:bg-[#0BB489]">
-              Contact Us
+
+            <div class="cta-metrics mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <div class="cta-metric-card">
+                <p class="cta-metric-value">Strategy</p>
+                <p class="cta-metric-label">Use-Case and ROI Alignment</p>
+              </div>
+              <div class="cta-metric-card">
+                <p class="cta-metric-value">Build</p>
+                <p class="cta-metric-label">MCP and Agentic Implementation</p>
+              </div>
+              <div class="cta-metric-card">
+                <p class="cta-metric-value">Scale</p>
+                <p class="cta-metric-label">Enterprise Governance and Operations</p>
+              </div>
+            </div>
+
+            <a href="/contact"
+              class="cta-button inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-semibold text-center">
+              Book a Discovery Call
             </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div>
-    <span class="absolute top-0 left-0">
+  <div aria-hidden="true">
+    <span class="absolute top-0 left-0 opacity-70">
       <svg width="495" height="470" viewBox="0 0 495 470" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="55" cy="442" r="138" stroke="white" stroke-opacity="0.04" stroke-width="50" />
         <circle cx="446" r="39" stroke="white" stroke-opacity="0.04" stroke-width="20" />
@@ -31,7 +48,7 @@
           stroke-opacity="0.08" stroke-width="12" />
       </svg>
     </span>
-    <span class="absolute bottom-0 right-0">
+    <span class="absolute bottom-0 right-0 opacity-70">
       <svg width="493" height="470" viewBox="0 0 493 470" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="462" cy="5" r="138" stroke="white" stroke-opacity="0.04" stroke-width="50" />
         <circle cx="49" cy="470" r="39" stroke="white" stroke-opacity="0.04" stroke-width="20" />
@@ -42,3 +59,111 @@
   </div>
 </section>
 <!-- ====== CTA Section End -->
+
+<style>
+  .cta-section {
+    background:
+      radial-gradient(circle at 14% 18%, rgba(32, 235, 199, 0.18) 0%, rgba(32, 235, 199, 0) 44%),
+      radial-gradient(circle at 86% 12%, rgba(12, 154, 255, 0.22) 0%, rgba(12, 154, 255, 0) 42%),
+      linear-gradient(180deg, var(--brand-ink, #050b24) 0%, #0b1f52 56%, var(--brand-blue, #0f7cff) 100%);
+  }
+
+  .cta-shell {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--brand-shadow-strong, 0 24px 52px rgba(2, 9, 31, 0.38));
+  }
+
+  .cta-glow {
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(20px);
+    pointer-events: none;
+  }
+
+  .cta-glow-a {
+    width: 280px;
+    height: 280px;
+    top: 4%;
+    left: 1%;
+    background: radial-gradient(circle, rgba(0, 210, 255, 0.3) 0%, rgba(0, 210, 255, 0) 72%);
+    animation: ctaFloat var(--motion-float-fast, 8s) ease-in-out infinite;
+  }
+
+  .cta-glow-b {
+    width: 340px;
+    height: 340px;
+    bottom: 3%;
+    right: 0;
+    background: radial-gradient(circle, rgba(54, 244, 200, 0.28) 0%, rgba(54, 244, 200, 0) 72%);
+    animation: ctaFloat var(--motion-float-slow, 10s) ease-in-out infinite reverse;
+  }
+
+  .cta-pill {
+    border: 1px solid rgba(173, 220, 255, 0.38);
+    border-radius: 999px;
+    padding: 0.45rem 0.95rem;
+    background: rgba(255, 255, 255, 0.12);
+    color: #d6ecff;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .cta-heading {
+    color: #ffffff;
+    text-wrap: balance;
+  }
+
+  .cta-description {
+    color: rgba(225, 237, 255, 0.88);
+  }
+
+  .cta-metric-card {
+    border: 1px solid rgba(163, 210, 255, 0.26);
+    border-radius: 0.9rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 0.85rem;
+  }
+
+  .cta-metric-value {
+    color: #ffffff;
+    font-size: 0.98rem;
+    font-weight: 800;
+  }
+
+  .cta-metric-label {
+    margin-top: 0.3rem;
+    color: rgba(208, 228, 252, 0.9);
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .cta-button {
+    color: #031535;
+    border: 1px solid rgba(24, 132, 244, 0.35);
+    background: linear-gradient(92deg, var(--brand-cyan, #00d2ff) 0%, var(--brand-blue, #0f7cff) 100%);
+    box-shadow: 0 16px 34px rgba(0, 160, 255, 0.36);
+    transition: transform var(--motion-hover, 220ms ease), box-shadow var(--motion-hover, 220ms ease), border-color var(--motion-hover, 220ms ease);
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 182, 255, 0.45);
+    box-shadow: 0 20px 40px rgba(0, 160, 255, 0.42);
+  }
+
+  @keyframes ctaFloat {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -16px, 0);
+    }
+  }
+</style>

@@ -13,7 +13,9 @@ import PostMarkdown from '../../components/blog/PostMarkdown.astro';
 export async function getStaticPaths() {
   // collections are not typed in this project; cast getCollection to any to avoid "never" errors
   const blogEntries: any[] = await (getCollection as any)("blog");
-  return blogEntries.map((entry: any) => ({
+  return blogEntries
+    .filter((entry: any) => !entry.slug.includes('/'))
+    .map((entry: any) => ({
     params: { slug: entry.slug },
     props: { entry },
     template: entry.data.template || null,

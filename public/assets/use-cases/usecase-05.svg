@@ -1,0 +1,15 @@
+<svg width="920" height="520" viewBox="0 0 920 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="bg5" x1="86" y1="38" x2="832" y2="484" gradientUnits="userSpaceOnUse"><stop stop-color="#0C1E56"/><stop offset="1" stop-color="#0E6FD7"/></linearGradient></defs>
+  <rect x="18" y="18" width="884" height="484" rx="28" fill="url(#bg5)"/>
+  <rect x="18.5" y="18.5" width="883" height="483" rx="27.5" stroke="rgba(255,255,255,0.24)"/>
+  <text x="90" y="112" fill="#ECF8FF" font-size="32" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Fraud Risk Detection and Investigation</text>
+  <circle cx="238" cy="290" r="126" fill="rgba(255,255,255,0.13)"/>
+  <circle cx="238" cy="290" r="78" fill="rgba(58,232,203,0.26)"/>
+  <circle cx="238" cy="290" r="22" fill="#3AE8CB"/>
+  <rect x="404" y="196" width="422" height="68" rx="12" fill="rgba(255,255,255,0.14)"/>
+  <rect x="404" y="282" width="422" height="68" rx="12" fill="rgba(255,255,255,0.14)"/>
+  <rect x="404" y="368" width="422" height="68" rx="12" fill="rgba(255,255,255,0.14)"/>
+  <text x="426" y="238" fill="#DDF0FF" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Anomaly alerts in near real-time</text>
+  <text x="426" y="324" fill="#DDF0FF" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Automated case triage</text>
+  <text x="426" y="410" fill="#DDF0FF" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Investigator co-pilot insights</text>
+</svg>

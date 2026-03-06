@@ -1,0 +1,61 @@
+<svg width="920" height="760" viewBox="0 0 920 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="60" x2="836" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1742"/>
+      <stop offset="0.52" stop-color="#11337F"/>
+      <stop offset="1" stop-color="#0E6BDB"/>
+    </linearGradient>
+    <linearGradient id="line" x1="180" y1="410" x2="760" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#37F0C8"/>
+      <stop offset="1" stop-color="#56B9FF"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2BF0D2"/>
+      <stop offset="1" stop-color="#48BFFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="22" y="22" width="876" height="716" rx="34" fill="url(#bg)"/>
+  <rect x="22.5" y="22.5" width="875" height="715" rx="33.5" stroke="rgba(255,255,255,0.22)"/>
+
+  <g opacity="0.34">
+    <path d="M106 168H820" stroke="white" stroke-width="1"/>
+    <path d="M106 242H820" stroke="white" stroke-width="1"/>
+    <path d="M106 316H820" stroke="white" stroke-width="1"/>
+    <path d="M106 390H820" stroke="white" stroke-width="1"/>
+    <path d="M106 464H820" stroke="white" stroke-width="1"/>
+    <path d="M106 538H820" stroke="white" stroke-width="1"/>
+    <path d="M106 612H820" stroke="white" stroke-width="1"/>
+  </g>
+
+  <g opacity="0.32">
+    <path d="M160 124V648" stroke="white" stroke-width="1"/>
+    <path d="M260 124V648" stroke="white" stroke-width="1"/>
+    <path d="M360 124V648" stroke="white" stroke-width="1"/>
+    <path d="M460 124V648" stroke="white" stroke-width="1"/>
+    <path d="M560 124V648" stroke="white" stroke-width="1"/>
+    <path d="M660 124V648" stroke="white" stroke-width="1"/>
+    <path d="M760 124V648" stroke="white" stroke-width="1"/>
+  </g>
+
+  <path d="M140 530L250 456L364 488L494 360L612 396L730 292L800 332" stroke="url(#line)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="140" cy="530" r="12" fill="#37F0C8"/>
+  <circle cx="250" cy="456" r="12" fill="#57BEFF"/>
+  <circle cx="364" cy="488" r="12" fill="#37F0C8"/>
+  <circle cx="494" cy="360" r="12" fill="#57BEFF"/>
+  <circle cx="612" cy="396" r="12" fill="#37F0C8"/>
+  <circle cx="730" cy="292" r="12" fill="#57BEFF"/>
+  <circle cx="800" cy="332" r="12" fill="#37F0C8"/>
+
+  <rect x="110" y="72" width="210" height="52" rx="13" fill="rgba(255,255,255,0.16)"/>
+  <text x="130" y="105" fill="#ECF8FF" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">MCP Connectors</text>
+
+  <rect x="336" y="72" width="192" height="52" rx="13" fill="rgba(255,255,255,0.16)"/>
+  <text x="356" y="105" fill="#ECF8FF" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Agentic Flows</text>
+
+  <rect x="546" y="72" width="264" height="52" rx="13" fill="url(#chip)"/>
+  <text x="570" y="105" fill="#0A295C" font-size="20" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Enterprise AI Delivery</text>
+
+  <text x="112" y="684" fill="#D8EFFF" font-size="30" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Next-Gen AI Framework Architecture</text>
+</svg>

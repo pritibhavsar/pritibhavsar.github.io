@@ -2,123 +2,187 @@
 const services = [
   {
     icon: 'assets/services/business-inteligent.svg',
+    category: 'Marketing Intelligence',
     title: 'Business Intelligence',
-    ref: 'javascript:void(0)',
-    refTitle: 'Learn More',
+    ref: '/contact',
+    refTitle: 'Discuss Solution',
+    impact: 'Forecasting, reporting, and performance visibility',
     description:
-      'We are offering leading reporting solutions using different tools of BI. Our extensive and proven experience in forecasting, strategy, optimization, performance analysis, trend analysis, customer analysis, budget planning, financial reporting and more.',
+      'We deliver advanced BI reporting and decision frameworks across forecasting, strategy, optimization, performance tracking, customer analysis, and financial planning.',
   },
   {
     icon: 'assets/services/solution-architecture.svg',
+    category: 'Technology Strategy',
     title: 'Solution Architecture',
-    ref: 'javascript:void(0)',
-    refTitle: 'Learn More',
+    ref: '/contact',
+    refTitle: 'Discuss Solution',
+    impact: 'Roadmaps that reduce risk and improve ROI',
     description:
-      'We design and maintain technology roadmaps for our clients based upon their individual requirements. We help to identify value opportunities within technology investment and document an effective business casees for future enhancement.',
+      'We design and maintain scalable technology roadmaps tailored to business priorities, helping teams identify high-value investments and define practical evolution plans.',
   },
   {
     icon: 'assets/services/proffesional-services.svg',
-    title: 'Proffesional Services',
-    ref: 'javascript:void(0)',
-    refTitle: 'Learn More',
+    category: 'Technology Delivery',
+    title: 'Professional Services',
+    ref: '/contact',
+    refTitle: 'Discuss Solution',
+    impact: 'Faster adoption of modern platforms',
     description:
-      'We help to overcome the challenge of implementing new technologies with our expertise to deploy latest trends of services & technologies, which helps to achieve simplified operation, increased utilization and overall optimal performances',
+      'We help organizations adopt modern services and technologies with structured implementation support that improves utilization, simplifies operations, and accelerates outcomes.',
   },
   {
     icon: 'assets/services/managed-services.svg',
+    category: 'Generative AI',
     title: 'Model Context Protocol (MCP)',
-    ref: 'javascript:void(0)',
-    refTitle: 'Learn More',
+    ref: '/contact',
+    refTitle: 'Discuss Solution',
+    impact: 'Unified context across systems and teams',
     description:
-      'We specialize in auditing your existing digital ecosystem to identify high-value opportunities where the MCP can drive the most ROI. Our process focuses on silos where critical data is trapped—such as CRM logs, complex supply chain databases, or local engineering solutioning.',
+      'We assess your ecosystem to identify where MCP can unlock measurable value by connecting siloed context from systems like CRM, operations data stores, and engineering workflows.',
   },
   {
     icon: 'assets/services/system-selection.svg',
+    category: 'Generative AI',
     title: 'Agentic AI',
-    ref: 'javascript:void(0)',
-    refTitle: 'Learn More',
+    ref: '/contact',
+    refTitle: 'Discuss Solution',
+    impact: 'Autonomous workflows with human-aligned control',
     description:
-      'We provide enterprise-grade Agentic AI solutions that transform static tools into autonomous, goal-oriented systems. Including Custom Agent Orchestration, MCP Integration, Production Enhancement, and Continuous Learning Frameworks to drive efficiency and innovation.',
+      'We build enterprise-grade agentic systems with custom orchestration, MCP integration, production hardening, and continuous improvement frameworks to drive efficiency and innovation.',
   },
   {
     icon: 'assets/services/integration.svg',
+    category: 'Technology Integration',
     title: 'Integration',
-    ref: 'javascript:void(0)',
-    refTitle: 'Learn More',
+    ref: '/contact',
+    refTitle: 'Discuss Solution',
+    impact: 'Reliable API, cloud, and B2B connectivity',
     description:
-      'We offer capabilities around Proprietary and Open Source products for Application Integration, B2B, SOA, API and Cloud Integration. Our Agile and DevOps methodologies ensure stable deployment and faster time to market, adding value to business.',
+      'We implement integration architectures spanning API, cloud, B2B, SOA, and hybrid ecosystems using agile and DevOps practices for faster, safer delivery.',
   },
   {
     icon: 'assets/features/icon-03.svg',
+    category: 'Data Foundations',
     title: 'Data Migration',
-    ref: 'javascript:void(0)',
-    refTitle: 'Learn More',
+    ref: '/contact',
+    refTitle: 'Discuss Solution',
+    impact: 'Secure migration with minimal disruption',
     description:
-      'We help migration of your data from any location. Our experts use proven methodologies that include industry specific best practices and adhere to legal requirements and data privacy standards that ensuring non-disruption and flexibility as a core part of the proven process',
+      'We migrate business-critical data using proven methods aligned to industry standards, privacy requirements, and phased cutover strategies that minimize operational disruption.',
   },
   {
     icon: 'assets/services/business-process.svg',
+    category: 'Marketing and Operations',
     title: 'Business Processes',
-    ref: 'javascript:void(0)',
-    refTitle: 'Learn More',
+    ref: '/contact',
+    refTitle: 'Discuss Solution',
+    impact: 'Automated process execution and efficiency',
     description:
-      'Automated Business Processes play a critical role in helping companies achieve their business strategy by aligning resources, technology and supporting infrastructures towards achieving day by day goals. We offer you to set up those processes in background to get desire outputs.',
+      'We design automated processes that align people, technology, and workflows so teams can execute consistently, reduce manual bottlenecks, and improve day-to-day performance.',
   },
   {
     icon: 'assets/services/project-management.svg',
+    category: 'Trusted Delivery',
     title: 'Project Management',
-    ref: 'javascript:void(0)',
-    refTitle: 'Learn More',
+    ref: '/contact',
+    refTitle: 'Discuss Solution',
+    impact: 'Clear governance from planning to execution',
     description:
-      'Having access to project managers who understand specific subject matter within projects is pivotal to success. We deliver project management resourcing that goes beyond timelines and budgets, to provide control over success criteria and architecture decisions.',
+      'We provide project leadership that goes beyond scope and timelines to include governance, architecture alignment, and measurable success criteria across delivery cycles.',
+  }
+];
+
+const serviceMetrics = [
+  {
+    value: '3',
+    label: 'Core Expertise Domains',
+    detail: 'Generative AI, Marketing, Technology'
+  },
+  {
+    value: '9',
+    label: 'Solution Tracks',
+    detail: 'From strategy, build, integration, and scale'
+  },
+  {
+    value: 'End-to-End',
+    label: 'Delivery Model',
+    detail: 'Advisory, implementation, and optimization'
   }
 ];
 ---
 
 <!-- ====== Services Section Start -->
-<section  id="services" class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px] dark:bg-dark">
+<section id="services" class="services-section relative overflow-hidden pt-20 pb-10 lg:pt-[120px] lg:pb-[80px]">
+  <div class="services-glow services-glow-a" aria-hidden="true"></div>
+  <div class="services-glow services-glow-b" aria-hidden="true"></div>
   <div class="container">
     <div class="-mx-4 flex flex-wrap">
       <div class="w-full px-4">
-        <div class="mb-12 mx-auto max-w-[585px] lg:mb-[90px] text-center">
-          <span class="mb-2 block text-lg font-semibold text-primary">
-            Our Services
+        <div class="mb-12 mx-auto max-w-[760px] lg:mb-14 text-center">
+          <span class="services-pill mb-4 inline-flex">
+            AI, Marketing, and Technology Solutioning
           </span>
-          <h2 class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-            Services we offer
+          <h2 class="services-heading mb-4 text-3xl font-bold sm:text-4xl md:text-[44px] md:leading-[1.15]">
+            Services That Turn Expertise Into Business Growth
           </h2>
-          <p class="text-base text-body-color dark:text-dark-6">
-            We build intelligent solutions for data-driven businesses to enhance their productivity and customer experience.
+          <p class="services-subheading mx-auto max-w-[680px] text-base sm:text-lg">
+            We deliver outcome-focused offerings across Generative AI, modern marketing systems, and advanced technology consulting to help teams scale with confidence.
           </p>
         </div>
       </div>
     </div>
-    <div class="-mx-4 flex flex-wrap">
+
+    <div class="-mx-4 mb-10 flex flex-wrap lg:mb-14">
       {
-        services.map((feature) => (
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
+        serviceMetrics.map((metric) => (
+          <div class="w-full px-4 md:w-1/3">
+            <div class="services-metric-card mb-4 md:mb-0">
+              <p class="services-metric-value">{metric.value}</p>
+              <p class="services-metric-label">{metric.label}</p>
+              <p class="services-metric-detail">{metric.detail}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {
+        services.map((service, index) => (
+          <div>
+            <article class="service-card wow fadeInUp group h-full" data-wow-delay={`${0.08 + index * 0.02}s`}>
+              <div class="mb-4 flex items-start justify-between gap-3">
+                <span class="service-category">{service.category}</span>
+                <span class="service-step">{String(index + 1).padStart(2, '0')}</span>
+              </div>
+
               <div
-                class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
+                class="service-icon-wrap relative z-10 mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-[14px]"
               >
                 <span
-                  class="absolute top-0 left-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-secondary bg-opacity-20 duration-300 group-hover:rotate-45"
+                  class="service-icon-shadow absolute top-0 left-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[18deg] items-center justify-center rounded-[14px] duration-300 group-hover:rotate-45"
                 ></span>
-                <img src={feature.icon} alt="icon" />
+                <img src={service.icon} alt={`${service.title} icon`} />
               </div>
-              <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
-                {feature.title}
+
+              <h4 class="service-title mb-3 text-xl font-bold">
+                {service.title}
               </h4>
-              <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
-                {feature.description}
+
+              <p class="service-description mb-5">
+                {service.description}
               </p>
+
+              <p class="service-impact mb-6">{service.impact}</p>
+
               <a
-                href={feature.ref}
-                class="text-base font-medium text-dark dark:text-white hover:text-primary dark:hover:text-primary"
+                href={service.ref}
+                class="service-link inline-flex items-center gap-2 text-sm font-semibold"
               >
-                {feature.refTitle}
+                {service.refTitle}
+                <span aria-hidden="true">-></span>
               </a>
-            </div>
+            </article>
           </div>
         ))
       }
@@ -126,3 +190,260 @@ const services = [
   </div>
 </section>
 <!-- ====== Features Section End -->
+
+<style>
+  .services-section {
+    position: relative;
+    background:
+      radial-gradient(circle at 12% 8%, rgba(74, 236, 201, 0.16) 0%, rgba(74, 236, 201, 0) 46%),
+      radial-gradient(circle at 88% 12%, rgba(32, 140, 255, 0.18) 0%, rgba(32, 140, 255, 0) 42%),
+      linear-gradient(180deg, #f4f8ff 0%, #ecf4ff 48%, #f8fbff 100%);
+  }
+
+  :global(.dark) .services-section {
+    background:
+      radial-gradient(circle at 14% 10%, rgba(74, 236, 201, 0.18) 0%, rgba(74, 236, 201, 0) 40%),
+      radial-gradient(circle at 90% 15%, rgba(32, 140, 255, 0.24) 0%, rgba(32, 140, 255, 0) 42%),
+      linear-gradient(180deg, #081024 0%, #0a1632 52%, #0d1c3e 100%);
+  }
+
+  .services-glow {
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(20px);
+    pointer-events: none;
+  }
+
+  .services-glow-a {
+    width: 280px;
+    height: 280px;
+    top: 2%;
+    left: 1%;
+    background: radial-gradient(circle, rgba(0, 211, 255, 0.26) 0%, rgba(0, 211, 255, 0) 72%);
+    animation: servicesFloat var(--motion-float-fast, 8s) ease-in-out infinite;
+  }
+
+  .services-glow-b {
+    width: 320px;
+    height: 320px;
+    bottom: 4%;
+    right: 1%;
+    background: radial-gradient(circle, rgba(72, 238, 198, 0.24) 0%, rgba(72, 238, 198, 0) 72%);
+    animation: servicesFloat var(--motion-float-slow, 10s) ease-in-out infinite reverse;
+  }
+
+  .services-pill {
+    border: 1px solid rgba(26, 117, 255, 0.25);
+    border-radius: 999px;
+    padding: 0.45rem 0.95rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #0b4fc4;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  :global(.dark) .services-pill {
+    border-color: rgba(115, 191, 255, 0.3);
+    background: rgba(13, 32, 67, 0.6);
+    color: #9fceff;
+  }
+
+  .services-heading {
+    color: #0c1733;
+    text-wrap: balance;
+  }
+
+  :global(.dark) .services-heading {
+    color: #f2f6ff;
+  }
+
+  .services-subheading {
+    color: #4d6285;
+  }
+
+  :global(.dark) .services-subheading {
+    color: #acc0e2;
+  }
+
+  .services-metric-card {
+    height: 100%;
+    border-radius: 1rem;
+    border: 1px solid rgba(64, 123, 218, 0.2);
+    background: rgba(255, 255, 255, 0.84);
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+    box-shadow: 0 16px 28px rgba(16, 49, 111, 0.08);
+  }
+
+  :global(.dark) .services-metric-card {
+    border-color: rgba(128, 186, 255, 0.2);
+    background: rgba(12, 25, 52, 0.78);
+    box-shadow: 0 16px 28px rgba(4, 8, 17, 0.35);
+  }
+
+  .services-metric-value {
+    color: #0a4abf;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    font-weight: 800;
+  }
+
+  :global(.dark) .services-metric-value {
+    color: #9ac9ff;
+  }
+
+  .services-metric-label {
+    margin-top: 0.35rem;
+    color: #142649;
+    font-weight: 700;
+    font-size: 0.96rem;
+  }
+
+  :global(.dark) .services-metric-label {
+    color: #e8f2ff;
+  }
+
+  .services-metric-detail {
+    margin-top: 0.3rem;
+    color: #5a7096;
+    font-size: 0.84rem;
+  }
+
+  :global(.dark) .services-metric-detail {
+    color: #abc0df;
+  }
+
+  .service-card {
+    height: 100%;
+    border-radius: 1.15rem;
+    border: 1px solid rgba(50, 112, 210, 0.2);
+    background: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(8px);
+    padding: 1.2rem;
+    box-shadow: 0 20px 36px rgba(20, 54, 116, 0.08);
+    transition: transform var(--motion-hover, 220ms ease), box-shadow var(--motion-hover, 220ms ease), border-color var(--motion-hover, 220ms ease);
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(26, 127, 238, 0.35);
+    box-shadow: 0 26px 44px rgba(14, 48, 111, 0.16);
+  }
+
+  :global(.dark) .service-card {
+    border-color: rgba(128, 186, 255, 0.2);
+    background: rgba(12, 27, 57, 0.78);
+    box-shadow: 0 20px 36px rgba(2, 8, 18, 0.36);
+  }
+
+  :global(.dark) .service-card:hover {
+    border-color: rgba(124, 197, 255, 0.36);
+    box-shadow: 0 28px 44px rgba(2, 8, 18, 0.52);
+  }
+
+  .service-category {
+    border: 1px solid rgba(44, 129, 234, 0.24);
+    background: rgba(20, 146, 255, 0.09);
+    color: #0c5acc;
+    border-radius: 999px;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  :global(.dark) .service-category {
+    border-color: rgba(137, 193, 255, 0.3);
+    background: rgba(69, 145, 255, 0.15);
+    color: #b7dcff;
+  }
+
+  .service-step {
+    color: #6e87ae;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  :global(.dark) .service-step {
+    color: #9db3d4;
+  }
+
+  .service-icon-wrap {
+    background: linear-gradient(135deg, var(--brand-blue, #0f7cff) 0%, var(--brand-mint, #36f4c8) 100%);
+  }
+
+  .service-icon-shadow {
+    background: rgba(46, 170, 251, 0.25);
+  }
+
+  .service-title {
+    color: #102447;
+  }
+
+  :global(.dark) .service-title {
+    color: #ecf3ff;
+  }
+
+  .service-description {
+    color: #546a8d;
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  :global(.dark) .service-description {
+    color: #aec2e0;
+  }
+
+  .service-impact {
+    border-top: 1px dashed rgba(73, 136, 229, 0.25);
+    padding-top: 0.75rem;
+    color: #1d4ea2;
+    font-size: 0.84rem;
+    font-weight: 700;
+  }
+
+  :global(.dark) .service-impact {
+    border-top-color: rgba(128, 186, 255, 0.26);
+    color: #a8d3ff;
+  }
+
+  .service-link {
+    color: #0e57ca;
+  }
+
+  .service-link:hover {
+    color: #19a8f0;
+  }
+
+  :global(.dark) .service-link {
+    color: #a6d2ff;
+  }
+
+  :global(.dark) .service-link:hover {
+    color: #65e4d5;
+  }
+
+  @media (max-width: 768px) {
+    .service-card {
+      padding: 1rem;
+    }
+
+    .services-metric-card {
+      padding: 0.9rem;
+    }
+  }
+
+  @keyframes servicesFloat {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -16px, 0);
+    }
+  }
+</style>

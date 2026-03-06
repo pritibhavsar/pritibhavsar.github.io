@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -11,8 +11,8 @@ const testimonialSwiper = new Swiper('.testimonial-carousel', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.testimonial-button-next',
+    prevEl: '.testimonial-button-prev',
   },
 
   breakpoints: {
@@ -28,5 +28,22 @@ const testimonialSwiper = new Swiper('.testimonial-carousel', {
       slidesPerView: 3,
       spaceBetween: 30,
     },
+  },
+});
+
+const useCaseSwiper = new Swiper('.usecase-carousel', {
+  modules: [Navigation, Autoplay],
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: true,
+  speed: 700,
+  autoplay: {
+    delay: 3200,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  navigation: {
+    nextEl: '.usecase-button-next',
+    prevEl: '.usecase-button-prev',
   },
 });

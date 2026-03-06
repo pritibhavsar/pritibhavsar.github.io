@@ -1,9 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 
-// Filter blog entries with 'draft: false' & date before current date
-const publishedBlogEntries = await getCollection("blog", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
+// Filter blog entries with 'draft: false' & date before current date.
+// Exclude child-level entries (nested folder slugs) to show only parent blogs.
+const publishedBlogEntries = await getCollection("blog", ({ data, slug }) => {
+  return !data.draft && data.publishDate < new Date() && !slug.includes("/");
 });
 
 // Sort content entries by publication date
@@ -12,20 +13,21 @@ publishedBlogEntries.sort(function (a, b) {
 });
 ---
 
-<section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-white dark:bg-dark">
+<section class="blog-section relative overflow-hidden pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+  <div class="blog-glow blog-glow-a" aria-hidden="true"></div>
+  <div class="blog-glow blog-glow-b" aria-hidden="true"></div>
   <div class="container">
     <div class="flex flex-wrap justify-center -mx-4">
       <div class="w-full px-4">
-        <div class="mx-auto mb-[60px] max-w-[485px] text-center">
-          <span class="block mb-2 text-lg font-semibold text-primary">
+        <div class="mx-auto mb-[60px] max-w-[760px] text-center">
+          <span class="blog-pill mb-4 inline-flex">
             Our Blogs
           </span>
-          <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-            Our Recent News
+          <h2 class="blog-heading mb-4 text-3xl font-bold sm:text-4xl md:text-[42px] md:leading-[1.2]">
+            Insights, Strategies, and Product Intelligence
           </h2>
-          <p class="text-base text-body-color dark:text-dark-6">
-            There are many variations of passages of Lorem Ipsum available
-            but the majority have suffered alteration in some form.
+          <p class="blog-subheading mx-auto max-w-[660px] text-base sm:text-lg">
+            Explore practical perspectives on Generative AI, MCP architecture, technology operations, and growth strategies designed for business leaders and delivery teams.
           </p>
         </div>
       </div>
@@ -34,33 +36,37 @@ publishedBlogEntries.sort(function (a, b) {
     <ul class="-mx-4 flex flex-wrap">
       {
         publishedBlogEntries.slice(0, 3).map((blogPostEntry, index) => (
-          <li class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <a class="wow fadeInUp group block mb-10" data-wow-delay=".1s" href={`/blog/${blogPostEntry.slug}`}>
-              <div class="mb-8 overflow-hidden rounded-[5px]">
-                <span class="block">
+          <li class="blog-item flex w-full px-4 md:w-1/2 lg:w-1/3">
+            <a class="wow fadeInUp blog-card group mb-10 flex h-full w-full flex-col" data-wow-delay=".1s" href={`/blog/${blogPostEntry.slug}`}>
+              <div class="blog-media mb-6 overflow-hidden rounded-[10px] w-full h-[240px]">
+                <span class="block w-full h-full">
+                  <span class="blog-media-overlay" aria-hidden="true"></span>
                   <img
                     src={blogPostEntry.data.image?.src || '/assets/blog/blog-default.jpg'}
                     alt={blogPostEntry.data.image?.alt || blogPostEntry.data.title}
-                    class="w-full ease-in duration-300 group-hover:rotate-6 group-hover:scale-125"
+                    class="blog-media-image w-full h-full object-cover ease-in duration-300"
                   />
                 </span>
-              </div>
-              <div>
-                <span
-                  class="inline-block px-4 py-0.5 mb-6 text-xs font-medium leading-loose text-center text-white rounded-[5px] bg-primary"
-                >
+                <span class="blog-date-pill">
                   {blogPostEntry.data.publishDate.toDateString()}
                 </span>
+              </div>
+              <div class="flex grow flex-col">
                 <h3>
                   <span
-                    class="inline-block mb-4 text-xl font-semibold text-dark dark:text-white hover:text-primary dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                    class="blog-title inline-block mb-4 text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
                   >
                     {blogPostEntry.data.title}
                   </span>
                 </h3>
-                <p class="max-w-[370px] text-base text-body-color dark:text-dark-6">
+                <p class="blog-description max-w-[370px] text-base">
                   {blogPostEntry.data.postDetails?.paraOne?.slice(0, 100) || blogPostEntry.data.snippet?.slice(0, 100) || 'Read more...'}
                 </p>
+
+                <span class="blog-readmore mt-5 inline-flex items-center gap-2 text-sm font-semibold">
+                  Read article
+                  <span aria-hidden="true">-></span>
+                </span>
               </div>
             </a>
           </li>
@@ -69,3 +75,96 @@ publishedBlogEntries.sort(function (a, b) {
     </ul>
   </div>
 </section>
+
+<style>
+  .blog-card {
+    border-radius: 0.9rem;
+    padding: 1rem;
+  }
+
+  .blog-item {
+    align-items: stretch;
+  }
+
+  .blog-media {
+    position: relative;
+    border: 1px solid rgba(90, 153, 239, 0.24);
+  }
+
+  .blog-media-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(4, 14, 35, 0.1) 0%, rgba(4, 14, 35, 0.54) 100%);
+  }
+
+  .blog-media-image {
+    transform: scale(1.01);
+    transition: transform 350ms ease, filter 350ms ease;
+    filter: saturate(1.05) contrast(1.05);
+  }
+
+  .blog-card:hover .blog-media-image {
+    transform: scale(1.08);
+    filter: saturate(1.1) contrast(1.08);
+  }
+
+  .blog-date-pill {
+    position: absolute;
+    left: 0.9rem;
+    bottom: 0.9rem;
+    z-index: 2;
+    border: 1px solid rgba(170, 218, 255, 0.45);
+    border-radius: 999px;
+    padding: 0.26rem 0.65rem;
+    background: rgba(10, 27, 64, 0.72);
+    color: #d7eeff;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .blog-title {
+    color: #102447;
+    transition: color var(--motion-hover, 220ms ease);
+  }
+
+  .blog-card:hover .blog-title {
+    color: #0f63cf;
+  }
+
+  :global(.dark) .blog-title {
+    color: #ecf3ff;
+  }
+
+  :global(.dark) .blog-card:hover .blog-title {
+    color: #8fd1ff;
+  }
+
+  .blog-description {
+    color: #546a8d;
+    line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 4.9rem;
+  }
+
+  :global(.dark) .blog-description {
+    color: #aec2e0;
+  }
+
+  .blog-readmore {
+    color: #0f63cf;
+  }
+
+  .blog-card:hover .blog-readmore {
+    color: #0eb4ef;
+  }
+
+  :global(.dark) .blog-readmore {
+    color: #a8d3ff;
+  }
+</style>

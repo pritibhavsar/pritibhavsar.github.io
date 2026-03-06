@@ -1,0 +1,12 @@
+<svg width="920" height="520" viewBox="0 0 920 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="bg4" x1="90" y1="40" x2="828" y2="480" gradientUnits="userSpaceOnUse"><stop stop-color="#0A1847"/><stop offset="1" stop-color="#0E88D8"/></linearGradient></defs>
+  <rect x="18" y="18" width="884" height="484" rx="28" fill="url(#bg4)"/>
+  <rect x="18.5" y="18.5" width="883" height="483" rx="27.5" stroke="rgba(255,255,255,0.24)"/>
+  <text x="84" y="112" fill="#ECF8FF" font-size="32" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Enterprise Knowledge Assistant</text>
+  <rect x="86" y="152" width="748" height="96" rx="14" fill="rgba(255,255,255,0.14)"/>
+  <text x="112" y="205" fill="#DDF0FF" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Search policies, SOPs, contracts and technical docs in seconds</text>
+  <rect x="86" y="276" width="352" height="148" rx="14" fill="rgba(255,255,255,0.12)"/>
+  <rect x="482" y="276" width="352" height="148" rx="14" fill="rgba(255,255,255,0.12)"/>
+  <text x="108" y="332" fill="#A9D3FF" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Role-based access</text>
+  <text x="504" y="332" fill="#A9D3FF" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Cited and auditable answers</text>
+</svg>

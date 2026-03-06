@@ -1,0 +1,333 @@
+---
+const useCases = [
+  {
+    image: '/assets/use-cases/usecase-01.svg',
+    title: 'AI Customer Support Copilot',
+    description:
+      'Implemented an omnichannel support copilot that understands intent, drafts accurate replies, and routes complex issues to specialists with full context continuity.',
+    outcome: 'Faster response quality with reduced manual effort'
+  },
+  {
+    image: '/assets/use-cases/usecase-02.svg',
+    title: 'Demand Forecasting for Supply Chain',
+    description:
+      'Delivered predictive demand models that combine sales history, seasonal behavior, and operational signals to improve planning and inventory confidence.',
+    outcome: 'Lower stockout risk and better inventory control'
+  },
+  {
+    image: '/assets/use-cases/usecase-03.svg',
+    title: 'Claims and Document Automation',
+    description:
+      'Built an AI-assisted claims flow that extracts data from documents, validates key fields, and accelerates decision workflows with policy-aware checks.',
+    outcome: 'Reduced processing cycle time and error rates'
+  },
+  {
+    image: '/assets/use-cases/usecase-04.svg',
+    title: 'Enterprise Knowledge Assistant',
+    description:
+      'Created a secure internal assistant that searches policies, SOPs, contracts, and technical docs with role-based controls and source-cited responses.',
+    outcome: 'Faster decision support across departments'
+  },
+  {
+    image: '/assets/use-cases/usecase-05.svg',
+    title: 'Fraud Risk Detection and Investigation',
+    description:
+      'Designed a risk-monitoring pipeline that flags anomalies in near real time and supports investigators with case summaries and contextual evidence.',
+    outcome: 'Stronger risk governance and quicker triage'
+  },
+  {
+    image: '/assets/use-cases/usecase-06.svg',
+    title: 'Marketing Personalization Co-Pilot',
+    description:
+      'Deployed a campaign copilot that segments audiences, generates channel-specific variants, and recommends launch timing based on engagement patterns.',
+    outcome: 'Higher campaign relevance and conversion lift'
+  }
+];
+---
+
+<section id="use-cases" class="usecases-section relative overflow-hidden py-20 md:py-[120px]">
+  <div class="usecases-glow usecases-glow-a" aria-hidden="true"></div>
+  <div class="usecases-glow usecases-glow-b" aria-hidden="true"></div>
+
+  <div class="container px-4">
+    <div class="flex flex-wrap justify-center -mx-4">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-[60px] max-w-[780px] text-center">
+          <span class="usecases-pill mb-4 inline-flex">Proven Delivery Portfolio</span>
+          <h2 class="usecases-heading mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[42px]">
+            Real-World AI Impact Stories Across Industries
+          </h2>
+          <p class="usecases-subheading mx-auto max-w-[700px] text-base sm:text-lg">
+            Explore selected delivery scenarios where we combined Generative AI, MCP integration, and enterprise engineering to create measurable business outcomes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="-m-5">
+      <div class="swiper usecase-carousel common-carousel p-5">
+        <div class="swiper-wrapper">
+          {
+            useCases.map((item, index) => (
+              <div class="swiper-slide">
+                <article class="usecase-card h-full rounded-xl p-5 md:p-7">
+                  <div class="usecase-media mb-5 overflow-hidden rounded-lg">
+                    <div class="usecase-media-overlay" aria-hidden="true"></div>
+                    <span class="usecase-media-index">Use Case {String(index + 1).padStart(2, '0')}</span>
+                    <img src={item.image} alt={`${item.title} illustration`} class="usecase-image h-full w-full" loading="lazy" decoding="async" />
+                  </div>
+                  <h3 class="usecase-title mb-3 text-xl font-bold">{item.title}</h3>
+                  <p class="usecase-description mb-4">{item.description}</p>
+                  <p class="usecase-outcome">{item.outcome}</p>
+                </article>
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="flex items-center justify-center mt-[36px] gap-2">
+          <div class="swiper-button-prev usecase-button-prev usecase-nav-btn">
+            <svg class="fill-current" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.25 10.2437H4.57187L10.4156 4.29687C10.725 3.9875 10.725 3.50625 10.4156 3.19687C10.1062 2.8875 9.625 2.8875 9.31562 3.19687L2.2 10.4156C1.89062 10.725 1.89062 11.2063 2.2 11.5156L9.31562 18.7344C9.45312 18.8719 9.65937 18.975 9.86562 18.975C10.0719 18.975 10.2437 18.9062 10.4156 18.7687C10.725 18.4594 10.725 17.9781 10.4156 17.6688L4.60625 11.7906H19.25C19.6625 11.7906 20.0063 11.4469 20.0063 11.0344C20.0063 10.5875 19.6625 10.2437 19.25 10.2437Z"/>
+            </svg>
+          </div>
+          <div class="swiper-button-next usecase-button-next usecase-nav-btn">
+            <svg class="fill-current" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.8 10.45L12.6844 3.2313C12.375 2.92192 11.8938 2.92192 11.5844 3.2313C11.275 3.54067 11.275 4.02192 11.5844 4.3313L17.3594 10.2094H2.75C2.3375 10.2094 1.99375 10.5532 1.99375 10.9657C1.99375 11.3782 2.3375 11.7563 2.75 11.7563H17.4281L11.5844 17.7032C11.275 18.0126 11.275 18.4938 11.5844 18.8032C11.7219 18.9407 11.9281 19.0094 12.1344 19.0094C12.3406 19.0094 12.5469 18.9407 12.6844 18.7688L19.8 11.55C20.1094 11.2407 20.1094 10.7594 19.8 10.45Z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .usecases-section {
+    position: relative;
+    background:
+      radial-gradient(circle at 12% 8%, rgba(74, 236, 201, 0.16) 0%, rgba(74, 236, 201, 0) 46%),
+      radial-gradient(circle at 88% 12%, rgba(32, 140, 255, 0.18) 0%, rgba(32, 140, 255, 0) 42%),
+      linear-gradient(180deg, #f4f8ff 0%, #ecf4ff 48%, #f8fbff 100%);
+  }
+
+  :global(.dark) .usecases-section {
+    background:
+      radial-gradient(circle at 14% 10%, rgba(74, 236, 201, 0.18) 0%, rgba(74, 236, 201, 0) 40%),
+      radial-gradient(circle at 90% 15%, rgba(32, 140, 255, 0.24) 0%, rgba(32, 140, 255, 0) 42%),
+      linear-gradient(180deg, #081024 0%, #0a1632 52%, #0d1c3e 100%);
+  }
+
+  .usecases-glow {
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(20px);
+    pointer-events: none;
+  }
+
+  .usecases-glow-a {
+    width: 280px;
+    height: 280px;
+    top: 2%;
+    left: 1%;
+    background: radial-gradient(circle, rgba(0, 211, 255, 0.26) 0%, rgba(0, 211, 255, 0) 72%);
+    animation: servicesThemeFloat var(--motion-float-fast, 8s) ease-in-out infinite;
+  }
+
+  .usecases-glow-b {
+    width: 320px;
+    height: 320px;
+    bottom: 4%;
+    right: 1%;
+    background: radial-gradient(circle, rgba(72, 238, 198, 0.24) 0%, rgba(72, 238, 198, 0) 72%);
+    animation: servicesThemeFloat var(--motion-float-slow, 10s) ease-in-out infinite reverse;
+  }
+
+  .usecases-pill {
+    border: 1px solid rgba(26, 117, 255, 0.25);
+    border-radius: 999px;
+    padding: 0.45rem 0.95rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #0b4fc4;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  :global(.dark) .usecases-pill {
+    border-color: rgba(115, 191, 255, 0.3);
+    background: rgba(13, 32, 67, 0.6);
+    color: #9fceff;
+  }
+
+  .usecases-heading {
+    color: #0c1733;
+    text-wrap: balance;
+  }
+
+  :global(.dark) .usecases-heading {
+    color: #f2f6ff;
+  }
+
+  .usecases-subheading {
+    color: #4d6285;
+  }
+
+  :global(.dark) .usecases-subheading {
+    color: #acc0e2;
+  }
+
+  .usecase-card {
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .usecase-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(145deg, rgba(14, 126, 236, 0.32), rgba(54, 244, 200, 0.32));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+    opacity: 0.55;
+  }
+
+  .usecase-media {
+    height: 290px;
+    border: 1px solid rgba(90, 153, 239, 0.24);
+    flex-shrink: 0;
+    position: relative;
+    background:
+      radial-gradient(circle at 18% 18%, rgba(54, 244, 200, 0.2) 0%, rgba(54, 244, 200, 0) 42%),
+      radial-gradient(circle at 86% 16%, rgba(15, 124, 255, 0.22) 0%, rgba(15, 124, 255, 0) 42%),
+      linear-gradient(145deg, #071125 0%, #0b1e44 56%, #10326f 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 16px 30px rgba(4, 16, 43, 0.22);
+  }
+
+  .usecase-media-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(4, 14, 35, 0.2) 0%, rgba(4, 14, 35, 0.62) 100%);
+    z-index: 1;
+  }
+
+  .usecase-media-index {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 2;
+    border: 1px solid rgba(172, 222, 255, 0.45);
+    border-radius: 999px;
+    background: rgba(10, 27, 64, 0.72);
+    color: #d7eeff;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .usecase-image {
+    position: relative;
+    z-index: 0;
+    object-fit: contain;
+    padding: 0.5rem;
+    transform: scale(1.02);
+    filter: contrast(1.08) saturate(1.06);
+    transition: transform var(--motion-hover, 220ms ease), filter var(--motion-hover, 220ms ease);
+  }
+
+  .usecase-card:hover .usecase-image {
+    transform: scale(1.06);
+    filter: contrast(1.12) saturate(1.12);
+  }
+
+  .usecase-title {
+    color: #102447;
+  }
+
+  :global(.dark) .usecase-title {
+    color: #ecf3ff;
+  }
+
+  .usecase-description {
+    color: #4f6488;
+    line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  :global(.dark) .usecase-description {
+    color: #acc0df;
+  }
+
+  .usecase-outcome {
+    margin-top: auto;
+    border-top: 1px dashed rgba(90, 150, 235, 0.28);
+    padding-top: 0.72rem;
+    color: #1456bb;
+    font-size: 0.86rem;
+    font-weight: 700;
+  }
+
+  :global(.dark) .usecase-outcome {
+    border-top-color: rgba(128, 186, 255, 0.26);
+    color: #a8d3ff;
+  }
+
+  .usecase-carousel .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  .usecase-carousel .swiper-slide {
+    height: auto !important;
+    display: flex;
+  }
+
+  .usecase-carousel .swiper-slide > * {
+    width: 100%;
+  }
+
+  @media (max-width: 1023px) {
+    .usecase-card {
+      min-height: 500px;
+    }
+
+    .usecase-media {
+      height: 270px;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .usecase-card {
+      min-height: 470px;
+      padding: 1.1rem;
+    }
+
+    .usecase-media {
+      height: 230px;
+    }
+  }
+
+  @keyframes servicesThemeFloat {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -16px, 0);
+    }
+  }
+</style>
