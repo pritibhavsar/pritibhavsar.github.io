@@ -3,11 +3,11 @@ draft: false
 title: "Social Algorithms Explained: How They Work and Why They Matter"
 snippet: "Understanding social media algorithms is crucial for optimizing content visibility and engagement on various platforms."
 image: {
-    src: "/assets/blog/blog-01.jpg",
+    src: "/assets/blog/Social-Media-Explained.png",
     alt: "blog details"
 }
 bigImg: {
-    src: "/assets/blog/blog-details-01.jpg",
+    src: "/assets/blog/Social-Media-Explained.png",
     alt: "blog details",
 }
 authorImg: {

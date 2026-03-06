@@ -1,0 +1,56 @@
+---
+slug: social-media-terms/character-counter
+draft: false
+title: "Character counter"
+snippet: "Tool to track text length per platform limits."
+image: {
+  src: "/assets/blog/blog-01.jpg",
+  alt: "character-counter"
+}
+bigImg: {
+  src: "/assets/blog/blog-details-01.jpg",
+  alt: "character-counter"
+}
+authorImg: {
+  src: "/assets/blog/author-01.png",
+  alt: "author"
+}
+publishDate: "2025-12-29"
+category: "social"
+author: "Priti B"
+tags: ["Social Media", "Glossary", "Character counter"]
+---
+
+## Definition ##
+
+Tool to track text length per platform limits.
+
+## In Simple Terms ##
+
+Character counter is easier to understand if you think about it as a practical tool. It helps people make better decisions, communicate clearly, and reduce trial-and-error in social media work.
+
+## Everyday Example ##
+
+A marketing team includes **Character counter** in its weekly planning and review process. That shared language reduces confusion and makes decisions faster across content, design, and leadership.
+
+## When You Should Care ##
+
+- You are building strategy and want everyone aligned on what **Character counter** means.
+- You are training new team members and need simple, practical definitions.
+- You want clearer briefs, better execution, and cleaner post-campaign reviews.
+
+## Common Mistakes ##
+
+- Treating **Character counter** as a one-time tactic instead of an ongoing practice.
+- Copying others without adapting for your audience, brand, and objectives.
+- Skipping post-review, which prevents learning and improvement.
+
+## Quick Action Steps ##
+
+1. Write a one-line team definition of **Character counter** in your content playbook.
+2. Apply it in one campaign this week and document outcomes.
+3. Review what worked, what confused people, and what to improve next.
+
+## Related ##
+
+- [Back to glossary](/blog/social-media-terms)

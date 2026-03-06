@@ -1,0 +1,10 @@
+<svg width="920" height="520" viewBox="0 0 920 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="bg2" x1="92" y1="36" x2="826" y2="486" gradientUnits="userSpaceOnUse"><stop stop-color="#0A1A4A"/><stop offset="1" stop-color="#0CA0D9"/></linearGradient></defs>
+  <rect x="18" y="18" width="884" height="484" rx="28" fill="url(#bg2)"/>
+  <rect x="18.5" y="18.5" width="883" height="483" rx="27.5" stroke="rgba(255,255,255,0.24)"/>
+  <text x="86" y="114" fill="#ECF8FF" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Demand Forecasting for Supply Chain</text>
+  <path d="M90 374L196 332L294 350L404 290L524 306L648 246L820 196" stroke="#3AE8CB" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="90" cy="374" r="9" fill="#3AE8CB"/><circle cx="196" cy="332" r="9" fill="#52BCFF"/><circle cx="294" cy="350" r="9" fill="#3AE8CB"/><circle cx="404" cy="290" r="9" fill="#52BCFF"/><circle cx="524" cy="306" r="9" fill="#3AE8CB"/><circle cx="648" cy="246" r="9" fill="#52BCFF"/><circle cx="820" cy="196" r="9" fill="#3AE8CB"/>
+  <rect x="86" y="150" width="220" height="74" rx="12" fill="rgba(255,255,255,0.14)"/>
+  <text x="106" y="194" fill="#D8EEFF" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Inventory Stability</text>
+</svg>

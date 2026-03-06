@@ -300,3 +300,8 @@
   - author: Dipal Bhavsar
   - commit-date: 2026-01-02T19:08:41+05:30
 
+## v0.0.61 — 2026-03-05
+- Initial main version
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-03-03T17:23:54+05:30
+

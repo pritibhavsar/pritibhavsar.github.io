@@ -1,0 +1,14 @@
+<svg width="920" height="520" viewBox="0 0 920 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="bg3" x1="80" y1="30" x2="840" y2="490" gradientUnits="userSpaceOnUse"><stop stop-color="#0B1D54"/><stop offset="1" stop-color="#1279E7"/></linearGradient></defs>
+  <rect x="18" y="18" width="884" height="484" rx="28" fill="url(#bg3)"/>
+  <rect x="18.5" y="18.5" width="883" height="483" rx="27.5" stroke="rgba(255,255,255,0.24)"/>
+  <text x="90" y="112" fill="#ECF8FF" font-size="33" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Claims and Document Automation</text>
+  <rect x="92" y="156" width="232" height="270" rx="16" fill="rgba(255,255,255,0.13)"/>
+  <rect x="344" y="156" width="232" height="270" rx="16" fill="rgba(255,255,255,0.13)"/>
+  <rect x="596" y="156" width="232" height="270" rx="16" fill="rgba(255,255,255,0.13)"/>
+  <text x="114" y="206" fill="#DDF0FF" font-size="19" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Capture</text>
+  <text x="366" y="206" fill="#DDF0FF" font-size="19" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Validate</text>
+  <text x="618" y="206" fill="#DDF0FF" font-size="19" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Approve</text>
+  <text x="114" y="382" fill="#A8D2FF" font-size="16" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Lower manual review</text>
+  <text x="114" y="404" fill="#A8D2FF" font-size="16" font-weight="600" font-family="Segoe UI, Arial, sans-serif">with AI extraction</text>
+</svg>

@@ -17,6 +17,7 @@ const defaultBigImage = entry.data.bigImg?.src || '/assets/blog/blog-details-def
 const defaultAuthorImage = entry.data.authorImg?.src || '/assets/blog/author-01.png';
 const defaultComments = entry.data.comments || '0';
 const defaultViews = entry.data.views || '0';
+const isGlossaryIndexPage = entry.slug === 'social-media-terms';
 ---
 
 <Layout title={entry.data.title} description={entry.data.snippet} image={defaultBigImage}>
@@ -83,10 +84,10 @@ const defaultViews = entry.data.views || '0';
             </svg> 
               <!-- Theme-aware SVG background: uses currentColor so Tailwind text color controls light/dark -->
               
-            <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center p-4 sm:p-6">
-              <div class="max-w-[90%] sm:max-w-[80%] md:max-w-[70%] flex flex-col items-center text-center space-y-2 sm:space-y-3 md:space-y-5">
-                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold tracking-wide leading-snug sm:leading-tight md:leading-tight text-white">{entry.data.title}</h1>
-                <p class="text-base sm:text-lg md:text-1xl tracking-wider text-white max-w-[90%]">{entry.data.snippet}</p>
+            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center p-4 text-center sm:p-6">
+              <div class="flex max-w-[90%] flex-col items-center text-center sm:max-w-[80%] md:max-w-[70%]">
+                <h1 class="mb-2 text-2xl font-extrabold leading-tight text-white sm:mb-3 sm:text-3xl md:mb-4 md:text-4xl lg:text-6xl">{entry.data.title}</h1>
+                <p class="text-base leading-relaxed text-white/95 sm:text-lg md:text-xl max-w-[90%]">{entry.data.snippet}</p>
               </div>
             </div>
             <div
@@ -180,7 +181,10 @@ const defaultViews = entry.data.views || '0';
           <div class="-mx-4 flex flex-wrap">
             <div class="w-full px-4 lg:w-8/12">
               <div>
-                <div class="prose prose-base md:prose-lg dark:prose-invert prose-p:text-black dark:prose-p:text-white prose-h2:text-dark dark:prose-h2:text-white prose-h3:text-dark dark:prose-h3:text-white prose-strong:text-dark dark:prose-strong:text-white prose-blockquote:border-primary prose-blockquote:text-body-color dark:prose-blockquote:text-dark-6 max-w-none">
+                <div class:list={[
+                  'prose prose-base md:prose-lg dark:prose-invert prose-p:text-black dark:prose-p:text-white prose-h2:text-dark dark:prose-h2:text-white prose-h3:text-dark dark:prose-h3:text-white prose-strong:text-dark dark:prose-strong:text-white prose-blockquote:border-primary prose-blockquote:text-body-color dark:prose-blockquote:text-dark-6 max-w-none',
+                  isGlossaryIndexPage && 'glossary-term-cards',
+                ]}>
                   <Content />
                 </div>
 
@@ -198,11 +202,11 @@ const defaultViews = entry.data.views || '0';
                   class="wow fadeInUp mb-12 overflow-hidden rounded-[5px]"
                   data-wow-delay=".1s"
                 >
-                  <img
+                  <!-- <img
                     src="/assets/blog/bannder-ad.png"
                     alt="image"
                     class="w-full"
-                  />
+                  /> -->
                 </div>
               </div>
             </div>
@@ -215,3 +219,143 @@ const defaultViews = entry.data.views || '0';
   </section>
   <!-- ====== Blog Details Section End -->
 </Layout>
+
+<style>
+  .glossary-term-cards {
+    --glossary-card-text: #213747;
+    --glossary-card-muted: #4f6686;
+    --glossary-card-bg: linear-gradient(150deg, rgba(255, 255, 255, 0.98) 0%, rgba(244, 249, 255, 0.9) 100%);
+    --glossary-card-border: rgba(52, 118, 220, 0.24);
+    --glossary-card-border-hover: rgba(24, 103, 219, 0.45);
+    --glossary-card-shadow: 0 10px 24px rgba(14, 51, 115, 0.08);
+    --glossary-card-shadow-hover: 0 16px 34px rgba(14, 51, 115, 0.14);
+    --glossary-arrow-bg: rgba(255, 255, 255, 0.95);
+    --glossary-arrow-bg-hover: #ffffff;
+    --glossary-arrow-border: rgba(29, 80, 147, 0.8);
+  }
+
+  :global(.dark) .glossary-term-cards {
+    --glossary-card-text: #e9f4ff;
+    --glossary-card-muted: #b8cbe3;
+    --glossary-card-bg: linear-gradient(160deg, rgba(15, 31, 62, 0.94) 0%, rgba(11, 24, 49, 0.9) 100%);
+    --glossary-card-border: rgba(151, 198, 255, 0.46);
+    --glossary-card-border-hover: rgba(177, 214, 255, 0.82);
+    --glossary-card-shadow: 0 10px 24px rgba(3, 7, 18, 0.35);
+    --glossary-card-shadow-hover: 0 16px 34px rgba(3, 7, 18, 0.52);
+    --glossary-arrow-bg: rgba(15, 23, 42, 0.75);
+    --glossary-arrow-bg-hover: rgba(15, 23, 42, 0.95);
+    --glossary-arrow-border: rgba(204, 229, 255, 0.86);
+  }
+
+  .glossary-term-cards :global(ul) {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    gap: 1.15rem;
+  }
+
+  .glossary-term-cards :global(li) {
+    position: relative;
+    border: 2.5px solid var(--glossary-card-border);
+    border-radius: 16px;
+    padding: 1.4rem 6.25rem 1.3rem 1.4rem;
+    margin-bottom: 0;
+    background: var(--glossary-card-bg);
+    color: var(--glossary-card-muted);
+    font-family: var(--font-inter);
+    box-shadow: var(--glossary-card-shadow);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  }
+
+  .glossary-term-cards :global(li:hover) {
+    transform: translateY(-2px);
+    border-color: var(--glossary-card-border-hover);
+    box-shadow: var(--glossary-card-shadow-hover);
+  }
+
+  .glossary-term-cards :global(li > a:first-child) {
+    display: block;
+    width: fit-content;
+    margin-bottom: 0.55rem;
+    font-size: clamp(1.45rem, 2.6vw, 2.25rem);
+    font-weight: 700;
+    font-family: var(--font-space-grotesk);
+    line-height: 1.1;
+    color: var(--glossary-card-text);
+    text-decoration: none;
+  }
+
+  .glossary-term-cards :global(li > a:first-child:hover) {
+    color: #0c2342;
+  }
+
+  :global(.dark) .glossary-term-cards :global(li > a:first-child:hover) {
+    color: #ffffff;
+  }
+
+  .glossary-term-cards :global(li > a:first-child::after) {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    right: 1.35rem;
+    width: 56px;
+    height: 56px;
+    border: 2px solid var(--glossary-arrow-border);
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--glossary-card-text);
+    background: var(--glossary-arrow-bg);
+    transform: translateY(-50%);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .glossary-term-cards :global(li > a:first-child:hover::after) {
+    transform: translate(3px, -50%);
+    background: var(--glossary-arrow-bg-hover);
+  }
+
+  .glossary-term-cards :global(li) {
+    font-size: clamp(1rem, 1.25vw, 1.05rem);
+    line-height: 1.6;
+  }
+
+  .glossary-term-cards :global(li a + *) {
+    margin-top: 0.1rem;
+  }
+
+  .glossary-term-cards :global(li > ul),
+  .glossary-term-cards :global(li > ol) {
+    margin-top: 0.6rem;
+  }
+
+  @media (max-width: 640px) {
+    .glossary-term-cards :global(ul) {
+      gap: 0.9rem;
+    }
+
+    .glossary-term-cards :global(li) {
+      padding: 1rem 4.7rem 1rem 1rem;
+      border-radius: 12px;
+    }
+
+    .glossary-term-cards :global(li > a:first-child) {
+      font-size: clamp(1.25rem, 6.2vw, 1.75rem);
+      margin-bottom: 0.35rem;
+    }
+
+    .glossary-term-cards :global(li > a:first-child::after) {
+      width: 44px;
+      height: 44px;
+      top: 50%;
+      right: 0.9rem;
+      font-size: 1.55rem;
+    }
+  }
+</style>

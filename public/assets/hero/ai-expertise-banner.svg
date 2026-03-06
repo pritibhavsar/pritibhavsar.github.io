@@ -1,0 +1,80 @@
+<svg width="1080" height="720" viewBox="0 0 1080 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="94" y1="55" x2="985" y2="684" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1C56"/>
+      <stop offset="0.55" stop-color="#0A2C73"/>
+      <stop offset="1" stop-color="#1063D2"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="220" y1="270" x2="880" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30E6D6"/>
+      <stop offset="1" stop-color="#51B0FF"/>
+    </linearGradient>
+    <linearGradient id="chipGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1DF2D7"/>
+      <stop offset="1" stop-color="#44BCFF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="24" y="24" width="1032" height="672" rx="36" fill="url(#bgGrad)"/>
+  <rect x="24" y="24" width="1032" height="672" rx="36" stroke="rgba(255,255,255,0.25)"/>
+
+  <g opacity="0.42">
+    <circle cx="930" cy="136" r="92" fill="#1DE6D7"/>
+    <circle cx="160" cy="598" r="110" fill="#399CFF"/>
+  </g>
+
+  <g opacity="0.3">
+    <path d="M110 185H975" stroke="white" stroke-width="1"/>
+    <path d="M110 250H975" stroke="white" stroke-width="1"/>
+    <path d="M110 315H975" stroke="white" stroke-width="1"/>
+    <path d="M110 380H975" stroke="white" stroke-width="1"/>
+    <path d="M110 445H975" stroke="white" stroke-width="1"/>
+    <path d="M110 510H975" stroke="white" stroke-width="1"/>
+    <path d="M110 575H975" stroke="white" stroke-width="1"/>
+  </g>
+
+  <g opacity="0.32">
+    <path d="M200 120V610" stroke="white" stroke-width="1"/>
+    <path d="M320 120V610" stroke="white" stroke-width="1"/>
+    <path d="M440 120V610" stroke="white" stroke-width="1"/>
+    <path d="M560 120V610" stroke="white" stroke-width="1"/>
+    <path d="M680 120V610" stroke="white" stroke-width="1"/>
+    <path d="M800 120V610" stroke="white" stroke-width="1"/>
+    <path d="M920 120V610" stroke="white" stroke-width="1"/>
+  </g>
+
+  <path d="M180 500L300 430L420 470L560 340L700 390L830 250L940 300" stroke="url(#lineGrad)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <g>
+    <circle cx="180" cy="500" r="15" fill="#1EF3D8"/>
+    <circle cx="300" cy="430" r="15" fill="#3BBEFF"/>
+    <circle cx="420" cy="470" r="15" fill="#1EF3D8"/>
+    <circle cx="560" cy="340" r="15" fill="#3BBEFF"/>
+    <circle cx="700" cy="390" r="15" fill="#1EF3D8"/>
+    <circle cx="830" cy="250" r="15" fill="#3BBEFF"/>
+    <circle cx="940" cy="300" r="15" fill="#1EF3D8"/>
+  </g>
+
+  <g>
+    <rect x="126" y="84" width="200" height="56" rx="14" fill="rgba(255,255,255,0.15)"/>
+    <text x="146" y="118" fill="#EFFFFB" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">GenAI Systems</text>
+
+    <rect x="352" y="84" width="188" height="56" rx="14" fill="rgba(255,255,255,0.12)"/>
+    <text x="372" y="118" fill="#E8F4FF" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Marketing Ops</text>
+
+    <rect x="564" y="84" width="214" height="56" rx="14" fill="rgba(255,255,255,0.12)"/>
+    <text x="584" y="118" fill="#E8F4FF" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Tech Expertise</text>
+
+    <rect x="804" y="84" width="150" height="56" rx="14" fill="url(#chipGrad)"/>
+    <text x="827" y="118" fill="#07234F" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800">Trusted</text>
+  </g>
+
+  <text x="134" y="651" fill="#DDF0FF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">AI-Led Services Dashboard</text>
+</svg>

@@ -1,64 +1,65 @@
 ---
 const testimonials = [
   {
-    authorName: 'Sabo Masties',
-    authorRole: 'Founder @ Rolex',
+    authorName: 'Ananya Patel',
+    authorRole: 'Chief Operations Officer, FinEdge Group',
     image: '/assets/testimonials/author-01.jpg',
     message:
-      `“Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.”`,
+      `“PAL Portals helped us move from disconnected AI pilots to one production-ready architecture. Their MCP and agentic workflow approach improved operational response time and governance at the same time.”`,
   },
   {
-    authorName: 'Musharof Chowdhury',
-    authorRole: 'Founder @ Ayro UI',
+    authorName: 'Rohan Mehta',
+    authorRole: 'VP Technology, Nova Retail Systems',
     image: '/assets/testimonials/author-02.jpg',
     message:
-      `“Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.”`,
+      `“The delivery quality was exceptional. Their team translated our business goals into a secure AI roadmap, then executed with clarity across integration, analytics, and performance optimization.”`,
   },
   {
-    authorName: 'William Smith',
-    authorRole: 'Founder @ Trorex',
+    authorName: 'Priya Nair',
+    authorRole: 'Director of Strategy, Velocity Healthcare',
     image: '/assets/testimonials/author-03.jpg',
     message:
-      `“Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.”`,
+      `“We needed enterprise-grade AI with measurable business impact. PAL Portals delivered a practical, high-standard framework that improved decision speed and reduced implementation complexity.”`,
   },
   {
-    authorName: 'Sabo Masties',
-    authorRole: 'Founder @ Rolex',
+    authorName: 'Arjun Malhotra',
+    authorRole: 'Head of Digital Transformation, Aster Manufacturing',
     image: '/assets/testimonials/author-01.jpg',
     message:
-      `“Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.”`,
+      `“From architecture assessment to deployment readiness, their consulting brought discipline and speed to our AI program. The team combines deep technical expertise with strong business understanding.”`,
   },
   {
-    authorName: 'Musharof Chowdhury',
-    authorRole: 'Founder @ Ayro UI',
+    authorName: 'Neha Sharma',
+    authorRole: 'Senior Product Lead, Orbit SaaS Platforms',
     image: '/assets/testimonials/author-02.jpg',
     message:
-      `“Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.”`,
+      `“Their agentic AI implementation gave our product team a clear advantage. We now ship smarter automations with lower friction and stronger confidence in governance.”`,
   },
   {
-    authorName: 'William Smith',
-    authorRole: 'Founder @ Trorex',
+    authorName: 'Kunal Desai',
+    authorRole: 'CTO, Meridian Logistics Network',
     image: '/assets/testimonials/author-03.jpg',
     message:
-      `“Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.”`,
+      `“What stood out was execution excellence. Their team aligned architecture, security, and business KPIs from day one, which made our AI rollout both predictable and scalable.”`,
   },
 ];
 ---
 
-<section id="testimonials" class="py-20 md:py-[120px] bg-gray-1 dark:bg-dark-2 overflow-hidden">
+<section id="testimonials" class="testimonials-section relative overflow-hidden py-20 md:py-[120px]">
+  <div class="testimonials-glow testimonials-glow-a" aria-hidden="true"></div>
+  <div class="testimonials-glow testimonials-glow-b" aria-hidden="true"></div>
   <div class="container px-4">
     <div class="flex flex-wrap justify-center -mx-4">
       <div class="w-full px-4">
-        <div class="mx-auto mb-[60px] max-w-[485px] text-center">
-          <span class="block mb-2 text-lg font-semibold text-primary">
+        <div class="mx-auto mb-[60px] max-w-[760px] text-center">
+          <span class="testimonials-pill mb-4 inline-flex">
             Testimonials
           </span>
-          <h2 class="text-dark dark:text-white mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]">
-            What our Clients Say
+          <h2 class="testimonials-heading mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[42px]">
+            Trusted by Leaders Building High-Impact AI Programs
           </h2>
-          <p class="text-base text-body-color dark:text-dark-6">
-            There are many variations of passages of Lorem Ipsum available
-            but the majority have suffered alteration in some form.
+          <p class="testimonials-subheading mx-auto max-w-[680px] text-base sm:text-lg">
+            Hear how organizations are partnering with PAL Portals to deploy secure, scalable, and outcome-driven Generative AI solutions.
           </p>
         </div>
       </div>
@@ -72,10 +73,10 @@ const testimonials = [
           {
             testimonials.map((testimonial) => (
               <div class="swiper-slide">
-                <div class="shadow-testimonial bg-white dark:bg-dark rounded-xl py-[30px] px-4 sm:px-[30px]" data-wow-delay=".1s">
+                <div class="testimonial-card rounded-xl py-[30px] px-4 sm:px-[30px]" data-wow-delay=".1s">
                   <div class="flex items-center gap-[2px] mb-[18px]">
                     {[...Array(5)].map(() => (
-                      <span class="text-[#FBB040]">
+                      <span class="text-[#F8B84A]">
                         <svg class="fill-current" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M8.94043 0.360474L10.9477 6.06481H17.4433L12.1882 9.59028L14.1955 15.2946L8.94043 11.7691L3.68538 15.2946L5.69263 9.59028L0.437576 6.06481H6.93318L8.94043 0.360474Z" 
                           />
@@ -83,9 +84,9 @@ const testimonials = [
                       </span>
                     ))}
                   </div>
-                  <p class="text-body-color dark:text-dark-6 text-base mb-6">{testimonial.message}</p>
+                  <p class="testimonial-message text-base mb-6">{testimonial.message}</p>
                   
-                  <div class="flex items-center gap-4">
+                  <div class="testimonial-footer mt-auto flex items-center gap-4">
                     <div
                       class="w-[50px] h-[50px] rounded-full overflow-hidden"
                     >
@@ -96,10 +97,10 @@ const testimonials = [
                       />
                     </div>
                     <div>
-                      <h3 class="font-semibold text-sm text-dark dark:text-white">
+                      <h3 class="testimonial-author font-semibold text-sm">
                         {testimonial.authorName}
                       </h3>
-                      <p class="text-xs text-body-secondary">{testimonial.authorRole}</p>
+                      <p class="testimonial-role text-xs">{testimonial.authorRole}</p>
                     </div>
                   </div>
                 </div>
@@ -108,8 +109,8 @@ const testimonials = [
           }
         </div>
 
-        <div class="flex items-center justify-center mt-[60px] gap-1">
-          <div class="swiper-button-prev">
+        <div class="flex items-center justify-center mt-[60px] gap-2">
+          <div class="swiper-button-prev testimonial-button-prev testimonial-nav-btn">
             <svg class="fill-current" width="22" height="22" viewBox="0 0 22 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -117,7 +118,7 @@ const testimonials = [
             </svg>
           </div>
 
-          <div class="swiper-button-next">
+          <div class="swiper-button-next testimonial-button-next testimonial-nav-btn">
             <svg class="fill-current" width="22" height="22" viewBox="0 0 22 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -129,3 +130,129 @@ const testimonials = [
     </div>
   </div>
 </section>
+
+<style>
+  .testimonials-section {
+    position: relative;
+    background:
+      radial-gradient(circle at 12% 8%, rgba(74, 236, 201, 0.16) 0%, rgba(74, 236, 201, 0) 46%),
+      radial-gradient(circle at 88% 12%, rgba(32, 140, 255, 0.18) 0%, rgba(32, 140, 255, 0) 42%),
+      linear-gradient(180deg, #f4f8ff 0%, #ecf4ff 48%, #f8fbff 100%);
+  }
+
+  :global(.dark) .testimonials-section {
+    background:
+      radial-gradient(circle at 14% 10%, rgba(74, 236, 201, 0.18) 0%, rgba(74, 236, 201, 0) 40%),
+      radial-gradient(circle at 90% 15%, rgba(32, 140, 255, 0.24) 0%, rgba(32, 140, 255, 0) 42%),
+      linear-gradient(180deg, #081024 0%, #0a1632 52%, #0d1c3e 100%);
+  }
+
+  .testimonials-glow {
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(20px);
+    pointer-events: none;
+  }
+
+  .testimonials-glow-a {
+    width: 280px;
+    height: 280px;
+    top: 2%;
+    left: 1%;
+    background: radial-gradient(circle, rgba(0, 211, 255, 0.26) 0%, rgba(0, 211, 255, 0) 72%);
+    animation: testimonialsThemeFloat var(--motion-float-fast, 8s) ease-in-out infinite;
+  }
+
+  .testimonials-glow-b {
+    width: 320px;
+    height: 320px;
+    bottom: 4%;
+    right: 1%;
+    background: radial-gradient(circle, rgba(72, 238, 198, 0.24) 0%, rgba(72, 238, 198, 0) 72%);
+    animation: testimonialsThemeFloat var(--motion-float-slow, 10s) ease-in-out infinite reverse;
+  }
+
+  .testimonials-pill {
+    border: 1px solid rgba(26, 117, 255, 0.25);
+    border-radius: 999px;
+    padding: 0.45rem 0.95rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #0b4fc4;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  :global(.dark) .testimonials-pill {
+    border-color: rgba(115, 191, 255, 0.3);
+    background: rgba(13, 32, 67, 0.6);
+    color: #9fceff;
+  }
+
+  .testimonials-heading {
+    color: #0c1733;
+    text-wrap: balance;
+  }
+
+  :global(.dark) .testimonials-heading {
+    color: #f2f6ff;
+  }
+
+  .testimonials-subheading {
+    color: #4d6285;
+  }
+
+  :global(.dark) .testimonials-subheading {
+    color: #acc0e2;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    min-height: 330px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial-message {
+    color: var(--text-body, #2c466f);
+    line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .testimonial-carousel .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  .testimonial-carousel .swiper-slide {
+    height: auto !important;
+    display: flex;
+  }
+
+  .testimonial-carousel .swiper-slide > * {
+    width: 100%;
+  }
+
+  .testimonial-author {
+    color: var(--text-heading, #0f1f3d);
+  }
+
+  .testimonial-role {
+    color: var(--text-muted, #60779d);
+  }
+
+  @keyframes testimonialsThemeFloat {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -16px, 0);
+    }
+  }
+
+</style>

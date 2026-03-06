@@ -1,8 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
 interface Props { entry: any }
 const { entry } = Astro.props;
 const blogContentCollection = Astro.props.entry.data.blogContentCollection || [];
+
+const childPages: any[] = ((await (getCollection as any)('blog')) as any[])
+  .filter((item: any) => item.slug.startsWith(`${entry.slug}/`))
+  .sort((a: any, b: any) => a.data.title.localeCompare(b.data.title));
 ---
 
 <Layout title={entry.data.title} description={entry.data.postDetails?.paraOne} image={entry.data.bigImg?.src}>
@@ -68,6 +73,33 @@ const blogContentCollection = Astro.props.entry.data.blogContentCollection || []
           <p class="text-sm text-body-color dark:text-dark-6">No params provided.</p>
           </div>
         )}
+
+        {childPages.length > 0 && (
+          <div class="mb-8 mt-10">
+            <h3 class="mb-4 text-xl font-semibold text-dark dark:text-white">Related Terms In This Section</h3>
+            <p class="mb-5 text-sm text-body-color dark:text-dark-6">
+              Explore detailed term pages in this category.
+            </p>
+            <div class="grid gap-4 md:grid-cols-2">
+              {childPages.map((child: any) => (
+                <a
+                  href={`/blog/${child.slug}`}
+                  class="block rounded-lg border border-stroke bg-white p-5 transition hover:border-primary hover:shadow-md dark:border-dark-3 dark:bg-dark-2"
+                >
+                  <div class="mb-2 flex items-center justify-between gap-2">
+                    <h4 class="text-base font-semibold text-dark dark:text-white">{child.data.title}</h4>
+                    <span class="rounded bg-primary/10 px-2 py-1 text-xs font-medium text-primary">{child.data.category}</span>
+                  </div>
+                  <p class="mb-3 text-sm text-body-color dark:text-dark-6">{child.data.snippet}</p>
+                  <div class="text-xs text-body-color dark:text-dark-6">
+                    {child.data.publishDate.toDateString()}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
         {entry.data.tags && (
           <div class="flex flex-wrap gap-2">
             {entry.data.tags.map((tag: string) => (

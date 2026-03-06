@@ -1,0 +1,33 @@
+<svg width="560" height="360" viewBox="0 0 560 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="card" x1="60" y1="30" x2="510" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1E56"/>
+      <stop offset="1" stop-color="#0A4CB3"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="14" width="532" height="332" rx="26" fill="url(#card)"/>
+  <rect x="14.5" y="14.5" width="531" height="331" rx="25.5" stroke="rgba(255,255,255,0.24)"/>
+
+  <rect x="40" y="62" width="156" height="102" rx="16" fill="rgba(255,255,255,0.14)"/>
+  <text x="118" y="110" text-anchor="middle" fill="#F0F8FF" font-size="36" font-weight="800" font-family="Segoe UI, Arial, sans-serif">MCP</text>
+  <text x="118" y="138" text-anchor="middle" fill="#CDE6FF" font-size="14" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Secure Context</text>
+
+  <rect x="202" y="62" width="156" height="102" rx="16" fill="rgba(255,255,255,0.14)"/>
+  <text x="280" y="110" text-anchor="middle" fill="#F0F8FF" font-size="36" font-weight="800" font-family="Segoe UI, Arial, sans-serif">AI</text>
+  <text x="280" y="138" text-anchor="middle" fill="#CDE6FF" font-size="14" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Agentic Workflows</text>
+
+  <rect x="364" y="62" width="156" height="102" rx="16" fill="rgba(255,255,255,0.14)"/>
+  <text x="442" y="110" text-anchor="middle" fill="#F0F8FF" font-size="36" font-weight="800" font-family="Segoe UI, Arial, sans-serif">ROI</text>
+  <text x="442" y="138" text-anchor="middle" fill="#CDE6FF" font-size="14" font-weight="600" font-family="Segoe UI, Arial, sans-serif">Outcome Focused</text>
+
+  <path d="M56 250L136 230L216 246L296 202L378 220L466 170L516 190" stroke="#39E8CB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="56" cy="250" r="8" fill="#39E8CB"/>
+  <circle cx="136" cy="230" r="8" fill="#55B9FF"/>
+  <circle cx="216" cy="246" r="8" fill="#39E8CB"/>
+  <circle cx="296" cy="202" r="8" fill="#55B9FF"/>
+  <circle cx="378" cy="220" r="8" fill="#39E8CB"/>
+  <circle cx="466" cy="170" r="8" fill="#55B9FF"/>
+  <circle cx="516" cy="190" r="8" fill="#39E8CB"/>
+
+  <text x="48" y="316" fill="#D7EEFF" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Frameworks that scale from pilot to enterprise production</text>
+</svg>

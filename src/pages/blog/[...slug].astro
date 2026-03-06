@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import PostStandard from '../../components/blog/PostStandard.astro';
+import PostOther from '../../components/blog/PostOther.astro';
+import PostDefault from '../../components/blog/PostDefault.astro';
+import PostMarkdown from '../../components/blog/PostMarkdown.astro';
+
+// Generate paths only for nested blog slugs (e.g. category/post-name)
+export async function getStaticPaths() {
+  // collections are not typed in this project; cast getCollection to any to avoid "never" errors
+  const blogEntries: any[] = await (getCollection as any)("blog");
+
+  return blogEntries
+    .filter((entry: any) => entry.slug.includes('/'))
+    .map((entry: any) => ({
+      params: { slug: entry.slug },
+      props: { entry },
+      template: entry.data.template || null,
+    }));
+}
+
+// Get the entry directly from the prop on render
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+{!entry.data.postDetails ? (
+  <PostMarkdown entry={entry} Content={Content} />
+) : entry.data.template === "standard" ? (
+  <PostStandard entry={entry} />
+) : entry.data.template === "other" ? (
+  <PostOther entry={entry} Content={Content} />
+) : (
+  <PostDefault entry={entry} />
+)}
