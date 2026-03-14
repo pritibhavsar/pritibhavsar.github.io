@@ -4,11 +4,11 @@ draft: false
 title: "Fediverse"
 snippet: "Interconnected network of decentralized social platforms."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/fediverse.svg",
   alt: "fediverse"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/fediverse.svg",
   alt: "fediverse"
 }
 authorImg: {

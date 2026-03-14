@@ -4,11 +4,11 @@ draft: false
 title: "Organic marketing"
 snippet: "Unpaid methods for audience and demand growth."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/organic-marketing.svg",
   alt: "organic-marketing"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/organic-marketing.svg",
   alt: "organic-marketing"
 }
 authorImg: {

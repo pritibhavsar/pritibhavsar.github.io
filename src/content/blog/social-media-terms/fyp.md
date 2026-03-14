@@ -4,11 +4,11 @@ draft: false
 title: "FYP"
 snippet: "TikTok \"For You Page\" recommendation feed."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/fyp.svg",
   alt: "fyp"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/fyp.svg",
   alt: "fyp"
 }
 authorImg: {

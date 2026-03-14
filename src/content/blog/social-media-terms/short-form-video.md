@@ -4,11 +4,11 @@ draft: false
 title: "Short-form video"
 snippet: "Brief video optimized for fast attention and completion."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/short-form-video.svg",
   alt: "short-form-video"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/short-form-video.svg",
   alt: "short-form-video"
 }
 authorImg: {

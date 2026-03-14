@@ -4,11 +4,11 @@ draft: false
 title: "Campaign"
 snippet: "Coordinated set of posts tied to one objective."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/campaign.svg",
   alt: "campaign"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/campaign.svg",
   alt: "campaign"
 }
 authorImg: {

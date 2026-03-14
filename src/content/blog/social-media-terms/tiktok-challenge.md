@@ -4,11 +4,11 @@ draft: false
 title: "TikTok challenge"
 snippet: "Prompt-based trend inviting user participation."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/tiktok-challenge.svg",
   alt: "tiktok-challenge"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/tiktok-challenge.svg",
   alt: "tiktok-challenge"
 }
 authorImg: {

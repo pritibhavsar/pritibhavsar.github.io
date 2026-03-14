@@ -4,11 +4,11 @@ draft: false
 title: "Hashtag"
 snippet: "Metadata label using `#` to categorize discoverable content."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/hashtag.svg",
   alt: "hashtag"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/hashtag.svg",
   alt: "hashtag"
 }
 authorImg: {

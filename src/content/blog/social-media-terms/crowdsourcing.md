@@ -4,11 +4,11 @@ draft: false
 title: "Crowdsourcing"
 snippet: "Collecting ideas or contributions from communities."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/crowdsourcing.svg",
   alt: "crowdsourcing"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/crowdsourcing.svg",
   alt: "crowdsourcing"
 }
 authorImg: {

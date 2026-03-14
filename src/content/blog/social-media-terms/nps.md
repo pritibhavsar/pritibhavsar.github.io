@@ -4,11 +4,11 @@ draft: false
 title: "NPS"
 snippet: "Net promoter score measuring customer advocacy."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/nps.svg",
   alt: "nps"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/nps.svg",
   alt: "nps"
 }
 authorImg: {

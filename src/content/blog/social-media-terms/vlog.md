@@ -4,11 +4,11 @@ draft: false
 title: "Vlog"
 snippet: "Video-based blog format."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/vlog.svg",
   alt: "vlog"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/vlog.svg",
   alt: "vlog"
 }
 authorImg: {

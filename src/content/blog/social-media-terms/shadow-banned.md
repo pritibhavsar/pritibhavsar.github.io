@@ -4,11 +4,11 @@ draft: false
 title: "Shadow banned"
 snippet: "Reduced visibility without explicit user-facing notice."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/shadow-banned.svg",
   alt: "shadow-banned"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/shadow-banned.svg",
   alt: "shadow-banned"
 }
 authorImg: {

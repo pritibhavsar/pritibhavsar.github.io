@@ -4,11 +4,11 @@ draft: false
 title: "PFP"
 snippet: "Profile picture representing an account identity."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/pfp.svg",
   alt: "pfp"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/pfp.svg",
   alt: "pfp"
 }
 authorImg: {

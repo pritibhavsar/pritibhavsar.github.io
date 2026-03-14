@@ -1,0 +1,49 @@
+---
+interface Props {
+  publishedCount: number;
+  latestPublishedDate: string;
+  highlights: string[];
+  currentPage?: number;
+  totalPages?: number;
+}
+
+const { publishedCount, latestPublishedDate, highlights, currentPage, totalPages } = Astro.props;
+const showPageStatus = typeof currentPage === "number" && typeof totalPages === "number";
+---
+
+<div class="wow fadeInUp mb-12 rounded-3xl border border-stroke bg-white p-6 shadow-sm md:p-8 lg:p-10 dark:border-dark-3 dark:bg-dark-2" data-wow-delay=".05s">
+  <div class="grid gap-7 lg:grid-cols-12 lg:items-center">
+    <div class="lg:col-span-8">
+      <span class="mb-4 inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+        Insight Center
+      </span>
+      <h1 class="mb-4 text-3xl font-semibold leading-tight text-dark sm:text-4xl lg:text-[2.7rem] dark:text-white">
+        AI, Marketing, and Technology Insights Built for Business Growth
+      </h1>
+      <p class="max-w-[70ch] text-base leading-8 text-body-color dark:text-dark-6">
+        Explore practical strategies, real-world frameworks, and implementation guidance designed for decision-makers.
+        Every article is crafted to help teams accelerate execution, improve ROI, and make smarter growth bets.
+      </p>
+    </div>
+
+    <div class="lg:col-span-4">
+      <div class="rounded-2xl border border-stroke bg-gray-1 p-5 dark:border-dark-3 dark:bg-dark">
+        <p class="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-body-color dark:text-dark-6">Knowledge Snapshot</p>
+        <p class="mb-1 text-3xl font-semibold text-dark dark:text-white">{publishedCount}</p>
+        <p class="mb-1 text-sm text-body-color dark:text-dark-6">Published articles</p>
+        {showPageStatus && (
+          <p class="mb-4 text-sm text-body-color dark:text-dark-6">
+            Current page: <span class="font-medium text-dark dark:text-white">{currentPage}</span> / {totalPages}
+          </p>
+        )}
+        <p class="text-sm text-body-color dark:text-dark-6">Latest update: <span class="font-medium text-dark dark:text-white">{latestPublishedDate}</span></p>
+      </div>
+    </div>
+  </div>
+
+  <ul class="mt-7 grid gap-3 md:grid-cols-3">
+    {highlights.map((point) => (
+      <li class="rounded-xl border border-stroke bg-gray-1 px-4 py-3 text-sm text-body-color dark:border-dark-3 dark:bg-dark dark:text-dark-6">{point}</li>
+    ))}
+  </ul>
+</div>

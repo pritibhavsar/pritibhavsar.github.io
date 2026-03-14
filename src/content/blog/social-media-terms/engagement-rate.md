@@ -4,11 +4,11 @@ draft: false
 title: "Engagement rate"
 snippet: "Ratio of interactions relative to audience size or reach."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/engagement-rate.svg",
   alt: "engagement-rate"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/engagement-rate.svg",
   alt: "engagement-rate"
 }
 authorImg: {

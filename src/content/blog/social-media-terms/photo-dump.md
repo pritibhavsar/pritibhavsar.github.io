@@ -4,11 +4,11 @@ draft: false
 title: "Photo dump"
 snippet: "Casual multi-image post with mixed moments."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/photo-dump.svg",
   alt: "photo-dump"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/photo-dump.svg",
   alt: "photo-dump"
 }
 authorImg: {

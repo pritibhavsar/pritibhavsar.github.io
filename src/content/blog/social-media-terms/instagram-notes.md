@@ -4,11 +4,11 @@ draft: false
 title: "Instagram Notes"
 snippet: "Short status-like messages inside Instagram inbox."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-notes.svg",
   alt: "instagram-notes"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-notes.svg",
   alt: "instagram-notes"
 }
 authorImg: {

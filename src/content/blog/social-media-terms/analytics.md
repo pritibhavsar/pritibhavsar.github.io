@@ -4,11 +4,11 @@ draft: false
 title: "Analytics"
 snippet: "Data and analysis used to evaluate social performance."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/analytics.svg",
   alt: "analytics"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/analytics.svg",
   alt: "analytics"
 }
 authorImg: {

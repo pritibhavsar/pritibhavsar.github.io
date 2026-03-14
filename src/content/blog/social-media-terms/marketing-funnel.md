@@ -4,11 +4,11 @@ draft: false
 title: "Marketing funnel"
 snippet: "Journey from awareness to conversion and retention."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/marketing-funnel.svg",
   alt: "marketing-funnel"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/marketing-funnel.svg",
   alt: "marketing-funnel"
 }
 authorImg: {

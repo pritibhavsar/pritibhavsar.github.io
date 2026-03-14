@@ -4,11 +4,11 @@ draft: false
 title: "Smart goals"
 snippet: "Goals defined as specific, measurable, achievable, relevant, and time-bound."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/smart-goals.svg",
   alt: "smart-goals"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/smart-goals.svg",
   alt: "smart-goals"
 }
 authorImg: {

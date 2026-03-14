@@ -4,11 +4,11 @@ draft: false
 title: "X App"
 snippet: "Rebranded Twitter platform identity."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/x-app.svg",
   alt: "x-app"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/x-app.svg",
   alt: "x-app"
 }
 authorImg: {

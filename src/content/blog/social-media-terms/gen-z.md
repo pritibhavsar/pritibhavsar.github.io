@@ -4,11 +4,11 @@ draft: false
 title: "Generation Z (Gen Z)"
 snippet: "Demographic cohort born roughly 1997 to 2012."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/gen-z.svg",
   alt: "gen-z"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/gen-z.svg",
   alt: "gen-z"
 }
 authorImg: {

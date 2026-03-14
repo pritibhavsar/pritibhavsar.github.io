@@ -4,11 +4,11 @@ draft: false
 title: "POV"
 snippet: "\"Point of view\" storytelling format in short video."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/pov.svg",
   alt: "pov"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/pov.svg",
   alt: "pov"
 }
 authorImg: {

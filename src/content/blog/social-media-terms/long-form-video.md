@@ -4,11 +4,11 @@ draft: false
 title: "Long-form video"
 snippet: "Extended-duration video designed for depth."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/long-form-video.svg",
   alt: "long-form-video"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/long-form-video.svg",
   alt: "long-form-video"
 }
 authorImg: {

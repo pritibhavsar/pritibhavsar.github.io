@@ -4,11 +4,11 @@ draft: false
 title: "URL shortener"
 snippet: "Tool for compact, trackable links."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/url-shortener.svg",
   alt: "url-shortener"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/url-shortener.svg",
   alt: "url-shortener"
 }
 authorImg: {

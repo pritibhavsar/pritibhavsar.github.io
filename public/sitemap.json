@@ -2,7 +2,7 @@
   "urls": [
     {
       "loc": "https://palportals.com/",
-      "lastmod": "2026-03-03",
+      "lastmod": "2026-03-06",
       "changefreq": "weekly",
       "priority": "1.00"
     },
@@ -74,18 +74,624 @@
     },
     {
       "loc": "https://palportals.com/blog/social-algorithm",
-      "lastmod": "2026-03-03",
+      "lastmod": "2026-03-05",
       "changefreq": "weekly",
       "priority": "0.70"
     },
     {
       "loc": "https://palportals.com/blog/social-media-terms",
-      "lastmod": "2026-03-03",
+      "lastmod": "2026-03-06",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/affiliate-marketing",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/algospeak",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/analytics",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/batching",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/bereal",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/bio",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/bluesky",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/boomerang",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/boosted-post",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/brand-awareness",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/cac",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/campaign",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/caption",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/carousel-post",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/cfbr",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/character-counter",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/clickbait",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/community-manager",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/content-pillars",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/creator-economy",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/cross-posting",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/crowdsourcing",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/decentralized",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/demure",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/dm",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/emoji",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/engagement-rate",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/evergreen-content",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/fediverse",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/feed",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/finsta",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/follower-growth",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/fyp",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/gen-z",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/gif",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/google-business-profile",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/grwm",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/hashtag",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/impressions",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/influencer",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/instagram-broadcast-channel",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/instagram-close-friends",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/instagram-highlights",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/instagram-insights",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/instagram-notes",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/instagram-reels",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/instagram-threads",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/instagrammable",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/jpeg",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/keyword",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/kol",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/kpi",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/link-in-bio",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/linkedin-articles",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/linkedin-company-page",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/linkedin-creator-mode",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/linkedin-newsletter",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/linkedin-showcase-page",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/long-form-video",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/main-character-energy",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/marketing-funnel",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/meme",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/meta-business-suite",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/meta-verified",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/nps",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/ootd",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/organic-marketing",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/pfp",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/photo-dump",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/pov",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/quality-control",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/quiet-mode",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/reach",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/reddit",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/roi",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/sentiment-analysis",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/shadow-banned",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/short-form-video",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/smart-goals",
+      "lastmod": "2026-03-05",
       "changefreq": "weekly",
       "priority": "0.70"
     },
     {
       "loc": "https://palportals.com/blog/social-media-terms/social-algorithm",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/social-media",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/sponsored-post",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/stickers",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/thought-leader",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/tiktok-challenge",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/tiktok-duet",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/tiktok-shop",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/tiktok-stitch",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/touch-grass",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/trending",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/twitter-advanced-search",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/twitter-threads",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/ugc",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/url-shortener",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/ux",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/vanish-mode",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/viral",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/vlog",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/watermark",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/x-app",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/youtube-studio",
+      "lastmod": "2026-03-05",
+      "changefreq": "weekly",
+      "priority": "0.70"
+    },
+    {
+      "loc": "https://palportals.com/blog/social-media-terms/zapier",
       "lastmod": "2026-03-05",
       "changefreq": "weekly",
       "priority": "0.70"

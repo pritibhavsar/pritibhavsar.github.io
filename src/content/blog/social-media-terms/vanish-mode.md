@@ -4,11 +4,11 @@ draft: false
 title: "Vanish mode"
 snippet: "Auto-disappearing chat mode in messaging apps."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/vanish-mode.svg",
   alt: "vanish-mode"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/vanish-mode.svg",
   alt: "vanish-mode"
 }
 authorImg: {

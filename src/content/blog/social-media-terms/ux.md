@@ -4,11 +4,11 @@ draft: false
 title: "UX"
 snippet: "Overall quality of user interaction with a digital product."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/ux.svg",
   alt: "ux"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/ux.svg",
   alt: "ux"
 }
 authorImg: {

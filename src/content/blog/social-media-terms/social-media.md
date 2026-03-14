@@ -4,11 +4,11 @@ draft: false
 title: "Social media"
 snippet: "Digital platforms for publishing, interaction, and community."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/social-media.svg",
   alt: "social-media"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/social-media.svg",
   alt: "social-media"
 }
 authorImg: {

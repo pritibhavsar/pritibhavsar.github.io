@@ -4,11 +4,11 @@ draft: false
 title: "Instagram Reels"
 snippet: "Short-form vertical video format."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-reels.svg",
   alt: "instagram-reels"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-reels.svg",
   alt: "instagram-reels"
 }
 authorImg: {

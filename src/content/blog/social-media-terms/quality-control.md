@@ -4,11 +4,11 @@ draft: false
 title: "Quality control"
 snippet: "Review process for consistency, clarity, and brand safety."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/quality-control.svg",
   alt: "quality-control"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/quality-control.svg",
   alt: "quality-control"
 }
 authorImg: {

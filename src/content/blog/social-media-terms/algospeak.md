@@ -4,11 +4,11 @@ draft: false
 title: "Algospeak"
 snippet: "Algospeak is coded language creators use to avoid moderation filters while still communicating sensitive or restricted topics."
 image: {
-  src: "/assets/blog/blog-02.jpg",
+  src: "/assets/blog/social-media-terms/algospeak.svg",
   alt: "algospeak"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/algospeak.svg",
   alt: "algospeak"
 }
 authorImg: {

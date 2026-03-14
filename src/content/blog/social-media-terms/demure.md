@@ -4,11 +4,11 @@ draft: false
 title: "Demure"
 snippet: "Trend term associated with modest or understated presentation."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/demure.svg",
   alt: "demure"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/demure.svg",
   alt: "demure"
 }
 authorImg: {

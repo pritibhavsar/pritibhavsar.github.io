@@ -4,11 +4,11 @@ draft: false
 title: "Sentiment analysis"
 snippet: "Detecting emotional tone in public mentions."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/sentiment-analysis.svg",
   alt: "sentiment-analysis"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/sentiment-analysis.svg",
   alt: "sentiment-analysis"
 }
 authorImg: {

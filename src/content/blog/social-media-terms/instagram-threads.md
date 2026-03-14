@@ -4,11 +4,11 @@ draft: false
 title: "Threads (Instagram)"
 snippet: "Text-first social platform by Instagram."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-threads.svg",
   alt: "instagram-threads"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-threads.svg",
   alt: "instagram-threads"
 }
 authorImg: {

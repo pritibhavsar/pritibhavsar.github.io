@@ -4,11 +4,11 @@ draft: false
 title: "Instagram Highlights"
 snippet: "Saved story collections pinned to profile."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-highlights.svg",
   alt: "instagram-highlights"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-highlights.svg",
   alt: "instagram-highlights"
 }
 authorImg: {

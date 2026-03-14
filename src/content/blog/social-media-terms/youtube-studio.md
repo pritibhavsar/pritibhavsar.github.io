@@ -4,11 +4,11 @@ draft: false
 title: "YouTube Studio"
 snippet: "Creator dashboard for channel management and analytics."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/youtube-studio.svg",
   alt: "youtube-studio"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/youtube-studio.svg",
   alt: "youtube-studio"
 }
 authorImg: {

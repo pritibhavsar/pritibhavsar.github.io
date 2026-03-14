@@ -4,11 +4,11 @@ draft: false
 title: "Batching"
 snippet: "Grouping similar work into focused production blocks."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/batching.svg",
   alt: "batching"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/batching.svg",
   alt: "batching"
 }
 authorImg: {

@@ -4,11 +4,11 @@ draft: false
 title: "Caption"
 snippet: "Text that accompanies social media visuals."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/caption.svg",
   alt: "caption"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/caption.svg",
   alt: "caption"
 }
 authorImg: {

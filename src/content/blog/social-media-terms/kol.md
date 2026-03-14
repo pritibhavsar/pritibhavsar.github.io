@@ -4,11 +4,11 @@ draft: false
 title: "KOL"
 snippet: "Key opinion leader with influence in a niche."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/kol.svg",
   alt: "kol"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/kol.svg",
   alt: "kol"
 }
 authorImg: {

@@ -4,11 +4,11 @@ draft: false
 title: "Community manager"
 snippet: "Person managing audience interaction and trust."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/community-manager.svg",
   alt: "community-manager"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/community-manager.svg",
   alt: "community-manager"
 }
 authorImg: {

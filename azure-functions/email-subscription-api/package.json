@@ -1,0 +1,18 @@
+{
+  "name": "email-subscription-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Azure Functions app for handling email subscriptions via Sender API",
+  "main": "src/functions/*.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests configured\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.5.0"
+  }
+}

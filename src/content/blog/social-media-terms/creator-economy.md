@@ -4,11 +4,11 @@ draft: false
 title: "Creator economy"
 snippet: "Ecosystem where creators monetize audience and content."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/creator-economy.svg",
   alt: "creator-economy"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/creator-economy.svg",
   alt: "creator-economy"
 }
 authorImg: {

@@ -4,11 +4,11 @@ draft: false
 title: "Link in bio"
 snippet: "Primary outbound profile link for social traffic routing."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/link-in-bio.svg",
   alt: "link-in-bio"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/link-in-bio.svg",
   alt: "link-in-bio"
 }
 authorImg: {

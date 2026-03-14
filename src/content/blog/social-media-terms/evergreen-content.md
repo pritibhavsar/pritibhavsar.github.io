@@ -4,11 +4,11 @@ draft: false
 title: "Evergreen content"
 snippet: "Content that stays relevant for long periods."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/evergreen-content.svg",
   alt: "evergreen-content"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/evergreen-content.svg",
   alt: "evergreen-content"
 }
 authorImg: {

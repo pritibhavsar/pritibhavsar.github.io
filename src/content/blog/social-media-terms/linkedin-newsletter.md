@@ -4,11 +4,11 @@ draft: false
 title: "LinkedIn Newsletter"
 snippet: "Recurring publication sent to subscribers."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/linkedin-newsletter.svg",
   alt: "linkedin-newsletter"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/linkedin-newsletter.svg",
   alt: "linkedin-newsletter"
 }
 authorImg: {

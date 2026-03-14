@@ -4,11 +4,11 @@ draft: false
 title: "Watermark"
 snippet: "Overlay marking ownership or source attribution."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/watermark.svg",
   alt: "watermark"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/watermark.svg",
   alt: "watermark"
 }
 authorImg: {

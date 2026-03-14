@@ -4,11 +4,11 @@ draft: false
 title: "Duet (TikTok)"
 snippet: "Split-screen reaction or collaboration format."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/tiktok-duet.svg",
   alt: "tiktok-duet"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/tiktok-duet.svg",
   alt: "tiktok-duet"
 }
 authorImg: {

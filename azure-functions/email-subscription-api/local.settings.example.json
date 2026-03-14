@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "SENDER_API_URL": "https://api.sender.net",
+    "SENDER_API_SUBSCRIBE_PATH": "/v2/subscribers",
+    "SENDER_API_TOKEN": "your_sender_api_token",
+    "SENDER_LIST_ID": "your_list_id",
+    "ALLOWED_ORIGINS": "https://dipalbhavsar.github.io,http://localhost:4321"
+    }
+}

@@ -4,11 +4,11 @@ draft: false
 title: "Trending"
 snippet: "Topic or format experiencing rapid visibility growth."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/trending.svg",
   alt: "trending"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/trending.svg",
   alt: "trending"
 }
 authorImg: {

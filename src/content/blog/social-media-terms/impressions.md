@@ -4,11 +4,11 @@ draft: false
 title: "Impressions"
 snippet: "Total number of times content appears on screen."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/impressions.svg",
   alt: "impressions"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/impressions.svg",
   alt: "impressions"
 }
 authorImg: {

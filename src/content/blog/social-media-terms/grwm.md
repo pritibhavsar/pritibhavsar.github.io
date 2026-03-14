@@ -4,11 +4,11 @@ draft: false
 title: "GRWM"
 snippet: "\"Get Ready With Me\" creator content format."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/grwm.svg",
   alt: "grwm"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/grwm.svg",
   alt: "grwm"
 }
 authorImg: {

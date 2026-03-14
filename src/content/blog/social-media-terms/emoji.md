@@ -4,11 +4,11 @@ draft: false
 title: "Emoji"
 snippet: "Visual symbols used to add tone and meaning."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/emoji.svg",
   alt: "emoji"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/emoji.svg",
   alt: "emoji"
 }
 authorImg: {

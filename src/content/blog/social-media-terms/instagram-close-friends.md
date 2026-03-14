@@ -4,11 +4,11 @@ draft: false
 title: "Instagram Close Friends"
 snippet: "Private story sharing list."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-close-friends.svg",
   alt: "instagram-close-friends"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-close-friends.svg",
   alt: "instagram-close-friends"
 }
 authorImg: {
