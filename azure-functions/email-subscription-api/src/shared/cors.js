@@ -1,8 +1,9 @@
 const DEFAULT_ALLOWED_METHODS = "POST,OPTIONS";
 const DEFAULT_ALLOWED_HEADERS = "Content-Type,Authorization";
 
+
 function parseAllowedOrigins() {
-  const configured = process.env.ALLOWED_ORIGINS || "";
+  const configured = "https://dipalbhavsar.github.io,http://localhost:4321"; // process.env.ALLOWED_ORIGINS || "";
   return configured
     .split(",")
     .map((value) => value.trim())

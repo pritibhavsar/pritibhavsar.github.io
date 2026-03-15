@@ -96,7 +96,7 @@ app.http("subscribe", {
         },
         jsonBody: {
           success: false,
-          message: "Unable to complete subscription"
+          message: { message: "Unable to complete subscription", error: error.message }
         }
       };
     }

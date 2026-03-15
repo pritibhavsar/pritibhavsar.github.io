@@ -8,14 +8,17 @@
   <p class="mb-5 text-base text-white">
     Enter your email to receive our latest newsletter.
   </p>
-  <form>
+  <form id="newsletter-form">
     <input
       type="email"
+      id="newsletter-email"
+      required
       placeholder="Your email address"
       class="mb-4 h-[50px] w-full rounded-md border border-transparent bg-white/10 text-center text-base text-white placeholder:text-white/60 outline-none focus:border-white focus-visible:shadow-none"
     />
     <input
       type="submit"
+      id="newsletter-submit"
       value="Subscribe Now"
       class="mb-4 h-[50px] w-full cursor-pointer rounded-md bg-secondary text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:bg-[#0BB489]"
     />
@@ -303,3 +306,51 @@
     </span>
   </div>
 </div>
+
+<script>
+  const newsletterForm = document.getElementById("newsletter-form") as HTMLFormElement | null;
+  const emailInput = document.getElementById("newsletter-email") as HTMLInputElement | null;
+  const submitButton = document.getElementById("newsletter-submit") as HTMLInputElement | null;
+
+  async function subscribe(payload: { email: string }) {
+    const response = await fetch("https://fun-email-subscription-api.azurewebsites.net/api/subscribe", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!response.ok) {
+      throw new Error("Subscription request failed");
+    }
+  }
+
+  if (newsletterForm && emailInput && submitButton) {
+    newsletterForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (!emailInput.checkValidity()) {
+        emailInput.reportValidity();
+        return;
+      }
+
+      const email = emailInput.value.trim();
+      if (!email) {
+        emailInput.reportValidity();
+        return;
+      }
+
+      submitButton.disabled = true;
+
+      try {
+        await subscribe({ email });
+        newsletterForm.reset();
+      } catch (error) {
+        console.error(error);
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  }
+</script>
