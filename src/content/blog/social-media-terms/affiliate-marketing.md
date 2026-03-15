@@ -4,11 +4,11 @@ draft: false
 title: "Affiliate Marketing"
 snippet: "Affiliate marketing is a performance model where partners earn commission for driving sales or leads through tracked links."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/affiliate-marketing.svg",
   alt: "affiliate marketing"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/affiliate-marketing.svg",
   alt: "affiliate marketing"
 }
 authorImg: {

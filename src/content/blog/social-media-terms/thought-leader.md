@@ -4,11 +4,11 @@ draft: false
 title: "Thought leader"
 snippet: "Recognized expert known for clear original perspective."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/thought-leader.svg",
   alt: "thought-leader"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/thought-leader.svg",
   alt: "thought-leader"
 }
 authorImg: {

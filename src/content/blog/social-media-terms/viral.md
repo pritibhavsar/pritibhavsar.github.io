@@ -4,11 +4,11 @@ draft: false
 title: "Viral"
 snippet: "Rapid spread of content across audiences."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/viral.svg",
   alt: "viral"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/viral.svg",
   alt: "viral"
 }
 authorImg: {

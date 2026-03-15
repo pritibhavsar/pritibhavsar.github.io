@@ -4,11 +4,11 @@ draft: false
 title: "Character counter"
 snippet: "Tool to track text length per platform limits."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/character-counter.svg",
   alt: "character-counter"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/character-counter.svg",
   alt: "character-counter"
 }
 authorImg: {

@@ -4,11 +4,11 @@ draft: false
 title: "Twitter threads"
 snippet: "Connected post sequence forming one longer narrative."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/twitter-threads.svg",
   alt: "twitter-threads"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/twitter-threads.svg",
   alt: "twitter-threads"
 }
 authorImg: {

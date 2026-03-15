@@ -4,11 +4,11 @@ draft: false
 title: "OOTD"
 snippet: "\"Outfit of the day\" post format."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/ootd.svg",
   alt: "ootd"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/ootd.svg",
   alt: "ootd"
 }
 authorImg: {

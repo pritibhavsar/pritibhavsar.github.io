@@ -4,11 +4,11 @@ draft: false
 title: "Google Business Profile"
 snippet: "Business listing system for local discovery."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/google-business-profile.svg",
   alt: "google-business-profile"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/google-business-profile.svg",
   alt: "google-business-profile"
 }
 authorImg: {

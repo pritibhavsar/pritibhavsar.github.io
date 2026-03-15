@@ -4,11 +4,11 @@ draft: false
 title: "ROI"
 snippet: "Return on investment from social initiatives."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/roi.svg",
   alt: "roi"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/roi.svg",
   alt: "roi"
 }
 authorImg: {

@@ -4,11 +4,11 @@ draft: false
 title: "CFBR"
 snippet: "\"Comment for better reach\" engagement tactic."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/cfbr.svg",
   alt: "cfbr"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/cfbr.svg",
   alt: "cfbr"
 }
 authorImg: {

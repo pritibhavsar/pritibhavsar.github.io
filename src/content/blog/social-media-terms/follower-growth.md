@@ -4,11 +4,11 @@ draft: false
 title: "Follower growth"
 snippet: "Increase in audience size over time."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/follower-growth.svg",
   alt: "follower-growth"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/follower-growth.svg",
   alt: "follower-growth"
 }
 authorImg: {

@@ -4,11 +4,11 @@ draft: false
 title: "Decentralized"
 snippet: "Platform model distributed across independent servers."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/decentralized.svg",
   alt: "decentralized"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/decentralized.svg",
   alt: "decentralized"
 }
 authorImg: {

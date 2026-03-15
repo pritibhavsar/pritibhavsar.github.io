@@ -4,11 +4,11 @@ draft: false
 title: "Meta Business Suite"
 snippet: "Management hub for Facebook and Instagram activity."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/meta-business-suite.svg",
   alt: "meta-business-suite"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/meta-business-suite.svg",
   alt: "meta-business-suite"
 }
 authorImg: {

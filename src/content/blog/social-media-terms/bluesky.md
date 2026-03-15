@@ -4,11 +4,11 @@ draft: false
 title: "Bluesky"
 snippet: "Decentralized social platform and X/Twitter alternative."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/bluesky.svg",
   alt: "bluesky"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/bluesky.svg",
   alt: "bluesky"
 }
 authorImg: {

@@ -4,11 +4,11 @@ draft: false
 title: "Finsta"
 snippet: "Secondary private Instagram account with casual content."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/finsta.svg",
   alt: "finsta"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/finsta.svg",
   alt: "finsta"
 }
 authorImg: {

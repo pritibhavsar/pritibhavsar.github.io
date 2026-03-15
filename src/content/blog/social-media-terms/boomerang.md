@@ -4,11 +4,11 @@ draft: false
 title: "Boomerang"
 snippet: "Looping short video format popularized by Instagram."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/boomerang.svg",
   alt: "boomerang"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/boomerang.svg",
   alt: "boomerang"
 }
 authorImg: {

@@ -1,0 +1,22 @@
+---
+import Breadcrumb from '../layout/Breadcrumb.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Blog',
+  description = 'Through our blogs, leaders gain practical strategies to boost execution speed, ROI, and smart growth.',
+} = Astro.props;
+---
+
+<Breadcrumb>
+  <Fragment slot="title"> {title} </Fragment>
+  <Fragment slot="description">
+    <h3 class="mx-auto max-w-3xl text-xl font-semibold text-primary dark:text-primary sm:text-2xl lg:text-[30px]">
+      {description}
+    </h3>
+  </Fragment>
+</Breadcrumb>

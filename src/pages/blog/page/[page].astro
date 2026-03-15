@@ -1,0 +1,118 @@
+---
+import Pagination from '../../../components/Pagination.astro';
+import BlogListingHero from '../../../components/blog/BlogListingHero.astro';
+import BlogListingBreadcrumb from '../../../components/blog/BlogListingBreadcrumb.astro';
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from "astro:content";
+
+const POSTS_PER_PAGE = 9;
+
+const publishedBlogEntries = await getCollection("blog", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+
+publishedBlogEntries.sort((a, b) => {
+  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+});
+
+const totalPages = Math.ceil(publishedBlogEntries.length / POSTS_PER_PAGE);
+
+export async function getStaticPaths() {
+  const postsPerPage = 9;
+
+  const entries = await getCollection("blog", ({ data }) => {
+    return !data.draft && data.publishDate < new Date();
+  });
+
+  const pages = Math.ceil(entries.length / postsPerPage);
+
+  return Array.from({ length: Math.max(0, pages - 1) }, (_, index) => {
+    const pageNumber = index + 2;
+
+    return {
+      params: {
+        page: String(pageNumber),
+      },
+    };
+  });
+}
+
+const currentPage = Number(Astro.params.page);
+const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+const endIndex = startIndex + POSTS_PER_PAGE;
+const pageBlogEntries = publishedBlogEntries.slice(startIndex, endIndex);
+const latestPublishedDate = publishedBlogEntries[0]?.data.publishDate?.toLocaleDateString("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+}) || "N/A";
+
+const blogHighlights = [
+  "Actionable AI and automation playbooks",
+  "Growth marketing frameworks for measurable ROI",
+  "Business-ready technology strategy insights",
+];
+---
+
+<Layout
+  description="Leverage GenAI to delivering intelligent services, automating workflows, personalizing experiences, and accelerating scalable, data-driven business outcomes."
+  title={`Blog - Page ${currentPage} | PAL Portals`}
+>
+  <BlogListingBreadcrumb />
+
+  <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 dark:bg-dark">
+    <div class="container">
+      <BlogListingHero
+        publishedCount={publishedBlogEntries.length}
+        latestPublishedDate={latestPublishedDate}
+        highlights={blogHighlights}
+        currentPage={currentPage}
+        totalPages={totalPages}
+      />
+
+      <ul class="-mx-4 flex flex-wrap items-stretch">
+        {
+          pageBlogEntries.map((blogPostEntry) => (
+            <li class="mb-8 flex w-full px-4 md:w-1/2 lg:w-1/3">
+              <a
+                class="wow fadeInUp group flex h-full w-full flex-col rounded-2xl border border-stroke bg-white p-4 transition duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-dark-3 dark:bg-dark-2"
+                data-wow-delay=".1s"
+                href={`/blog/${blogPostEntry.slug}`}
+              >
+                <div class="mb-6 overflow-hidden rounded-xl">
+                  <span class="block">
+                    <img
+                      src={blogPostEntry.data.image?.src || '/assets/blog/blog-default.jpg'}
+                      alt={blogPostEntry.data.image?.alt || blogPostEntry.data.title}
+                      class="h-[220px] w-full object-cover ease-in duration-500 group-hover:scale-110"
+                    />
+                  </span>
+                </div>
+                <div class="flex flex-1 flex-col">
+                  <span
+                    class="mb-4 inline-block w-fit rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
+                  >
+                    {blogPostEntry.data.publishDate.toDateString()}
+                  </span>
+                  <h3>
+                    <span
+                      class="mb-3 inline-block line-clamp-2 text-xl font-semibold leading-8 text-dark transition-colors group-hover:text-primary dark:text-white dark:group-hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                    >
+                      {blogPostEntry.data.title}
+                    </span>
+                  </h3>
+                  <p class="mb-5 min-h-[84px] text-base leading-7 text-body-color line-clamp-3 dark:text-dark-6">
+                    {blogPostEntry.data.postDetails?.paraOne?.slice(0, 130) || blogPostEntry.data.snippet?.slice(0, 130) || 'Explore practical insights and apply them in your business context.'}
+                  </p>
+                  <span class="mt-auto inline-flex items-center text-sm font-medium text-primary">Read article -></span>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <Pagination currentPage={currentPage} totalPages={totalPages} />
+    </div>
+  </section>
+</Layout>

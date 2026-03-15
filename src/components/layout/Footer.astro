@@ -3,8 +3,8 @@ import { getCollection } from "astro:content";
 
 const isDev = import.meta.env.DEV;
 
-const publishedBlogEntries = await getCollection("blog", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
+const publishedBlogEntries = await getCollection("blog", ({ data, slug }) => {
+  return !slug.includes("/") && !data.draft && data.publishDate < new Date();
 });
 
 publishedBlogEntries.sort((a, b) => {
@@ -24,19 +24,19 @@ const footerLinks = [
   {
     header: "Features",
     links: [
-      { name: "How it works", href: "/", isExternal: false },
-      { name: "Privacy policy", href: "/privacy-policy", isExternal: false },
-      { name: "Terms of Services", href: "/terms-of-services", isExternal: false },
-      { name: "Refund policy", href: "/", isExternal: false },
+      { name: "End-to-End Strategy", href: "/#services", isExternal: false },
+      { name: "Data-Driven Execution", href: "/#use-cases", isExternal: false },
+      { name: "Expert Consulting Team", href: "/about", isExternal: false },
+      { name: "Transparent Pricing", href: "/pricing", isExternal: false },
     ],
   },
   {
-    header: "Our Products",
+    header: "Our Offerings",
     links: [
-      { name: "Lineicons", href: "https://lineicons.com/", isExternal: true },
-      { name: "TailAdmin", href: "https://tailadmin.com/", isExternal: true },
-      { name: "TailGrids", href: "https://tailgrids.com/", isExternal: true },
-      { name: "UIdeck", href: "https://uideck.com/", isExternal: true },
+      { name: "AI Enablement Program", href: "/#services", isExternal: false },
+      { name: "Growth Marketing Retainer", href: "/#use-cases", isExternal: false },
+      { name: "Custom Enterprise Plan", href: "/pricing", isExternal: false },
+      { name: "Book a Consultation", href: "/contact", isExternal: false },
     ],
   },
   {
@@ -80,8 +80,8 @@ const currentYear = new Date().getFullYear();
   <div class="footer-orb footer-orb-right" aria-hidden="true"></div>
 
   <div class="container relative z-10">
-    <div class="footer-top grid gap-6 rounded-3xl p-6 md:p-8 lg:grid-cols-12 lg:gap-8 lg:p-10">
-      <div class="lg:col-span-4">
+    <div class="footer-top grid gap-8 py-4 md:py-6 lg:grid-cols-12 lg:gap-10 lg:py-8">
+      <div class="lg:col-span-3">
         <div class="h-full p-2 md:p-3">
           {!isDev ? (
             <a href="/" class="mb-6 inline-block max-w-[170px]">
@@ -113,8 +113,8 @@ const currentYear = new Date().getFullYear();
         </div>
       </div>
 
-      <div class="lg:col-span-5">
-        <div class="grid gap-6 sm:grid-cols-3">
+      <div class="lg:col-span-6">
+        <div class="grid gap-7 sm:grid-cols-2 xl:grid-cols-3">
           {footerLinks.slice(0, 3).map((section) => (
             <div class="p-2 md:p-3">
               <h4 class="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-cyan-300">{section.header}</h4>
@@ -141,7 +141,7 @@ const currentYear = new Date().getFullYear();
         <div class="p-2 md:p-3">
           <h4 class="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-cyan-300">{footerLinks[3].header}</h4>
           <ul class="space-y-4">
-            {publishedBlogEntries.slice(0, 2).map((blogPostEntry) => (
+            {publishedBlogEntries.slice(0, 3).map((blogPostEntry) => (
               <li>
                 <a class="group flex items-center gap-4" href={`/blog/${blogPostEntry.slug}`}>
                   <div class="h-14 w-14 overflow-hidden rounded-xl border border-white/20 bg-white/10">
@@ -186,10 +186,10 @@ const currentYear = new Date().getFullYear();
   }
 
   .footer-top {
-    border: 1px solid var(--brand-glass-border);
-    background: linear-gradient(140deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
-    backdrop-filter: blur(10px);
-    box-shadow: var(--brand-shadow-strong);
+    border: 0;
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
   }
 
   .footer-social-chip {

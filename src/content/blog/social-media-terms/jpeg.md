@@ -4,11 +4,11 @@ draft: false
 title: "JPEG"
 snippet: "Compressed image format widely used on the web."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/jpeg.svg",
   alt: "jpeg"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/jpeg.svg",
   alt: "jpeg"
 }
 authorImg: {

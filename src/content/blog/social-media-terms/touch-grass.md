@@ -4,11 +4,11 @@ draft: false
 title: "Touch grass"
 snippet: "Slang reminder to disconnect and go offline."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/touch-grass.svg",
   alt: "touch-grass"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/touch-grass.svg",
   alt: "touch-grass"
 }
 authorImg: {

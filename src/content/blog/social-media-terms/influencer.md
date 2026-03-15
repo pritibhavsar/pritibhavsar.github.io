@@ -4,11 +4,11 @@ draft: false
 title: "Influencer"
 snippet: "Creator whose audience trust can shape decisions."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/influencer.svg",
   alt: "influencer"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/influencer.svg",
   alt: "influencer"
 }
 authorImg: {

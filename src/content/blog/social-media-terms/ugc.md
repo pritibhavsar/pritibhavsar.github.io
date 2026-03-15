@@ -4,11 +4,11 @@ draft: false
 title: "UGC"
 snippet: "User-generated content created by customers or communities."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/ugc.svg",
   alt: "ugc"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/ugc.svg",
   alt: "ugc"
 }
 authorImg: {

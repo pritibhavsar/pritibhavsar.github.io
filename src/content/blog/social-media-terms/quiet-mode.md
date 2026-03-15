@@ -4,11 +4,11 @@ draft: false
 title: "Quiet mode"
 snippet: "Notification pause mode in social applications."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/quiet-mode.svg",
   alt: "quiet-mode"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/quiet-mode.svg",
   alt: "quiet-mode"
 }
 authorImg: {

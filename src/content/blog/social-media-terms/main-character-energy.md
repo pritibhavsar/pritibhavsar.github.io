@@ -4,11 +4,11 @@ draft: false
 title: "Main character energy"
 snippet: "Trend phrase for personal narrative confidence."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/main-character-energy.svg",
   alt: "main-character-energy"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/main-character-energy.svg",
   alt: "main-character-energy"
 }
 authorImg: {

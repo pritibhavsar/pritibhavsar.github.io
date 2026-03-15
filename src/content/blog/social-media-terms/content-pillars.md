@@ -4,11 +4,11 @@ draft: false
 title: "Content pillars"
 snippet: "Core topic themes guiding content strategy."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/content-pillars.svg",
   alt: "content-pillars"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/content-pillars.svg",
   alt: "content-pillars"
 }
 authorImg: {

@@ -4,11 +4,11 @@ draft: false
 title: "Boosted post"
 snippet: "Organic post promoted with paid budget."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/boosted-post.svg",
   alt: "boosted-post"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/boosted-post.svg",
   alt: "boosted-post"
 }
 authorImg: {

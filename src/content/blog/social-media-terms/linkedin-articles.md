@@ -4,11 +4,11 @@ draft: false
 title: "LinkedIn Articles"
 snippet: "Long-form posts published directly on LinkedIn."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/linkedin-articles.svg",
   alt: "linkedin-articles"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/linkedin-articles.svg",
   alt: "linkedin-articles"
 }
 authorImg: {

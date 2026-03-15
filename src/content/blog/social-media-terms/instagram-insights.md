@@ -4,11 +4,11 @@ draft: false
 title: "Instagram Insights"
 snippet: "Native analytics for business or creator accounts."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-insights.svg",
   alt: "instagram-insights"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/instagram-insights.svg",
   alt: "instagram-insights"
 }
 authorImg: {

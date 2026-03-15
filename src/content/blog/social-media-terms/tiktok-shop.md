@@ -4,11 +4,11 @@ draft: false
 title: "TikTok Shop"
 snippet: "In-app commerce feature for discovery and checkout."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/tiktok-shop.svg",
   alt: "tiktok-shop"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/tiktok-shop.svg",
   alt: "tiktok-shop"
 }
 authorImg: {

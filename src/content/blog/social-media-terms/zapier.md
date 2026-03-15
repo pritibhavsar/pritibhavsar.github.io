@@ -4,11 +4,11 @@ draft: false
 title: "Zapier"
 snippet: "Automation platform that connects apps and workflows."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/zapier.svg",
   alt: "zapier"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/zapier.svg",
   alt: "zapier"
 }
 authorImg: {

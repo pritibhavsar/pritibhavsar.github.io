@@ -4,11 +4,11 @@ draft: false
 title: "LinkedIn Creator Mode"
 snippet: "Profile mode built for creator discovery."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/linkedin-creator-mode.svg",
   alt: "linkedin-creator-mode"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/linkedin-creator-mode.svg",
   alt: "linkedin-creator-mode"
 }
 authorImg: {

@@ -4,11 +4,11 @@ draft: false
 title: "Cross-posting"
 snippet: "Publishing the same content across multiple channels."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/cross-posting.svg",
   alt: "cross-posting"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/cross-posting.svg",
   alt: "cross-posting"
 }
 authorImg: {

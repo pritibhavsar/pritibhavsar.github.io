@@ -4,11 +4,11 @@ draft: false
 title: "Carousel post"
 snippet: "Multi-slide post with sequential images or videos."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/carousel-post.svg",
   alt: "carousel-post"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/carousel-post.svg",
   alt: "carousel-post"
 }
 authorImg: {

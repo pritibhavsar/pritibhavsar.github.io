@@ -305,3 +305,8 @@
   - author: Dipalkumar Bhavsar
   - commit-date: 2026-03-03T17:23:54+05:30
 
+## v0.0.62 — 2026-03-09
+- Enhance design
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-03-06T18:12:33+05:30
+

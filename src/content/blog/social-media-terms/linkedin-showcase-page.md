@@ -4,11 +4,11 @@ draft: false
 title: "LinkedIn Showcase Page"
 snippet: "Sub-page focused on product or segment stories."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/linkedin-showcase-page.svg",
   alt: "linkedin-showcase-page"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/linkedin-showcase-page.svg",
   alt: "linkedin-showcase-page"
 }
 authorImg: {

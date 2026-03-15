@@ -4,11 +4,11 @@ draft: false
 title: "Meta Verified"
 snippet: "Subscription verification and account support bundle."
 image: {
-  src: "/assets/blog/blog-01.jpg",
+  src: "/assets/blog/social-media-terms/meta-verified.svg",
   alt: "meta-verified"
 }
 bigImg: {
-  src: "/assets/blog/blog-details-01.jpg",
+  src: "/assets/blog/social-media-terms/meta-verified.svg",
   alt: "meta-verified"
 }
 authorImg: {
