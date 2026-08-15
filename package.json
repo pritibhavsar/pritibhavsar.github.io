@@ -15,7 +15,7 @@
     "@fontsource-variable/inter": "5.2.8",
     "@fontsource/space-grotesk": "^5.2.10",
     "astro": "5.16.6",
-    "astro-compress": "2.3.8",
+    "astro-compress": "2.4.0",
     "dotenv": "17.2.3",
     "gray-matter": "^4.0.3",
     "swiper": "12.0.3",
