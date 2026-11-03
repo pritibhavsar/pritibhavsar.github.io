@@ -12,5 +12,15 @@ export default defineConfig({
         forward: ['dataLayer.push', 'GTM-PG4CLJ2'], // Forward these events
       }
     }
-  )]
+  )],
+  vite: {
+    server: {
+      proxy: {
+        '/api': {
+          target: 'https://fun-email-subscription-api.azurewebsites.net',
+          changeOrigin: true,
+        }
+      }
+    }
+  }
 });

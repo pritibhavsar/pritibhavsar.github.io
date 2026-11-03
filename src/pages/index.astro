@@ -2,14 +2,14 @@
 import About from '../components/Aboutsection.astro';
 import Features from '../components/Features.astro';
 import Services from '../components/Services.astro';
+import MobileAppServices from '../components/MobileAppServices.astro';
 import Hero from '../components/Hero.astro';
 import Testimonials from '../components/Testimonials.astro';
 import UseCases from '../components/UseCases.astro';
 import Layout from '../layouts/Layout.astro';
-// import Pricing from '../components/Pricingsection.astro';
-// import Faq from '../components/Faq.astro';
+import Process from '../components/Process.astro';
+import Faq from '../components/Faq.astro';
 import Clients from '../components/Clients.astro';
-// import Team from '../components/Team.astro';
 import Contact from '../components/Contactsection.astro';
 import CTA from '../components/CTAsection.astro';
 import Blogsection from '../components/Blogsection.astro';
@@ -20,16 +20,16 @@ import Blogsection from '../components/Blogsection.astro';
   title="PAL Portals | AI Innovations for Business Growth"
 >
   <Hero />
+  <Clients />
   <Services />
+  <Process />
   <Features />
+  <MobileAppServices />
   <UseCases />
   <About />
-  <CTA />
-  <!-- <Pricing /> -->
   <Testimonials />
-  <!-- <Faq />
-  <Team /> -->
+  <Faq />
+  <CTA />
   <Blogsection />
   <Contact />
-  <!-- <Clients /> -->
 </Layout>

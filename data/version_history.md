@@ -310,3 +310,8 @@
   - author: Dipalkumar Bhavsar
   - commit-date: 2026-03-06T18:12:33+05:30
 
+## v0.0.63 — 2026-07-02
+- Implemented Email Subscription API
+  - author: Dipalkumar Bhavsar
+  - commit-date: 2026-03-20T16:48:23+05:30
+

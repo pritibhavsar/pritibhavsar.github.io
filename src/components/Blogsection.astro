@@ -7,66 +7,54 @@ const publishedBlogEntries = await getCollection("blog", ({ data, slug }) => {
   return !data.draft && data.publishDate < new Date() && !slug.includes("/");
 });
 
-// Sort content entries by publication date
-publishedBlogEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
-});
+publishedBlogEntries.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 ---
 
-<section class="blog-section relative overflow-hidden pt-20 pb-10 lg:pt-[120px] lg:pb-20">
-  <div class="blog-glow blog-glow-a" aria-hidden="true"></div>
-  <div class="blog-glow blog-glow-b" aria-hidden="true"></div>
+<section id="blog" class="section">
+  <div class="section-orb section-orb--cyan section-orb--tr" aria-hidden="true"></div>
   <div class="container">
-    <div class="flex flex-wrap justify-center -mx-4">
-      <div class="w-full px-4">
-        <div class="mx-auto mb-[60px] max-w-[760px] text-center">
-          <span class="blog-pill mb-4 inline-flex">
-            Our Blogs
-          </span>
-          <h2 class="blog-heading mb-4 text-3xl font-bold sm:text-4xl md:text-[42px] md:leading-[1.2]">
-            Insights, Strategies, and Product Intelligence
-          </h2>
-          <p class="blog-subheading mx-auto max-w-[660px] text-base sm:text-lg">
-            Explore practical perspectives on Generative AI, MCP architecture, technology operations, and growth strategies designed for business leaders and delivery teams.
-          </p>
-        </div>
+    <div class="mb-12 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+      <div class="section-header section-header--left !mb-0">
+        <span class="eyebrow">Our Blog</span>
+        <h2 class="section-title !mb-3">
+          Insights, Strategies & <span class="text-gradient">Product Intelligence</span>
+        </h2>
+        <p class="section-lead mb-0">
+          Practical perspectives on Generative AI, MCP architecture, technology operations, and growth strategies for business leaders and delivery teams.
+        </p>
       </div>
+      <a href="/blog" class="btn btn-secondary shrink-0">View All Articles</a>
     </div>
 
-    <ul class="-mx-4 flex flex-wrap">
+    <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
       {
         publishedBlogEntries.slice(0, 3).map((blogPostEntry, index) => (
-          <li class="blog-item flex w-full px-4 md:w-1/2 lg:w-1/3">
-            <a class="wow fadeInUp blog-card group mb-10 flex h-full w-full flex-col" data-wow-delay=".1s" href={`/blog/${blogPostEntry.slug}`}>
-              <div class="blog-media mb-6 overflow-hidden rounded-[10px] w-full h-[240px]">
-                <span class="block w-full h-full">
-                  <span class="blog-media-overlay" aria-hidden="true"></span>
-                  <img
-                    src={blogPostEntry.data.image?.src || '/assets/blog/blog-default.jpg'}
-                    alt={blogPostEntry.data.image?.alt || blogPostEntry.data.title}
-                    class="blog-media-image w-full h-full object-cover ease-in duration-300"
-                  />
-                </span>
-                <span class="blog-date-pill">
-                  {blogPostEntry.data.publishDate.toDateString()}
-                </span>
+          <li class="m-0 flex">
+            <a
+              class="glass-card glass-card--interactive blog-card wow flex w-full flex-col !p-4"
+              data-wow-delay={`${index * 0.08}s`}
+              href={`/blog/${blogPostEntry.slug}`}
+            >
+              <div class="blog-media mb-6">
+                <img
+                  src={blogPostEntry.data.image?.src || '/assets/blog/blog-default.jpg'}
+                  alt={blogPostEntry.data.image?.alt || blogPostEntry.data.title}
+                  loading="lazy"
+                  decoding="async"
+                  class="blog-media-image"
+                />
+                <time class="blog-date chip" datetime={blogPostEntry.data.publishDate.toISOString()}>
+                  {dateFormatter.format(blogPostEntry.data.publishDate)}
+                </time>
               </div>
-              <div class="flex grow flex-col">
-                <h3>
-                  <span
-                    class="blog-title inline-block mb-4 text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
-                  >
-                    {blogPostEntry.data.title}
-                  </span>
-                </h3>
-                <p class="blog-description max-w-[370px] text-base">
-                  {blogPostEntry.data.postDetails?.paraOne?.slice(0, 100) || blogPostEntry.data.snippet?.slice(0, 100) || 'Read more...'}
+              <div class="flex grow flex-col px-2 pb-2">
+                <h3 class="blog-title card-title">{blogPostEntry.data.title}</h3>
+                <p class="blog-description card-text">
+                  {blogPostEntry.data.postDetails?.paraOne?.slice(0, 120) || blogPostEntry.data.snippet?.slice(0, 120) || 'Read more...'}
                 </p>
-
-                <span class="blog-readmore mt-5 inline-flex items-center gap-2 text-sm font-semibold">
-                  Read article
-                  <span aria-hidden="true">-></span>
-                </span>
+                <span class="link-arrow mt-auto pt-2">Read article</span>
               </div>
             </a>
           </li>
@@ -77,94 +65,51 @@ publishedBlogEntries.sort(function (a, b) {
 </section>
 
 <style>
-  .blog-card {
-    border-radius: 0.9rem;
-    padding: 1rem;
-  }
-
-  .blog-item {
-    align-items: stretch;
-  }
+  .blog-card { color: inherit; }
 
   .blog-media {
     position: relative;
-    border: 1px solid rgba(90, 153, 239, 0.24);
+    height: 230px;
+    overflow: hidden;
+    border-radius: var(--radius-md);
   }
 
-  .blog-media-overlay {
+  .blog-media::after {
+    content: "";
     position: absolute;
     inset: 0;
-    z-index: 1;
-    background: linear-gradient(180deg, rgba(4, 14, 35, 0.1) 0%, rgba(4, 14, 35, 0.54) 100%);
+    background: linear-gradient(180deg, transparent 40%, rgba(6, 9, 20, 0.7));
   }
 
   .blog-media-image {
-    transform: scale(1.01);
-    transition: transform 350ms ease, filter 350ms ease;
-    filter: saturate(1.05) contrast(1.05);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--duration-slow) var(--ease-out);
   }
 
-  .blog-card:hover .blog-media-image {
-    transform: scale(1.08);
-    filter: saturate(1.1) contrast(1.08);
-  }
+  .blog-card:hover .blog-media-image { transform: scale(1.07); }
 
-  .blog-date-pill {
+  .blog-date {
     position: absolute;
     left: 0.9rem;
     bottom: 0.9rem;
-    z-index: 2;
-    border: 1px solid rgba(170, 218, 255, 0.45);
-    border-radius: 999px;
-    padding: 0.26rem 0.65rem;
-    background: rgba(10, 27, 64, 0.72);
-    color: #d7eeff;
-    font-size: 0.7rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-weight: 700;
+    z-index: 1;
+    background: rgba(11, 16, 32, 0.75);
+    color: #ffffff;
+    backdrop-filter: blur(8px);
   }
 
   .blog-title {
-    color: #102447;
-    transition: color var(--motion-hover, 220ms ease);
+    transition: color var(--duration-base) ease;
   }
 
-  .blog-card:hover .blog-title {
-    color: #0f63cf;
-  }
-
-  :global(.dark) .blog-title {
-    color: #ecf3ff;
-  }
-
-  :global(.dark) .blog-card:hover .blog-title {
-    color: #8fd1ff;
-  }
+  .blog-card:hover .blog-title { color: var(--color-link); }
 
   .blog-description {
-    color: #546a8d;
-    line-height: 1.65;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    min-height: 4.9rem;
-  }
-
-  :global(.dark) .blog-description {
-    color: #aec2e0;
-  }
-
-  .blog-readmore {
-    color: #0f63cf;
-  }
-
-  .blog-card:hover .blog-readmore {
-    color: #0eb4ef;
-  }
-
-  :global(.dark) .blog-readmore {
-    color: #a8d3ff;
   }
 </style>
