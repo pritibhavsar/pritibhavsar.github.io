@@ -1,38 +1,84 @@
 ---
-const clients = [
-  { ref: "https://tailgrids.com", image: "/assets/brands/graygrids.svg", whiteImage: "/assets/brands/graygrids-white.svg", name: "tailgrids"},
-  { ref: "https://ayroui.com", image: "/assets/brands/lineicons.svg", whiteImage: "/assets/brands/lineicons-white.svg", name: "ayroui"},
-  { ref: "https://uideck.com", image: "/assets/brands/uideck.svg", whiteImage: "/assets/brands/uideck-white.svg", name: "uideck"},
-  { ref: "https://graygrids.com", image: "/assets/brands/ayroui.svg", whiteImage: "/assets/brands/ayroui-white.svg", name: "graygrids"},
-  { ref: "https://lineicons.com", image: "/assets/brands/tailgrids.svg", whiteImage: "/assets/brands/tailgrids-white.svg", name: "lineicons"},
-]
+// Platforms and technologies we deliver with — shown as text marks to avoid implying client endorsements.
+const technologies = [
+  'Microsoft Azure',
+  'Azure OpenAI',
+  'Model Context Protocol',
+  'LangChain',
+  'Power BI',
+  'Kubernetes',
+  'Python',
+  'TypeScript',
+  'PostgreSQL',
+  'Astro',
+];
 ---
 
-<!-- ====== Brands Section Start -->
-<section class="pb-20 dark:bg-dark">
-  <div class="container px-4">
-    <div class="-mx-4 flex flex-wrap items-center justify-center gap-8 xl:gap-11">
-      {
-        clients.map(client => (
-          <a
-            href={client.ref}
-            target="_blank"
-            rel="nofollow noopner"
-          >
-            <img
-              src={client.image}
-              alt={client.name}
-              class="dark:hidden"
-            />
-            <img
-              src={client.whiteImage}
-              alt={client.name}
-              class="hidden dark:block"
-            />
-          </a>
-        ))
-      }
-    </div>
+<!-- ====== Technology Ecosystem Start -->
+<section class="tech-strip section--divider relative py-12 lg:py-16" aria-labelledby="tech-strip-title">
+  <div class="container">
+    <p id="tech-strip-title" class="tech-strip-title">
+      Engineering with the platforms enterprise teams trust
+    </p>
+  </div>
+  <div class="tech-marquee">
+    <ul class="tech-track">
+      {[...technologies, ...technologies].map((tech, index) => (
+        <li aria-hidden={index >= technologies.length ? 'true' : undefined}>{tech}</li>
+      ))}
+    </ul>
   </div>
 </section>
-<!-- ====== Brands Section End -->
+<!-- ====== Technology Ecosystem End -->
+
+<style>
+  .tech-strip {
+    background: var(--color-bg);
+  }
+
+  .tech-strip-title {
+    margin-bottom: var(--space-8);
+    text-align: center;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+  }
+
+  .tech-marquee {
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  }
+
+  .tech-track {
+    display: flex;
+    width: max-content;
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation: marquee 40s linear infinite;
+  }
+
+  .tech-marquee:hover .tech-track { animation-play-state: paused; }
+
+  .tech-track li {
+    margin: 0;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: var(--color-glass);
+    font-family: var(--font-display);
+    font-size: var(--fs-md);
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--color-text-secondary);
+    transition: color var(--duration-base) ease, border-color var(--duration-base) ease;
+  }
+
+  .tech-track li:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-text);
+  }
+</style>

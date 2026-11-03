@@ -20,6 +20,20 @@ app.http("subscribe", {
     const { headers: corsHeaders, isAllowed } = getCorsHeaders(requestOrigin);
 
     if (request.method === "OPTIONS") {
+      if (!isAllowed) {
+        return {
+          status: 403,
+          headers: {
+            ...corsHeaders,
+            "Content-Type": "application/json"
+          },
+          jsonBody: {
+            success: false,
+            message: "Origin not allowed by CORS policy"
+          }
+        };
+      }
+
       return {
         status: 204,
         headers: corsHeaders
@@ -96,7 +110,7 @@ app.http("subscribe", {
         },
         jsonBody: {
           success: false,
-          message: { message: "Unable to complete subscription", error: error.message }
+          message: "Unable to complete subscription"
         }
       };
     }

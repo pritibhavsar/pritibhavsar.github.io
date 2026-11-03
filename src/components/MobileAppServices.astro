@@ -1,0 +1,190 @@
+---
+const appVerticals = [
+  {
+    slug: 'finance',
+    category: 'Finance Apps',
+    title: 'Secure Finance Mobile Platforms',
+    summary:
+      'We build high-trust finance apps with budgeting dashboards, intelligent alerts, and secure payment experiences optimized for conversion and retention.',
+    points: ['Smart expense insights', 'Fraud and risk alerts', 'Secure onboarding flows'],
+    cta: '/contact',
+    ctaLabel: 'Build Finance App'
+  },
+  {
+    slug: 'healthcare',
+    category: 'Healthcare Apps',
+    title: 'Connected Healthcare Journeys',
+    summary:
+      'We deliver patient-centric mobile applications for appointments, teleconsultation, and care coordination with privacy-first architecture and intuitive UX.',
+    points: ['Appointment management', 'Telehealth integrations', 'HIPAA-ready workflows'],
+    cta: '/contact',
+    ctaLabel: 'Build Healthcare App'
+  },
+  {
+    slug: 'ecommerce',
+    category: 'eCommerce Apps',
+    title: 'Conversion-Driven Shopping Apps',
+    summary:
+      'From personalized product discovery to one-tap checkout, we engineer retail and D2C experiences that increase average order value and repeat purchases.',
+    points: ['Personalized recommendations', 'Seamless checkout', 'Real-time order tracking'],
+    cta: '/contact',
+    ctaLabel: 'Build eCommerce App'
+  },
+  {
+    slug: 'event',
+    category: 'Event Management Apps',
+    title: 'Real-Time Event Companion Apps',
+    summary:
+      'We create event apps for registrations, live schedules, networking, and attendee engagement, enabling organizers to run smooth experiences at scale.',
+    points: ['Session and agenda control', 'Live attendee engagement', 'Digital ticketing and check-in'],
+    cta: '/contact',
+    ctaLabel: 'Build Event App'
+  }
+];
+---
+
+<section id="mobile-app-services" class="section section--alt">
+  <div class="section-orb section-orb--violet section-orb--tr" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Mobile Application Development</span>
+      <h2 class="section-title">
+        Industry-Focused <span class="text-gradient">Mobile Apps</span> That Stand Out
+      </h2>
+      <p class="section-lead">
+        Explore our specialized mobile app design and engineering services across finance, healthcare, eCommerce, and event management with tailored visual systems and user journeys.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      {
+        appVerticals.map((item, index) => (
+          <article class={`glass-card glass-card--interactive app-card app-card--${item.slug} wow`} data-wow-delay={`${(index % 2) * 0.1}s`}>
+            <div class="app-visual" aria-hidden="true">
+              <div class="device">
+                <div class="device-notch"></div>
+                <div class="device-screen">
+                  <div class="screen-row"><span></span><span></span><span></span></div>
+                  <div class="screen-chart"></div>
+                </div>
+              </div>
+              <div class="token token-1"></div>
+              <div class="token token-2"></div>
+              <div class="token token-3"></div>
+              <span class="app-index index-num">{String(index + 1).padStart(2, '0')}</span>
+            </div>
+
+            <span class="chip mt-6 mb-3 inline-flex">{item.category}</span>
+            <h3 class="card-title !text-2xl">{item.title}</h3>
+            <p class="card-text mb-5">{item.summary}</p>
+
+            <ul class="check-list mb-6">
+              {item.points.map((point) => <li>{point}</li>)}
+            </ul>
+
+            <a href={item.cta} class="link-arrow">{item.ctaLabel}</a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .app-card { --app-a: #7b61ff; --app-b: #00d4ff; }
+  .app-card--healthcare { --app-a: #f43f5e; --app-b: #7b61ff; }
+  .app-card--ecommerce { --app-a: #f59e0b; --app-b: #22c55e; }
+  .app-card--event { --app-a: #6d28d9; --app-b: #00d4ff; }
+
+  .app-visual {
+    position: relative;
+    height: 220px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background:
+      radial-gradient(60% 80% at 20% 100%, color-mix(in srgb, var(--app-a) 35%, transparent), transparent 70%),
+      radial-gradient(60% 80% at 90% 0%, color-mix(in srgb, var(--app-b) 30%, transparent), transparent 70%),
+      var(--palette-ink-950);
+  }
+
+  .app-index {
+    position: absolute;
+    top: 0.9rem;
+    right: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .device {
+    position: absolute;
+    left: 24px;
+    bottom: -24px;
+    width: 140px;
+    height: 220px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1.5rem;
+    background: rgba(19, 26, 42, 0.9);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transition: transform var(--duration-base) var(--ease-out);
+  }
+
+  .app-card:hover .device { transform: translateY(-10px); }
+
+  .device-notch {
+    width: 50px;
+    height: 6px;
+    margin: 10px auto;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+  }
+
+  .device-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 160px;
+    margin: 0 10px;
+    padding: 8px;
+    border-radius: 1rem;
+    background: linear-gradient(160deg, color-mix(in srgb, var(--app-a) 40%, transparent), color-mix(in srgb, var(--app-b) 25%, transparent));
+  }
+
+  .screen-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .screen-row span {
+    height: 24px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .screen-chart {
+    flex: 1;
+    border-radius: 8px;
+    background:
+      linear-gradient(0deg, rgba(255, 255, 255, 0.35) 0 2px, transparent 2px) 0 70% / 100% 100% no-repeat,
+      rgba(255, 255, 255, 0.12);
+  }
+
+  .token {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0.8rem;
+    background: linear-gradient(125deg, color-mix(in srgb, var(--app-a) 70%, transparent), color-mix(in srgb, var(--app-b) 60%, transparent));
+    backdrop-filter: blur(8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    animation: float 7s ease-in-out infinite;
+  }
+
+  .token-1 { width: 96px; height: 46px; right: 28px; top: 28px; }
+  .token-2 { width: 130px; height: 54px; right: 20%; top: 90px; animation-delay: -2s; }
+  .token-3 { width: 80px; height: 36px; right: 36px; bottom: 22px; animation-delay: -4s; }
+
+  @media (max-width: 539px) {
+    .app-visual { height: 190px; }
+    .token-2 { right: 12px; width: 100px; }
+  }
+</style>

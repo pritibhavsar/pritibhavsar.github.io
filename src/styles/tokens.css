@@ -1,0 +1,89 @@
+/* Primitive design tokens — raw values only. Components should consume semantic vars from variables.css. */
+
+:root {
+  /* Brand palette */
+  --palette-violet-300: #b3a4ff;
+  --palette-violet-400: #9a85ff;
+  --palette-violet-500: #7b61ff;
+  --palette-violet-600: #6d4cf5;
+  --palette-violet-700: #6d28d9;
+  --palette-cyan-300: #7ae8ff;
+  --palette-cyan-400: #33ddff;
+  --palette-cyan-500: #00d4ff;
+  --palette-cyan-600: #00a9cc;
+  --palette-green-500: #22c55e;
+  --palette-amber-500: #f59e0b;
+  --palette-rose-500: #f43f5e;
+
+  /* Neutrals (dark ramp) */
+  --palette-ink-950: #060914;
+  --palette-ink-900: #0b1020;
+  --palette-ink-850: #0f1528;
+  --palette-ink-800: #131a2a;
+  --palette-ink-700: #1b2338;
+  --palette-ink-600: #263049;
+  --palette-ink-500: #3a4560;
+  --palette-slate-400: #7d879b;
+  --palette-slate-300: #b0b8c5;
+  --palette-slate-200: #d5dae3;
+  --palette-slate-100: #eef1f6;
+  --palette-white: #ffffff;
+
+  /* Typography */
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Space Grotesk', 'Inter Variable', system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* Fluid type scale (mobile → desktop) */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --fs-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
+  --fs-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --fs-2xl: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  --fs-3xl: clamp(1.875rem, 1.4rem + 2vw, 2.75rem);
+  --fs-4xl: clamp(2.25rem, 1.5rem + 3.2vw, 3.75rem);
+  --fs-hero: clamp(2.5rem, 1.6rem + 4.2vw, 4.5rem);
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  --tracking-tight: -0.025em;
+  --tracking-wide: 0.08em;
+
+  /* Spacing (4px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-section: clamp(4.5rem, 3rem + 6vw, 8rem);
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 160ms;
+  --duration-base: 260ms;
+  --duration-slow: 600ms;
+
+  /* Layers */
+  --z-base: 1;
+  --z-header: 9999;
+  --z-overlay: 10000;
+}

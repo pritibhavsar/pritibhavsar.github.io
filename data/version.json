@@ -1,9 +1,9 @@
 {
-  "version": "0.0.62",
-  "updated": "2026-03-09T08:47:28.440Z",
+  "version": "0.0.63",
+  "updated": "2026-07-02T06:10:57.200Z",
   "last_commit": {
     "author": "Dipalkumar Bhavsar",
-    "date": "2026-03-06T18:12:33+05:30",
-    "message": "Enhance design"
+    "date": "2026-03-20T16:48:23+05:30",
+    "message": "Implemented Email Subscription API"
   }
 }

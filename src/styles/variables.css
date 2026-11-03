@@ -1,0 +1,139 @@
+/* Semantic theme variables. Dark is the default experience; light applies when `.dark` is removed from <html>. */
+
+:root {
+  color-scheme: dark;
+
+  /* Brand */
+  --color-primary: var(--palette-violet-500);
+  --color-primary-strong: var(--palette-violet-700);
+  --color-primary-soft: rgba(123, 97, 255, 0.14);
+  --color-secondary: var(--palette-cyan-500);
+  --color-secondary-soft: rgba(0, 212, 255, 0.12);
+  --color-accent: var(--palette-violet-700);
+  --color-success: var(--palette-green-500);
+  --color-warning: var(--palette-amber-500);
+  --color-danger: var(--palette-rose-500);
+
+  /* Surfaces */
+  --color-bg: var(--palette-ink-900);
+  --color-bg-elevated: var(--palette-ink-850);
+  --color-surface: var(--palette-ink-800);
+  --color-surface-hover: var(--palette-ink-700);
+  --color-glass: rgba(19, 26, 42, 0.62);
+  --color-glass-strong: rgba(19, 26, 42, 0.86);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+  --color-border-accent: rgba(123, 97, 255, 0.45);
+
+  /* Text */
+  --color-text: var(--palette-white);
+  --color-text-secondary: var(--palette-slate-300);
+  --color-text-muted: var(--palette-slate-400);
+  --color-text-on-primary: var(--palette-white);
+  --color-link: var(--palette-cyan-300);
+  --color-link-hover: var(--palette-white);
+
+  /* Gradients */
+  --gradient-brand: linear-gradient(120deg, var(--palette-violet-500) 0%, var(--palette-violet-700) 45%, var(--palette-cyan-500) 100%);
+  --gradient-button: linear-gradient(110deg, var(--palette-violet-500) 0%, var(--palette-violet-700) 55%, #4f46e5 100%);
+  --gradient-text: linear-gradient(100deg, #ffffff 0%, var(--palette-violet-300) 45%, var(--palette-cyan-400) 100%);
+  --gradient-border: linear-gradient(140deg, rgba(123, 97, 255, 0.7), rgba(0, 212, 255, 0.5) 60%, rgba(255, 255, 255, 0.05));
+  --gradient-section:
+    radial-gradient(60% 50% at 10% 0%, rgba(123, 97, 255, 0.12) 0%, transparent 70%),
+    radial-gradient(50% 40% at 95% 10%, rgba(0, 212, 255, 0.08) 0%, transparent 70%),
+    var(--color-bg);
+  --gradient-section-alt:
+    radial-gradient(55% 45% at 90% 0%, rgba(109, 40, 217, 0.16) 0%, transparent 70%),
+    radial-gradient(45% 40% at 5% 100%, rgba(0, 212, 255, 0.08) 0%, transparent 70%),
+    var(--color-bg-elevated);
+
+  /* Elevation */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 10px 40px -8px rgba(123, 97, 255, 0.55);
+  --shadow-glow-cyan: 0 10px 40px -8px rgba(0, 212, 255, 0.45);
+  --focus-ring: 0 0 0 3px rgba(0, 212, 255, 0.55);
+
+  /* Legacy aliases kept so untouched templates (blog, legal pages) inherit the new theme */
+  --font-inter: var(--font-sans);
+  --font-space-grotesk: var(--font-display);
+  --line-height-relaxed: var(--lh-relaxed);
+  --line-height-normal: var(--lh-normal);
+  --text-heading: var(--color-text);
+  --text-body: var(--color-text-secondary);
+  --text-muted: var(--color-text-muted);
+  --text-link: var(--color-link);
+  --text-link-hover: var(--color-link-hover);
+  --section-heading: var(--color-text);
+  --section-subheading: var(--color-text-secondary);
+  --section-pill-text: var(--palette-violet-300);
+  --section-pill-bg: var(--color-primary-soft);
+  --section-pill-border: var(--color-border-accent);
+  --brand-blue: var(--color-primary);
+  --brand-cyan: var(--color-secondary);
+  --brand-mint: var(--color-secondary);
+  --brand-ink: var(--palette-ink-950);
+  --brand-navy: var(--palette-ink-900);
+  --motion-hover: var(--duration-base) var(--ease-out);
+  --motion-float-fast: 8s;
+  --motion-float-slow: 11s;
+}
+
+:root:not(.dark) {
+  color-scheme: light;
+
+  --color-primary-soft: rgba(123, 97, 255, 0.1);
+  --color-secondary-soft: rgba(0, 169, 204, 0.1);
+
+  --color-bg: #f7f8fc;
+  --color-bg-elevated: #eef0fa;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f3f2ff;
+  --color-glass: rgba(255, 255, 255, 0.72);
+  --color-glass-strong: rgba(255, 255, 255, 0.92);
+  --color-border: rgba(15, 23, 42, 0.08);
+  --color-border-strong: rgba(15, 23, 42, 0.16);
+  --color-border-accent: rgba(123, 97, 255, 0.35);
+
+  --color-text: #0b1020;
+  --color-text-secondary: #46506a;
+  --color-text-muted: #6b748a;
+  --color-link: var(--palette-violet-700);
+  --color-link-hover: var(--palette-violet-500);
+
+  --gradient-text: linear-gradient(100deg, #0b1020 0%, var(--palette-violet-700) 50%, var(--palette-cyan-600) 100%);
+  --gradient-section:
+    radial-gradient(60% 50% at 10% 0%, rgba(123, 97, 255, 0.08) 0%, transparent 70%),
+    radial-gradient(50% 40% at 95% 10%, rgba(0, 212, 255, 0.06) 0%, transparent 70%),
+    var(--color-bg);
+  --gradient-section-alt:
+    radial-gradient(55% 45% at 90% 0%, rgba(109, 40, 217, 0.08) 0%, transparent 70%),
+    var(--color-bg-elevated);
+
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 12px 32px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 24px 64px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 10px 32px -10px rgba(123, 97, 255, 0.5);
+  --focus-ring: 0 0 0 3px rgba(123, 97, 255, 0.45);
+
+  --section-pill-text: var(--palette-violet-700);
+}
+
+/* Always-dark brand surfaces (hero, CTA, footer, and the transparent header over the hero) regardless of theme */
+.theme-dark-surface,
+.ud-header--over-dark:not(.sticky-header) {
+  --color-text: var(--palette-white);
+  --color-text-secondary: var(--palette-slate-300);
+  --color-text-muted: var(--palette-slate-400);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+  --color-glass: rgba(19, 26, 42, 0.62);
+  --color-glass-strong: rgba(19, 26, 42, 0.86);
+  --color-surface: var(--palette-ink-800);
+  --color-link: var(--palette-cyan-300);
+  --color-link-hover: var(--palette-white);
+  --gradient-text: linear-gradient(100deg, #ffffff 0%, var(--palette-violet-300) 45%, var(--palette-cyan-400) 100%);
+  --section-pill-text: var(--palette-violet-300);
+  color: var(--color-text-secondary);
+}

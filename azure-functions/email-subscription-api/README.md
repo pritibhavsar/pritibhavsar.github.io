@@ -1,30 +1,43 @@
-# Email Subscription Azure Function (JavaScript)
+# Email Subscription API v2 - Azure Function (JavaScript)
 
-This project adds an Azure Functions HTTP endpoint for newsletter/email subscriptions.
-It is designed to be called from your GitHub Pages static site with CORS protection.
+This project provides minimal Azure Functions HTTP endpoints for public use.
+All endpoints are publicly accessible with unrestricted CORS (Access-Control-Allow-Origin: *).
 
-## Endpoint
+## Endpoints
 
-- Route: `/api/subscribe` (local: `http://localhost:7071/api/subscribe`)
+### 1. Hello World (GET)
+
+- Route: `/api/hello` (local: `http://localhost:7071/api/hello`)
+- Method: `GET`
+- Auth: `anonymous`
+- Description: Returns a simple "Hello World" message with current timestamp
+
+Example request:
+```bash
+curl https://<your-function-app>.azurewebsites.net/api/hello
+```
+
+Example response:
+```json
+{
+  "message": "Hello World",
+  "timestamp": "2026-03-20T10:30:45.123Z"
+}
+```
+
+### 2. Public Endpoint (POST)
+
+- Route: `/api/public` (local: `http://localhost:7071/api/public`)
 - Method: `POST`
 - CORS preflight: `OPTIONS`
-- Auth: `anonymous` (token stays server-side in Function env)
+- Auth: `anonymous`
+- Description: Public POST endpoint with no restrictions. Accepts any JSON payload and echoes it back
 
 ## Environment configuration
 
-Copy `local.settings.example.json` to `local.settings.json` and provide real values:
+No special environment variables are required for these endpoints. All endpoints are public and unrestricted.
 
-- `SENDER_API_URL` - Sender API base URL
-- `SENDER_API_SUBSCRIBE_PATH` - subscribe path (default `/v2/subscribers`)
-- `SENDER_API_TOKEN` - API token for Sender
-- `SENDER_LIST_ID` - list/group identifier for subscription target
-- `ALLOWED_ORIGINS` - comma-separated origins allowed to call endpoint
-
-Example:
-
-```json
-"ALLOWED_ORIGINS": "https://<your-github-username>.github.io,http://localhost:4321"
-```
+For local development, ensure you have a `local.settings.json` file (copy from `local.settings.example.json` if needed).
 
 ## Local run
 
@@ -52,17 +65,40 @@ Example:
 }
 ```
 
-## Static site call example
+## Static sexamples
 
-```js
-await fetch("https://<your-function-app>.azurewebsites.net/api/subscribe", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ email })
-});
+### GET /api/hello
+
+```bash
+curl https://<your-function-app>.azurewebsites.net/api/hello
 ```
 
-## CORS note
+### POST /api/public
 
-This function validates `Origin` against `ALLOWED_ORIGINS` and returns proper preflight headers.
-Also configure CORS in Azure Function App settings to include your GitHub Pages domain.
+```bash
+curl -X POST https://<your-function-app>.azurewebsites.net/api/public \
+  -H "Content-Type: application/json" \
+  -d '{"name": "John", "email": "john@example.com"}'
+```
+
+JavaScript example:
+
+```js
+const response = await fetch("https://<your-function-app>.azurewebsites.net/api/public", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ 
+    name: "John",
+    email: "john@example.com",
+    customData: "any JSON structure is accepted"
+  })
+});
+
+const data = await response.json();
+console.log(data); // { success: true, message: "Request received", receivedData: {...}, timestamp: "..." }
+```
+
+## CORS
+
+All endpoints support unrestricted CORS with `Access-Control-Allow-Origin: *`. 
+Browsers from any origin can call these endpoints directly

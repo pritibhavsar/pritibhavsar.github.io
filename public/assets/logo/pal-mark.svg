@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <title>PAL Portals</title>
+  <defs>
+    <linearGradient id="bg" x1="4" y1="2" x2="38" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7B61FF"/>
+      <stop offset=".55" stop-color="#6D28D9"/>
+      <stop offset="1" stop-color="#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="20" y1="0" x2="20" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" rx="11" fill="url(#bg)"/>
+  <path d="M2 11C2 6 6 2 11 2h18c5 0 9 4 9 9v5C27 22 13 22 2 16z" fill="url(#gloss)"/>
+  <path d="M14.5 28V12.5h6a5 5 0 0 1 0 10h-6" fill="none" stroke="#fff" stroke-width="4.25" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="28" cy="28" r="2.75" fill="#fff"/>
+</svg>

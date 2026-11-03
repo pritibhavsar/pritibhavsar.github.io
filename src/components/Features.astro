@@ -43,54 +43,34 @@ const features = [
 ];
 
 const innovationMetrics = [
-  {
-    value: '4',
-    label: 'Core Innovation Pillars'
-  },
-  {
-    value: 'MCP + Agents',
-    label: 'Enterprise-Ready Foundation'
-  },
-  {
-    value: 'Secure by Design',
-    label: 'Governance and Data Controls'
-  },
-  {
-    value: 'ROI Focused',
-    label: 'Business-Driven AI Delivery'
-  }
+  { value: '4', label: 'Core Innovation Pillars' },
+  { value: 'MCP + Agents', label: 'Enterprise-Ready Foundation' },
+  { value: 'Secure by Design', label: 'Governance and Data Controls' },
+  { value: 'ROI Focused', label: 'Business-Driven AI Delivery' }
 ];
 ---
 
 <!-- ====== Features Section Start -->
-<section class="features-section relative overflow-hidden pt-20 pb-10 lg:pt-[120px] lg:pb-[80px]">
-  <div class="features-glow features-glow-a" aria-hidden="true"></div>
-  <div class="features-glow features-glow-b" aria-hidden="true"></div>
+<section id="features" class="section">
+  <div class="section-orb section-orb--cyan section-orb--tr" aria-hidden="true"></div>
+  <div class="section-orb section-orb--violet section-orb--bl" aria-hidden="true"></div>
   <div class="container">
-    <div class="-mx-4 flex flex-wrap">
-      <div class="w-full px-4">
-        <div class="mb-12 mx-auto max-w-[780px] lg:mb-14 text-center">
-          <span class="features-pill mb-4 inline-flex">
-            Generative AI Innovation Stack
-          </span>
-          <h2 class="features-heading mb-4 text-3xl font-bold sm:text-4xl md:text-[44px] md:leading-[1.15]">
-            AI Innovations Built for Enterprise-Grade Impact
-          </h2>
-          <p class="features-subheading mx-auto max-w-[700px] text-base sm:text-lg">
-            Combine agentic execution, secure MCP infrastructure, and predictive intelligence to launch trustworthy Generative AI systems that deliver measurable outcomes.
-          </p>
-        </div>
-      </div>
+    <div class="section-header">
+      <span class="eyebrow">Generative AI Innovation Stack</span>
+      <h2 class="section-title">
+        AI Innovations Built for <span class="text-gradient">Enterprise-Grade Impact</span>
+      </h2>
+      <p class="section-lead">
+        Combine agentic execution, secure MCP infrastructure, and predictive intelligence to launch trustworthy Generative AI systems that deliver measurable outcomes.
+      </p>
     </div>
 
-    <div class="-mx-4 mb-10 flex flex-wrap lg:mb-14">
+    <div class="mb-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mb-16 lg:grid-cols-4">
       {
         innovationMetrics.map((metric) => (
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
-            <div class="features-metric-card mb-4 lg:mb-0">
-              <p class="features-metric-value">{metric.value}</p>
-              <p class="features-metric-label">{metric.label}</p>
-            </div>
+          <div class="metric-card text-center">
+            <p class="metric-value !text-xl">{metric.value}</p>
+            <p class="metric-label">{metric.label}</p>
           </div>
         ))
       }
@@ -99,231 +79,28 @@ const innovationMetrics = [
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
       {
         features.map((feature, index) => (
-          <div>
-            <article class="feature-card wow fadeInUp group h-full" data-wow-delay={`${0.08 + index * 0.02}s`}>
-              <div class="mb-4 flex items-center justify-between gap-2">
-                <span class="feature-category">{feature.category}</span>
-                <span class="feature-step">{String(index + 1).padStart(2, '0')}</span>
-              </div>
+          <article class="glass-card glass-card--interactive wow flex flex-col" data-wow-delay={`${index * 0.08}s`}>
+            <div class="mb-6 flex items-start justify-between gap-2">
+              <span class="icon-tile">
+                <img src={feature.icon} alt="" loading="lazy" decoding="async" />
+              </span>
+              <span class="index-num">{String(index + 1).padStart(2, '0')}</span>
+            </div>
 
-              <div
-                class="feature-icon-wrap relative z-10 mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-[14px]"
-              >
-                <span
-                  class="feature-icon-shadow absolute top-0 left-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[18deg] items-center justify-center rounded-[14px] duration-300 group-hover:rotate-45"
-                ></span>
-                <img src={feature.icon} alt={`${feature.title} icon`} />
-              </div>
+            <span class="chip chip--cyan mb-4 self-start">{feature.category}</span>
+            <h3 class="card-title !text-lg">{feature.title}</h3>
+            <p class="card-text mb-0 !text-sm">{feature.description}</p>
 
-              <h4 class="feature-title mb-3 text-xl font-bold">
-                {feature.title}
-              </h4>
+            <hr class="card-divider mt-auto" />
+            <p class="outcome-text mb-5">{feature.outcome}</p>
 
-              <p class="feature-description mb-5">
-                {feature.description}
-              </p>
-
-              <p class="feature-outcome mb-6">{feature.outcome}</p>
-
-              <a
-                href={feature.ref}
-                class="feature-link inline-flex items-center gap-2 text-sm font-semibold"
-              >
-                {feature.refTitle}
-                <span aria-hidden="true">-></span>
-              </a>
-            </article>
-          </div>
+            <a href={feature.ref} class="link-arrow" aria-label={`${feature.refTitle}: ${feature.title}`}>
+              {feature.refTitle}
+            </a>
+          </article>
         ))
       }
     </div>
   </div>
 </section>
 <!-- ====== Features Section End -->
-
-<style>
-  .features-section {
-    position: relative;
-    background:
-      radial-gradient(circle at 12% 8%, rgba(74, 236, 201, 0.16) 0%, rgba(74, 236, 201, 0) 46%),
-      radial-gradient(circle at 88% 12%, rgba(32, 140, 255, 0.18) 0%, rgba(32, 140, 255, 0) 42%),
-      linear-gradient(180deg, #f4f8ff 0%, #ecf4ff 48%, #f8fbff 100%);
-  }
-
-  :global(.dark) .features-section {
-    background:
-      radial-gradient(circle at 8% 10%, rgba(31, 228, 198, 0.18) 0%, rgba(31, 228, 198, 0) 44%),
-      radial-gradient(circle at 88% 8%, rgba(0, 183, 255, 0.2) 0%, rgba(0, 183, 255, 0) 42%),
-      linear-gradient(180deg, var(--brand-ink, #050b24) 0%, #0b1e44 56%, #10285a 100%);
-  }
-
-  .features-glow {
-    position: absolute;
-    border-radius: 999px;
-    filter: blur(22px);
-    pointer-events: none;
-  }
-
-  .features-glow-a {
-    width: 300px;
-    height: 300px;
-    top: 4%;
-    left: 1%;
-    background: radial-gradient(circle, rgba(35, 227, 198, 0.3) 0%, rgba(35, 227, 198, 0) 72%);
-  }
-
-  .features-glow-b {
-    width: 340px;
-    height: 340px;
-    bottom: 4%;
-    right: 0;
-    background: radial-gradient(circle, rgba(36, 144, 255, 0.32) 0%, rgba(36, 144, 255, 0) 72%);
-  }
-
-  .features-pill {
-    border: 1px solid var(--section-pill-border, rgba(26, 117, 255, 0.25));
-    border-radius: 999px;
-    padding: 0.45rem 0.95rem;
-    background: var(--section-pill-bg, rgba(255, 255, 255, 0.8));
-    color: var(--section-pill-text, #0b4fc4);
-    font-size: 0.78rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  .features-heading {
-    color: var(--section-heading, var(--text-heading, #0f1f3d));
-    text-wrap: balance;
-  }
-
-  .features-subheading {
-    color: var(--section-subheading, var(--text-muted, #60779d));
-  }
-
-  .features-metric-card {
-    height: 100%;
-    border-radius: 1rem;
-    border: 1px solid rgba(64, 123, 218, 0.2);
-    background: rgba(255, 255, 255, 0.84);
-    backdrop-filter: blur(10px);
-    padding: 1rem;
-    box-shadow: 0 16px 28px rgba(16, 49, 111, 0.08);
-  }
-
-  :global(.dark) .features-metric-card {
-    border-color: rgba(130, 191, 255, 0.26);
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 18px 30px rgba(4, 11, 26, 0.28);
-  }
-
-  .features-metric-value {
-    color: var(--text-link, #0f63cf);
-    font-size: 1.15rem;
-    line-height: 1.2;
-    font-weight: 800;
-  }
-
-  .features-metric-label {
-    margin-top: 0.3rem;
-    color: var(--text-muted, #60779d);
-    font-size: 0.84rem;
-    font-weight: 600;
-  }
-
-  .feature-card {
-    border-radius: 1.1rem;
-    border: 1px solid rgba(50, 112, 210, 0.2);
-    background: linear-gradient(170deg, rgba(255, 255, 255, 0.92) 0%, rgba(244, 249, 255, 0.86) 100%);
-    backdrop-filter: blur(10px);
-    padding: 1.1rem;
-    box-shadow: 0 20px 36px rgba(20, 54, 116, 0.08);
-    transition: transform var(--motion-hover, 220ms ease), border-color var(--motion-hover, 220ms ease), box-shadow var(--motion-hover, 220ms ease);
-  }
-
-  .feature-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(26, 127, 238, 0.35);
-    box-shadow: 0 26px 44px rgba(14, 48, 111, 0.16);
-  }
-
-  :global(.dark) .feature-card {
-    border-color: rgba(125, 189, 255, 0.28);
-    background: linear-gradient(170deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.08) 100%);
-    box-shadow: 0 20px 36px rgba(3, 10, 24, 0.32);
-  }
-
-  :global(.dark) .feature-card:hover {
-    border-color: rgba(83, 204, 255, 0.52);
-    box-shadow: 0 26px 44px rgba(3, 10, 24, 0.4);
-  }
-
-  .feature-category {
-    border: 1px solid rgba(44, 129, 234, 0.24);
-    background: rgba(20, 146, 255, 0.09);
-    color: #0c5acc;
-    border-radius: 999px;
-    padding: 0.25rem 0.58rem;
-    font-size: 0.68rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  :global(.dark) .feature-category {
-    border-color: rgba(138, 205, 255, 0.34);
-    background: rgba(125, 185, 255, 0.16);
-    color: #d8ecff;
-  }
-
-  .feature-step {
-    color: #6e87ae;
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    font-weight: 700;
-  }
-
-  :global(.dark) .feature-step {
-    color: rgba(197, 219, 249, 0.86);
-  }
-
-  .feature-icon-wrap {
-    background: linear-gradient(135deg, var(--brand-blue, #0f7cff) 0%, var(--brand-mint, #36f4c8) 100%);
-  }
-
-  .feature-icon-shadow {
-    background: rgba(59, 184, 255, 0.26);
-  }
-
-  .feature-title {
-    color: var(--text-heading, #0f1f3d);
-  }
-
-  .feature-description {
-    color: var(--text-body, #2c466f);
-    font-size: 0.92rem;
-    line-height: 1.62;
-  }
-
-  .feature-outcome {
-    border-top: 1px dashed rgba(73, 136, 229, 0.25);
-    padding-top: 0.72rem;
-    color: var(--text-link, #0f63cf);
-    font-size: 0.82rem;
-    font-weight: 700;
-  }
-
-  .feature-link {
-    color: var(--text-link, #0f63cf);
-  }
-
-  .feature-link:hover {
-    color: var(--text-link-hover, #0a4faa);
-  }
-
-  @media (max-width: 768px) {
-    .feature-card {
-      padding: 1rem;
-    }
-  }
-</style>

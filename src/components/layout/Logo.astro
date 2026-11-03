@@ -1,0 +1,122 @@
+---
+interface Props {
+  size?: 'md' | 'lg';
+  tagline?: boolean;
+}
+
+const { size = 'md', tagline = false } = Astro.props;
+// Unique gradient ids — the logo renders more than once per page (header + footer).
+const uid = `pal-logo-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<span class:list={['pal-logo', `pal-logo--${size}`]}>
+  <svg class="pal-logo-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id={`${uid}-bg`} x1="4" y1="2" x2="38" y2="40" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#7B61FF" />
+        <stop offset="0.55" stop-color="#6D28D9" />
+        <stop offset="1" stop-color="#00D4FF" />
+      </linearGradient>
+      <linearGradient id={`${uid}-gloss`} x1="20" y1="0" x2="20" y2="22" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#fff" stop-opacity="0.35" />
+        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+    <rect width="40" height="40" rx="11" fill={`url(#${uid}-bg)`} />
+    <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="10.25" fill="none" stroke="#fff" stroke-opacity="0.22" stroke-width="1.5" />
+    <path d="M2 11C2 6 6 2 11 2h18c5 0 9 4 9 9v5C27 22 13 22 2 16z" fill={`url(#${uid}-gloss)`} />
+    <!-- "P" monogram whose bowl doubles as a portal -->
+    <path d="M14.5 28V12.5h6a5 5 0 0 1 0 10h-6" fill="none" stroke="#fff" stroke-width="4.25" stroke-linecap="round" stroke-linejoin="round" />
+    <circle class="pal-logo-node" cx="28" cy="28" r="2.75" fill="#fff" />
+  </svg>
+
+  <span class="pal-logo-text">
+    <span class="pal-logo-name">PAL</span>
+    <span class="pal-logo-sub">Portals</span>
+    {tagline && <span class="pal-logo-tagline">AI · Marketing · Technology</span>}
+  </span>
+</span>
+
+<style>
+  .pal-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    line-height: 1;
+    color: var(--color-text);
+  }
+
+  .pal-logo-mark {
+    flex-shrink: 0;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 11px;
+    box-shadow: 0 8px 24px -6px rgba(123, 97, 255, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.04);
+    transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out);
+  }
+
+  .pal-logo-node {
+    transform-origin: 28px 28px;
+    animation: pal-node-pulse 3s ease-in-out infinite;
+  }
+
+  .pal-logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+  }
+
+  .pal-logo-name {
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+  }
+
+  .pal-logo-sub {
+    font-family: var(--font-sans);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #9a85ff, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .pal-logo-tagline {
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+  }
+
+  .pal-logo--lg { gap: 0.9rem; }
+  .pal-logo--lg .pal-logo-mark { width: 3.25rem; height: 3.25rem; border-radius: 14px; }
+  .pal-logo--lg .pal-logo-name { font-size: 1.9rem; }
+  .pal-logo--lg .pal-logo-sub { font-size: 0.7rem; }
+
+  :global(a:hover) > .pal-logo .pal-logo-mark,
+  :global(a:focus-visible) > .pal-logo .pal-logo-mark {
+    transform: rotate(-6deg) scale(1.05);
+    box-shadow: 0 12px 32px -6px rgba(123, 97, 255, 0.85), 0 0 24px rgba(0, 212, 255, 0.35);
+  }
+
+  /* Light theme: deeper gradient so the subtitle stays readable on white */
+  :global(:root:not(.dark)) .pal-logo-sub {
+    background-image: linear-gradient(90deg, #6d28d9, #0891b2);
+  }
+
+  :global(.theme-dark-surface) .pal-logo-sub,
+  :global(.ud-header--over-dark:not(.sticky-header)) .pal-logo-sub {
+    background-image: linear-gradient(90deg, #9a85ff, #00d4ff);
+  }
+
+  @keyframes pal-node-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.8); }
+  }
+</style>

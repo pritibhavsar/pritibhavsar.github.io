@@ -1,0 +1,6 @@
+/* Global stylesheet entry — import order matters: tokens → theme → base → motion → components. */
+@import './tokens.css';
+@import './variables.css';
+@import './base.css';
+@import './animations.css';
+@import './components.css';

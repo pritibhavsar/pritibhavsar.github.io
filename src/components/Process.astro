@@ -1,0 +1,115 @@
+---
+const steps = [
+  {
+    title: 'Discover',
+    description: 'Readiness audit, use-case mapping, and ROI modelling to pick the highest-value opportunities.',
+  },
+  {
+    title: 'Design',
+    description: 'Solution architecture, data strategy, and governance guardrails aligned to your business goals.',
+  },
+  {
+    title: 'Build',
+    description: 'Agile delivery of agentic workflows, MCP servers, integrations, and marketing systems.',
+  },
+  {
+    title: 'Scale',
+    description: 'Production hardening, monitoring, and continuous optimization as adoption grows.',
+  },
+];
+---
+
+<!-- ====== Process Section Start -->
+<section id="process" class="section section--alt">
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">How We Deliver</span>
+      <h2 class="section-title">
+        A Proven Path From <span class="text-gradient">Idea to Impact</span>
+      </h2>
+      <p class="section-lead">
+        A transparent four-stage workflow that keeps strategy, engineering, and business outcomes aligned at every step.
+      </p>
+    </div>
+
+    <ol class="process-grid">
+      {
+        steps.map((step, index) => (
+          <li class="process-step wow" data-wow-delay={`${index * 0.1}s`}>
+            <div class="process-marker" aria-hidden="true">
+              <span>{String(index + 1).padStart(2, '0')}</span>
+            </div>
+            <div class="glass-card glass-card--interactive">
+              <h3 class="card-title">{step.title}</h3>
+              <p class="card-text mb-0">{step.description}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+<!-- ====== Process Section End -->
+
+<style>
+  .process-grid {
+    position: relative;
+    display: grid;
+    gap: var(--space-8);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .process-step {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .process-marker {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 999px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border-accent);
+    box-shadow: 0 0 0 6px var(--color-primary-soft), var(--shadow-glow);
+  }
+
+  .process-marker span {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  @media (min-width: 720px) {
+    .process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (min-width: 960px) {
+    .process-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    /* Connector line running through the step markers */
+    .process-grid::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 32px;
+      right: calc((100% - 3 * var(--space-8)) / 4 - 32px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+      opacity: 0.5;
+    }
+  }
+</style>

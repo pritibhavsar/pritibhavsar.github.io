@@ -3,17 +3,11 @@ import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
 import BackToTop from '../components/layout/BackToTop.astro';
 
-// Primary: Space Grotesk - Modern geometric sans-serif for headings
-import '@fontsource/space-grotesk/400.css';
 import '@fontsource/space-grotesk/500.css';
 import '@fontsource/space-grotesk/600.css';
 import '@fontsource/space-grotesk/700.css';
-
-// Secondary: Inter Variable - Highly legible sans-serif for body text
 import '@fontsource-variable/inter/index.css';
-import '../styles/shared-sections.css';
-
-// import MadeWithButton from '../components/layout/MadeWithButton.astro';
+import '../styles/global.css';
 
 interface Props {
   description: string;
@@ -22,231 +16,16 @@ interface Props {
 }
 
 const { description, title, image } = Astro.props;
-// Google Tag Manager ID: prefer public env var, fallback to server env or hardcoded
-const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CLJ2';
 ---
 
-<style is:global>
-  :root {
-    /* Primary font for headings - Modern & distinctive */
-    --font-space-grotesk: 'Space Grotesk', system-ui, -apple-system, sans-serif;
-    
-    /* Secondary font for body text - Highly readable */
-    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
-
-    /* Line height for better readability */
-    --line-height-relaxed: 1.6;
-    --line-height-normal: 1.5;
-
-    /* Blue, Teal & Charcoal Theme - Light Mode */
-    --theme-primary-blue: #2196F3;
-    --theme-primary-cyan: #009688;
-    --theme-primary-charcoal: #2C2C2C;
-    
-    /* Background colors with proper contrast */
-    --theme-bg-light: #FFFFFF;
-    --theme-bg-surface: #F5F5F5;
-    --theme-bg-hover: #EEEEEE;
-    
-    /* Text colors for proper contrast */
-    --theme-text-primary: #1A1A1A;
-    --theme-text-secondary: #424242;
-    --theme-text-tertiary: #757575;
-
-    /* Global typography tokens (light) */
-    --text-heading: #0f1f3d;
-    --text-body: #2c466f;
-    --text-muted: #60779d;
-    --text-link: #0f63cf;
-    --text-link-hover: #0a4faa;
-
-    /* Shared section text tokens (light) */
-    --section-pill-text: #0b4fc4;
-    --section-pill-bg: rgba(255, 255, 255, 0.92);
-    --section-pill-border: rgba(26, 117, 255, 0.26);
-    --section-heading: #0f1f3d;
-    --section-subheading: #60779d;
-    
-    /* Accent colors */
-    --theme-accent-blue: #1976D2;
-    --theme-accent-cyan: #00897B;
-    --theme-accent-charcoal: #1A1A1A;
-
-    /* Unified homepage brand system */
-    --brand-navy: #0b1335;
-    --brand-ink: #050b24;
-    --brand-blue: #0f7cff;
-    --brand-cyan: #00d2ff;
-    --brand-mint: #36f4c8;
-    --brand-text-soft: rgba(236, 242, 255, 0.82);
-    --brand-glass-border: rgba(255, 255, 255, 0.16);
-    --brand-glass-surface: rgba(255, 255, 255, 0.1);
-    --brand-shadow-strong: 0 24px 52px rgba(2, 9, 31, 0.38);
-
-    --motion-float-fast: 8s;
-    --motion-float-slow: 10s;
-    --motion-hover: 220ms ease;
-  }
-
-  /* Dark Mode Theme */
-  :root.dark {
-    --theme-primary-blue: #64B5F6;
-    --theme-primary-cyan: #4DB6AC;
-    --theme-primary-charcoal: #E0E0E0;
-    
-    /* Dark mode backgrounds */
-    --theme-bg-light: #1A1A1A;
-    --theme-bg-surface: #2C2C2C;
-    --theme-bg-hover: #3F3F3F;
-    
-    /* Dark mode text - high contrast */
-    --theme-text-primary: #FFFFFF;
-    --theme-text-secondary: #E0E0E0;
-    --theme-text-tertiary: #BDBDBD;
-
-    /* Global typography tokens (dark) */
-    --text-heading: #f3f8ff;
-    --text-body: #d9e6fa;
-    --text-muted: #afc3e0;
-    --text-link: #a8d3ff;
-    --text-link-hover: #d9edff;
-
-    /* Shared section text tokens (dark) */
-    --section-pill-text: #a9d5ff;
-    --section-pill-bg: rgba(13, 30, 63, 0.72);
-    --section-pill-border: rgba(138, 197, 255, 0.32);
-    --section-heading: #f3f8ff;
-    --section-subheading: #afc3e0;
-    
-    /* Dark mode accents */
-    --theme-accent-blue: #90CAF9;
-    --theme-accent-cyan: #80CBC4;
-    --theme-accent-charcoal: #E0E0E0;
-
-    /* Keep same brand signals in dark mode for cross-section consistency */
-    --brand-navy: #0b1335;
-    --brand-ink: #050b24;
-    --brand-blue: #0f7cff;
-    --brand-cyan: #00d2ff;
-    --brand-mint: #36f4c8;
-    --brand-text-soft: rgba(236, 242, 255, 0.82);
-    --brand-glass-border: rgba(255, 255, 255, 0.18);
-    --brand-glass-surface: rgba(255, 255, 255, 0.12);
-    --brand-shadow-strong: 0 24px 52px rgba(2, 9, 31, 0.45);
-  }
-
-  /* Apply Inter to body for excellent readability */
-  body {
-    font-family: var(--font-inter);
-    line-height: var(--line-height-relaxed);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: var(--theme-bg-light);
-    color: var(--text-body);
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  /* Headings use Space Grotesk for visual hierarchy */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-space-grotesk);
-    line-height: 1.2;
-    font-weight: 600;
-    color: var(--text-heading);
-  }
-
-  /* Links with theme colors */
-  a {
-    color: var(--text-link);
-    transition: color 0.2s ease;
-  }
-
-  a:hover {
-    color: var(--text-link-hover);
-  }
-
-  /* Improved paragraph spacing */
-  p {
-    margin-bottom: 1rem;
-    color: var(--text-body);
-  }
-
-  /* Better readability for lists */
-  ul, ol {
-    line-height: var(--line-height-relaxed);
-  }
-
-  li {
-    margin-bottom: 0.5rem;
-    color: var(--text-body);
-  }
-
-  /* Buttons with theme colors */
-  button, [role="button"] {
-    transition: all 0.2s ease;
-  }
-
-  /* Surface elements */
-  .theme-surface {
-    background-color: var(--theme-bg-surface);
-    color: var(--theme-text-primary);
-  }
-
-  /* Blue theme element */
-  .theme-blue-accent {
-    color: var(--theme-primary-blue);
-    border-color: var(--theme-primary-blue);
-  }
-
-  .theme-blue-accent:hover {
-    color: var(--theme-accent-blue);
-    border-color: var(--theme-accent-blue);
-  }
-
-  /* Cyan theme element */
-  .theme-cyan-accent {
-    color: var(--theme-primary-cyan);
-    border-color: var(--theme-primary-cyan);
-  }
-
-  .theme-cyan-accent:hover {
-    color: var(--theme-accent-cyan);
-    border-color: var(--theme-accent-cyan);
-  }
-
-  /* Charcoal theme element */
-  .theme-charcoal-accent {
-    color: var(--theme-primary-charcoal);
-    border-color: var(--theme-primary-charcoal);
-  }
-
-  .theme-charcoal-accent:hover {
-    color: var(--theme-accent-charcoal);
-    border-color: var(--theme-accent-charcoal);
-  }
-
-  /* Background variants */
-  .bg-theme-blue {
-    background-color: var(--theme-primary-blue);
-    color: white;
-  }
-
-  .bg-theme-cyan {
-    background-color: var(--theme-primary-cyan);
-    color: white;
-  }
-
-  .bg-theme-charcoal {
-    background-color: var(--theme-primary-charcoal);
-    color: var(--theme-text-primary);
-  }
-</style>
-
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0B1020" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo/pal-mark.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
@@ -257,11 +36,17 @@ const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CL
     <meta name="robots" content="index,follow" />
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title={title} />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="PAL Portals Blog Feed" />
+    <!-- Apply saved theme before first paint to avoid a flash; dark is the default. -->
+    <script is:inline>
+      try {
+        if (localStorage.getItem('theme') === 'light') document.documentElement.classList.remove('dark');
+      } catch (e) {}
+    </script>
     <!-- Google tag (gtag.js) - Modified for Partytown -->
     <script
       async
       type="text/partytown"
-      src={`https://www.googletagmanager.com/gtag/js?id=G-VCP4LWK6DT`}
+      src={`https://www.googletagmanager.com/gtag/js?id=GTM-PG4CLJ2`}
     ></script>
     <script type="text/partytown" is:inline>
       window.dataLayer = window.dataLayer || [];
@@ -269,11 +54,10 @@ const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CL
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-      gtag('config', 'G-VCP4LWK6DT');
+      gtag('config', 'GTM-PG4CLJ2');
     </script>
     <script is:inline>
       (function (w, d, s, l, i) {
-        console.log("GTM");
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
@@ -305,81 +89,13 @@ const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CL
     <noscript>
       <iframe src={`https://www.googletagmanager.com/ns.html?id=GTM-PG4CLJ2`} height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <Header />
-    <!-- <Header client:load /> -->
-    <main>
+    <main id="main-content">
       <slot />
     </main>
     <Footer />
     <BackToTop />
-    <!-- <MadeWithButton /> -->
-    <style is:global>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-      body {
-        font-family: "Inter", sans-serif;
-        font-size: large;
-      }
-      .sticky-header {
-        @apply fixed z-[9999] bg-white/80 dark:bg-dark/80 transition;
-        backdrop-filter: blur(5px);
-        box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
-      }
-
-      .sticky-header .navbar-logo {
-        @apply py-2;
-      }
-
-      .sticky-header #navbarToggler span {
-        @apply bg-dark dark:bg-white;
-      }
-
-      .sticky-header #navbarCollapse li > a {
-        @apply text-dark dark:text-white hover:text-primary dark:hover:text-primary hover:opacity-100;
-      }
-      #navbarCollapse li .ud-menu-scroll.active {
-        @apply opacity-70;
-      }
-      .sticky-header #navbarCollapse li .ud-menu-scroll.active {
-        @apply text-primary opacity-100;
-      }
-      .sticky-header .loginBtn {
-        @apply text-dark dark:text-white hover:text-primary dark:hover:text-primary hover:opacity-100;
-      }
-
-      .sticky-header .signUpBtn {
-        @apply bg-primary text-white hover:bg-blue-dark hover:text-white;
-      }
-
-      .sticky-header #themeSwitcher span {
-        @apply text-dark dark:text-white;
-      }
-
-      .navbarTogglerActive > span:nth-child(1) {
-        @apply top-[7px] rotate-45 transform;
-      }
-      .navbarTogglerActive > span:nth-child(2) {
-        @apply opacity-0;
-      }
-      .navbarTogglerActive > span:nth-child(3) {
-        @apply top-[-8px] rotate-[135deg];
-      }
-
-      .common-carousel .swiper-button-next:after,
-      .common-carousel .swiper-button-prev:after {
-        @apply hidden;
-      }
-
-      .common-carousel .swiper-button-next,
-      .common-carousel .swiper-button-prev {
-        @apply !static h-12 w-12 rounded-lg bg-white dark:bg-dark shadow-testimonial-btn text-dark dark:text-white m-0 ease-out duration-200 hover:bg-primary hover:text-white hover:shadow-none;
-      }
-
-      .common-carousel .swiper-button-next svg,
-      .common-carousel .swiper-button-prev svg {
-        @apply w-auto h-auto;
-      }
-
-    </style>
     <script>
       import "../scripts/stickymenu.js";
       import "../scripts/dropdown.js";
@@ -387,6 +103,7 @@ const GTM_ID = import.meta.env.PUBLIC_GTM_ID || process.env.GTM_ID || 'GTM-PG4CL
       import "../scripts/scrolltop.js";
       import "../scripts/scrollmenu.js";
       import "../scripts/testimonial.js";
+      import "../scripts/reveal.js";
     </script>
   </body>
 </html>
